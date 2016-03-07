@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_5 = {
     /**
      * Determines the elements to register for processing.
@@ -39,7 +41,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains pre-recorded synchronised media, check that an audio description is provided for its video content.', 'G78,G173,G8');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'もしこの埋め込みオブジェクトが収録済の同期したメディアの場合、映像と同期した音声解説が提供され、ユーザーが利用可能か確認してください。 If this embedded object contains pre-recorded synchronised media, check that an audio description is provided for its video content.', 'G78,G173,G8');
 
     }
 };

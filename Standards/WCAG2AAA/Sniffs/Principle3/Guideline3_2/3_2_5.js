@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_5 = {
     /**
      * Determines the elements to register for processing.
@@ -53,7 +55,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_5 = {
         if (hasTarget === true) {
             var target = link.getAttribute('target') || '';
             if ((target === '_blank') && (/new window/i.test(link.innerHTML) === false)) {
-                HTMLCS.addMessage(HTMLCS.WARNING, link, 'Check that this link\'s link text contains information indicating that the link will open in a new window.', 'H83.3');
+                HTMLCS.addMessage(HTMLCS.WARNING, link, 'このリンクは新しいウィンドウ（またはタブ）が開くようになっていますが、そのことがユーザーに伝わる情報が提供されているか確認してください。 Check that this link\'s link text contains information indicating that the link will open in a new window.', 'H83.3');
             }
         }
     }

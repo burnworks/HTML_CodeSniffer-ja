@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_2 = {
     /**
      * Determines the elements to register for processing.
@@ -69,7 +71,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_2 = {
             HTMLCS.addMessage(
                 HTMLCS.ERROR,
                 form,
-                'This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute "submit" or "image", or BUTTON elements with type "submit" or omitted/invalid.',
+                'フォーム内に送信 / 実行ボタンが含まれていないため、キーボード操作でフォームを送信 / 実行することができません。送信 / 実行ボタンは、input 要素に type="submit"、input type="image" を指定するか、button 要素に type="submit" を指定することで作成することができます。 This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute "submit" or "image", or BUTTON elements with type "submit" or omitted/invalid.',
                 'H32.2'
             );
         }

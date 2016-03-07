@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_2 = {
     /**
      * Determines the elements to register for processing.
@@ -41,7 +43,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'If this element contains audio that plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.', 'F23');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'もし Web ページ上にある音声が自動的に、3秒以上再生る場合、その音声を一時停止、または停止、あるいは音量を調整可能な仕組みが提供されているか確認してください。 If this element contains audio that plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.', 'F23');
 
     }
 };

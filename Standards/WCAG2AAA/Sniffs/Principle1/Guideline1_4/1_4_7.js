@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_7 = {
     /**
      * Determines the elements to register for processing.
@@ -40,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_7 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'For pre-recorded audio-only content in this element that is primarily speech (such as narration), any background sounds should be muteable, or be at least 20 dB (or about 4 times) quieter than the speech.', 'G56');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, '前景にある主音声（ナレーションや発言など）を背景音より少なくとも 20 デジベル大きく、または主音声は背景音よりも 4 倍大きくなるように音声コンテンツが用意されている、あるいは背景音を消すことができる必要があります。 For pre-recorded audio-only content in this element that is primarily speech (such as narration), any background sounds should be muteable, or be at least 20 dB (or about 4 times) quieter than the speech.', 'G56');
 
     }
 };

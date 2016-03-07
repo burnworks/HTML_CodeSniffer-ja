@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_9 = {
     /**
      * Determines the elements to register for processing.
@@ -37,7 +39,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_9 = {
         var imgObj = top.querySelector('img');
 
         if (imgObj !== null) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.', 'G140,C22,C30.NoException');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, '純粋な装飾目的、もしくはその情報を伝える上でテキストを特定の形で表現することが必要不可欠である場合に限って、文字画像が使用されていることを確認してください。 Check that images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.', 'G140,C22,C30.NoException');
         }
     }
 };

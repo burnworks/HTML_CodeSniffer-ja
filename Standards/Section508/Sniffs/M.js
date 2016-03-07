@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_M = {
     /**
      * Determines the elements to register for processing.
@@ -41,7 +43,7 @@ var HTMLCS_Section508_Sniffs_M = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If external media requires a plugin or application to view, ensure a link is provided to a plugin or application that complies with Section 508 accessibility requirements for applications.', 'PluginLink');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, '外部メディアの閲覧にプラグインやアプリケーションを必要とする場合、リハビリテーション法第 508 条のアクセシビリティ規定に準拠したプラグインやアプリケーションへのリンクを提供しているか確認してください。 If external media requires a plugin or application to view, ensure a link is provided to a plugin or application that complies with Section 508 accessibility requirements for applications.', 'PluginLink');
     }
 
 };

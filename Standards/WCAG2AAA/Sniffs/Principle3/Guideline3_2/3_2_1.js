@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_1 = {
     /**
      * Determines the elements to register for processing.
@@ -39,7 +41,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_1 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that a change of context does not occur when this input field receives focus.', 'G107');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'この入力コントロールがフォーカスを受け取ったときに状況の変化が発生しないことを確認してください。例えばフォーカスすることで勝手にフォームが送信されたりといった予期せぬイベントが発生することは避けてください。 Check that a change of context does not occur when this input field receives focus.', 'G107');
 
     }
 };

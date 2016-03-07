@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_5 = {
     /**
      * Determines the elements to register for processing.
@@ -34,6 +36,6 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that context-sensitive help is available for this form, at a Web-page and/or control level.', 'G71,G184,G193');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, '状況に応じたヘルプが利用できるか確認してください。 Check that context-sensitive help is available for this form, at a Web-page and/or control level.', 'G71,G184,G193');
     }
 };

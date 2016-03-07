@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_6 = {
     /**
      * Determines the elements to register for processing.
@@ -34,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_6 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that headings and labels describe topic or purpose.', 'G130,G131');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'この見出し、及びラベルが主題、または目的を適切に説明しているか確認してください。 Check that headings and labels describe topic or purpose.', 'G130,G131');
 
     }
 };

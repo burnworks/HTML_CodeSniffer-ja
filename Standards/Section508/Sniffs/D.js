@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_D = {
     /**
      * Determines the elements to register for processing.
@@ -35,7 +37,7 @@ var HTMLCS_Section508_Sniffs_D = {
     process: function(element, top)
     {
         if (element === top) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Ensure that content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'Linearised');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'スタイルシートが無効な場合でも、コンテンツが意味のある順序で並べられていることを確認してください。 Ensure that content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'Linearised');
             this.testPresentationMarkup(top);
             this.testHeadingOrder(top);
 
@@ -45,7 +47,7 @@ var HTMLCS_Section508_Sniffs_D = {
             // a container through AJAX (and thus not accessible with scripting off).
             var hasScript = top.querySelectorAll('script, link[rel="stylesheet"]');
             if (hasScript.length > 0) {
-                HTMLCS.addMessage(HTMLCS.NOTICE, top, 'If content is hidden and made visible using scripting (such as "click to expand" sections), ensure this content is readable when scripts and style sheets are disabled.', 'HiddenText');
+                HTMLCS.addMessage(HTMLCS.NOTICE, top, '初期状態が非表示で、クリック操作などによって表示されるような機能（例えばアコーディオンメニューのような）を使用している場合は、スクリプトやスタイルシートが無効な場合でも該当コンテンツが読み取り可能か確認してください。 If content is hidden and made visible using scripting (such as "click to expand" sections), ensure this content is readable when scripts and style sheets are disabled.', 'HiddenText');
             }
         }
     },
@@ -62,7 +64,7 @@ var HTMLCS_Section508_Sniffs_D = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'PresMarkup.' + tags[i].nodeName.substr(0, 1).toUpperCase() + tags[i].nodeName.substr(1).toLowerCase();
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'セマンティックな要素は適切なテキストのマークアップに使用されるべきです。 Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
 
         // Align attributes, too.
@@ -70,7 +72,7 @@ var HTMLCS_Section508_Sniffs_D = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'PresMarkup.AlignAttr';
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'セマンティックな要素は適切なテキストのマークアップに使用されるべきです。 Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
     },
 
@@ -81,14 +83,14 @@ var HTMLCS_Section508_Sniffs_D = {
         for (var i = 0; i < headings.length; i++) {
             var headingNum = parseInt(headings[i].nodeName.substr(1, 1));
             if (headingNum - lastHeading > 1) {
-                var exampleMsg = 'should be an h' + (lastHeading + 1) + ' to be properly nested';
+                var exampleMsg = '適切なネストのために h' + (lastHeading + 1) + ' 要素でマークアップされるべきです。 should be an h' + (lastHeading + 1) + ' to be properly nested';
                 if (lastHeading === 0) {
                     // If last heading is empty, we are at document top and we are
                     // expecting a H1, generally speaking.
-                    exampleMsg = 'appears to be the primary document heading, so should be an h1 element';
+                    exampleMsg = '文書内の最初の見出しと思われるため、h1 要素でマークアップされるべきです。 appears to be the primary document heading, so should be an h1 element';
                 }
 
-                HTMLCS.addMessage(HTMLCS.ERROR, headings[i], 'The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'HeadingOrder');
+                HTMLCS.addMessage(HTMLCS.ERROR, headings[i], 'この見出し構造は適切にネストされていません。この h' + headingNum + ' 要素は、' + exampleMsg + ' The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'HeadingOrder');
             }
 
             lastHeading = headingNum;

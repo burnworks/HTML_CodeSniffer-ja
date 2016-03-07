@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_H = {
     /**
      * Determines the elements to register for processing.
@@ -38,23 +40,23 @@ var HTMLCS_Section508_Sniffs_H = {
 
         // Incorrect usage of headers - error; emit always.
         for (var i = 0; i < headersAttr.wrongHeaders.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, 'Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'IncorrectHeadersAttr');
+            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, '間違った headers 属性値がこの td 要素に付与されています。恐らく正しいのは "' + headersAttr.wrongHeaders[i].expected + '" ですが、実際に見つかったのは "' + headersAttr.wrongHeaders[i].actual + '" です。 Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'IncorrectHeadersAttr');
         }
 
         // Errors where headers are compulsory.
         if ((headersAttr.required === true) && (headersAttr.allowScope === false)) {
             if (headersAttr.used === false) {
                 // Headers not used at all, and they are mandatory.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'MissingHeadersAttrs');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, '見出しセル（th 要素）とデータセル（td 要素）の関係性が定義されていません。このテーブルには行見出しが複数あるため、td 要素に headers 属性を使用する必要があります。 The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'MissingHeadersAttrs');
             } else {
                 // Missing TH IDs - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingThId.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'MissingHeaderIds');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての th 要素には id 属性が付与されていません。td 要素に headers 属性を用いて参照するためには、id 属性を持っている必要があります。 Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'MissingHeaderIds');
                 }
 
                 // Missing TD headers attributes - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingTd.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'IncompleteHeadersAttrs');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての td 要素には headers 属性が付与されていません。headers 属性には関連付ける th 要素が持つ id 属性値をすべて指定する必要があります。 Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'IncompleteHeadersAttrs');
                 }
             }//end if
         }//end if

@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_A = {
     /**
      * Determines the elements to register for processing.
@@ -52,7 +54,7 @@ var HTMLCS_Section508_Sniffs_A = {
                 // audio is not considered "multimedia" (roughly equivalent to a
                 // "synchronised media" presentation in WCAG 2.0). It is non-text,
                 // though, so a transcript is required.
-                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'For multimedia containing audio only, ensure an alternative is available, such as a full text transcript.', 'Audio');
+                HTMLCS.addMessage(HTMLCS.NOTICE, element, '音声しか含まないコンテンツに対して、テキストベースの代替コンテンツが提供され、ユーザーが利用可能か確認してください。 For multimedia containing audio only, ensure an alternative is available, such as a full text transcript.', 'Audio');
             }
         }
     },
@@ -189,39 +191,39 @@ var HTMLCS_Section508_Sniffs_A = {
         var errors = this.testNullAltText(top);
 
         for (var i = 0; i < errors.img.emptyAltInLink.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.emptyAltInLink[i], 'Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.', 'Img.EmptyAltInLink');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.emptyAltInLink[i], 'リンクの内容が img 要素のみですが、alt 属性が見つかりません。alt 属性値に入れた代替テキストによってリンクの目的を適切に説明する必要があります。 Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.', 'Img.EmptyAltInLink');
         }
 
         for (var i = 0; i < errors.img.nullAltWithTitle.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.nullAltWithTitle[i], 'Img element with empty alt text must have absent or empty title attribute.', 'Img.NullAltWithTitle');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.nullAltWithTitle[i], 'alt 属性値が空の img 要素は title 属性を持たないか、title 属性値が空である必要があります。 Img element with empty alt text must have absent or empty title attribute.', 'Img.NullAltWithTitle');
         }
 
         for (var i = 0; i < errors.img.ignored.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.img.ignored[i], 'Img element is marked so that it is ignored by Assistive Technology.', 'Img.Ignored');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.img.ignored[i], 'この img 要素は支援技術から無視されるようにマークアップされています。装飾画像などで alt 属性が空の場合が考えられます。空の alt 属性が意図したものか確認してください。 Img element is marked so that it is ignored by Assistive Technology.', 'Img.Ignored');
         }
 
         for (var i = 0; i < errors.img.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.missingAlt[i], 'Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.', 'Img.MissingAlt');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.missingAlt[i], 'img 要素に alt 属性がありません。alt 属性を使用して適切な代替テキストを提供しましょう。 Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.', 'Img.MissingAlt');
         }
 
         for (var i = 0; i < errors.img.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.img.generalAlt[i], 'Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.', 'Img.GeneralAlt');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.img.generalAlt[i], '画像の代替テキストが画像の内容を正しく示しているか確認してください Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.', 'Img.GeneralAlt');
         }
 
         for (var i = 0; i < errors.inputImage.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.inputImage.missingAlt[i], 'Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute.', 'InputImage.MissingAlt');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.inputImage.missingAlt[i], '送信 / 実行ボタンとして使用されている画像に alt 属性が見当たりません。alt 属性によって代替テキストを提供し、ボタンの機能を適切に説明する必要があります。 Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute.', 'InputImage.MissingAlt');
         }
 
         for (var i = 0; i < errors.inputImage.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.inputImage.generalAlt[i], 'Ensure that the image submit button\'s alt text identifies the purpose of the button.', 'InputImage.GeneralAlt');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.inputImage.generalAlt[i], '画像による送信 / 実行ボタンに付与された alt 属性値によってボタンの目的が適切に説明されているか確認してください Ensure that the image submit button\'s alt text identifies the purpose of the button.', 'InputImage.GeneralAlt');
         }
 
         for (var i = 0; i < errors.area.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.area.missingAlt[i], 'Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.', 'Area.MissingAlt');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.area.missingAlt[i], 'イメージマップ内の area 要素に alt 属性が見当たりません。各 area 要素には alt 属性によって代替テキストを提供し、その領域の機能や目的を適切に説明する必要があります。 Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.', 'Area.MissingAlt');
         }
 
         for (var i = 0; i < errors.area.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.area.generalAlt[i], 'Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.', 'Area.GeneralAlt');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.area.generalAlt[i], 'area 要素の代替テキストがイメージマップ内の該当する選択可能領域の内容を正しく示しているか確認してください。 Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.', 'Area.GeneralAlt');
         }
     },
 
@@ -306,23 +308,23 @@ var HTMLCS_Section508_Sniffs_A = {
         var errors = HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_1_1_1_1.testMediaTextAlternatives(top);
 
         for (var i = 0; i < errors.object.missingBody.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.object.missingBody[i], 'Object elements must contain a text alternative after all other alternatives are exhausted.', 'Object.MissingBody');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.object.missingBody[i], 'object 要素の内容として、代替テキストを記述する必要があります。object 要素に未対応の環境で利用されます。 Object elements must contain a text alternative after all other alternatives are exhausted.', 'Object.MissingBody');
         }
 
         for (var i = 0; i < errors.object.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.object.generalAlt[i], 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'Object.GeneralAlt');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.object.generalAlt[i], '非テキストコンテンツに対してそれと同じ目的を果たし同じ情報を提供する簡潔な（または適切であれば長い）代替テキストが提供されていることを確認してください。 Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'Object.GeneralAlt');
         }
 
         for (var i = 0; i < errors.applet.missingBody.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingBody[i], 'Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.', 'Applet.MissingBody');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingBody[i], 'applet 要素の内容として、代替テキストを記述する必要があります。applet 要素に未対応の環境で利用されます。 Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.', 'Applet.MissingBody');
         }
 
         for (var i = 0; i < errors.applet.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingAlt[i], 'Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.', 'Applet.MissingAlt');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingAlt[i], 'applet 要素には alt 属性によって代替テキストを提供する必要があります。applet 要素に未対応の環境で利用されます。 Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.', 'Applet.MissingAlt');
         }
 
         for (var i = 0; i < errors.applet.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.applet.generalAlt[i], 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'Applet.GeneralAlt');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.applet.generalAlt[i], '非テキストコンテンツに対してそれと同じ目的を果たし同じ情報を提供する簡潔な（または適切であれば長い）代替テキストが提供されていることを確認してください。 Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'Applet.GeneralAlt');
         }
     }
 };

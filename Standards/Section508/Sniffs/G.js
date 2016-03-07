@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_G = {
     /**
      * Determines the elements to register for processing.
@@ -36,7 +38,7 @@ var HTMLCS_Section508_Sniffs_G = {
     {
         // If no table headers, emit notice about the table.
         if (HTMLCS.util.isLayoutTable(element) === true) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'This table has no headers. If this is a data table, ensure row and column headers are identified using th elements.', 'TableHeaders');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'このテーブルには見出し行がありません。このテーブルがデータテーブルの場合、見出しとなる行、もしくは列を th 要素を使用して用意します。 This table has no headers. If this is a data table, ensure row and column headers are identified using th elements.', 'TableHeaders');
         }
     }
 

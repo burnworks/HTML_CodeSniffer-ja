@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
     /**
      * Determines the elements to register for processing.
@@ -77,9 +79,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
             }
 
             if (hasTitle === false) {
-                HTMLCS.addMessage(HTMLCS.ERROR, element, 'Iframe element requires a non-empty title attribute that identifies the frame.', 'H64.1');
+                HTMLCS.addMessage(HTMLCS.ERROR, element, 'iframe 要素にはその内容を説明するための title 属性が必要です。 Iframe element requires a non-empty title attribute that identifies the frame.', 'H64.1');
             } else {
-                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that the title attribute of this element contains text that identifies the frame.', 'H64.2');
+                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'iframe 要素にはその内容を説明するための title 属性が必要です。(Iframe element requires a non-empty title attribute that identifies the frame.)","H64.1"):HTMLCS.addMessage(HTMLCS.NOTICE,a,"iframe 要素に付与された title 属性の値がそのフレームの内容を適切に示しているか確認してください。 Check that the title attribute of this element contains text that identifies the frame.', 'H64.2');
             }
         }//end if
     },
@@ -93,7 +95,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
      */
     testGenericBypassMsg: function(top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'G1,G123,G124,H69');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, '複数の Web ページ上で繰り返されているナビゲーションなどの要素をスキップできる機能が提供されているか確認してください。 Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'G1,G123,G124,H69');
     },
 
     /**
@@ -131,9 +133,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
 
                     if ((target === null) || (HTMLCS.util.contains(top, target) === false)) {
                         if ((HTMLCS.isFullDoc(top) === true) || (top.nodeName.toLowerCase() === 'body')) {
-                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'G1,G123,G124.NoSuchID');
+                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'このリンクは "' + id + '" という名前のアンカーにリンクされていますが、この文書内で該当する名前が見つかりません。 This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'G1,G123,G124.NoSuchID');
                         } else {
-                            HTMLCS.addMessage(HTMLCS.WARNING, element, 'This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'G1,G123,G124.NoSuchIDFragment');
+                            HTMLCS.addMessage(HTMLCS.WARNING, element, 'このリンクは "' + id + '" という名前のアンカーにリンクされていますが、この文書内で該当する名前が見つかりません。 This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'G1,G123,G124.NoSuchIDFragment');
                         }
                     }
                 } catch (ex) {

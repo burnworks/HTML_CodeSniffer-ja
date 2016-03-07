@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_7 = {
     /**
      * Determines the elements to register for processing.
@@ -40,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_7 = {
         var inputField = top.querySelector('input, textarea, button, select, a');
 
         if (inputField !== null) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.', 'G149,G165,G195,C15,SCR31');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'フォーカスを受け取った際に、フォーカスインジケータによってそれが認識できることを確認してください。 Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.', 'G149,G165,G195,C15,SCR31');
         }
 
     }

@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_4 = {
     /**
      * Determines the elements to register for processing.
@@ -34,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_4 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.', 'G197');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Web ページ一式の中で同じ機能を有するコンテンツに対して一貫したラベル、識別名、及び代替テキストが用いられ、ユーザーが一貫して識別できるか確認してください。 Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.', 'G197');
 
     }
 };

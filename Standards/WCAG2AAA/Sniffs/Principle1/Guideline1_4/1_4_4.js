@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_4 = {
     /**
      * Determines the elements to register for processing.
@@ -34,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_4 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.', 'G142');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'テキストはコンテンツ、または機能を損なうことなく、支援技術なしで 200% までサイズを変更できることを確認してください。 Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.', 'G142');
 
     }
 };

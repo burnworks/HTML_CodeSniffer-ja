@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_3 = {
     /**
      * Determines the elements to register for processing.
@@ -36,6 +38,6 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_3 = {
     {
         // Only G177 (about providing suggestions) is flagged as a technique.
         // The techniques in 3.3.1 are also listed in this Success Criterion.
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.', 'G177');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, '入力エラーが自動的に検出され、修正方法を提案できる場合、その提案がユーザーに提示されているか確認してください。ただし、セキュリティ、あるいはコンテンツの目的を損なう場合は除きます。 Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.', 'G177');
     }
 };

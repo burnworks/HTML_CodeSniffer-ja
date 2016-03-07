@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_3_F24 = {
     /**
      * Determines the elements to register for processing.
@@ -85,9 +87,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_3_F24 = {
 
         if (hasBg !== hasFg) {
             if (hasBg === true) {
-                HTMLCS.addMessage(HTMLCS.WARNING, element, 'Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.', 'F24.BGColour');
+                HTMLCS.addMessage(HTMLCS.WARNING, element, 'この要素にはインラインで背景色、あるいは背景画像が指定されていますが前景色が指定されていません。適切なコントラストが確保されているか確認してください。 Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.', 'F24.BGColour');
             } else {
-                HTMLCS.addMessage(HTMLCS.WARNING, element, 'Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.', 'F24.FGColour');
+                HTMLCS.addMessage(HTMLCS.WARNING, element, 'この要素にはインラインで前景色が指定されていますが背景色、あるいは背景画像が指定されていません。適切なコントラストが確保されているか確認してください。 Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.', 'F24.FGColour');
             }
         }
     }

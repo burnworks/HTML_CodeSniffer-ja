@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_1 = {
     /**
      * Determines the elements to register for processing.
@@ -45,7 +47,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_1 = {
                 if (usedIds[id] !== undefined) {
                     // F77 = "Failure of SC 4.1.1 due to duplicate values of type ID".
                     // Appropriate technique in HTML is H93.
-                    HTMLCS.addMessage(HTMLCS.ERROR, elsWithIds[i], 'Duplicate id attribute value "' + id + '" found on the web page.', 'F77');
+                    HTMLCS.addMessage(HTMLCS.ERROR, elsWithIds[i], 'ページ内で "' + id + '" という id 属性値が重複して存在しています。 Duplicate id attribute value "' + id + '" found on the web page.', 'F77');
                 } else {
                     usedIds[id] = true;
                 }

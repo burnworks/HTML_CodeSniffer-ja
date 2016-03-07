@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_I = {
     /**
      * Determines the elements to register for processing.
@@ -47,7 +49,7 @@ var HTMLCS_Section508_Sniffs_I = {
         }
 
         if (titleEmpty === true) {
-            HTMLCS.addMessage(HTMLCS.ERROR, top, 'This ' + nodeName + ' element is missing title text. Frames should be titled with text that facilitates frame identification and navigation.', 'Frames');
+            HTMLCS.addMessage(HTMLCS.ERROR, top, 'この ' + nodeName + ' 要素にはタイトルとなるテキストがありません。フレームには識別や操作を容易にするため、適切なタイトルを付ける必要があります。 This ' + nodeName + ' element is missing title text. Frames should be titled with text that facilitates frame identification and navigation.', 'Frames');
         }
     }
 };

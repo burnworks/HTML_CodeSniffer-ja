@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_3 = {
     /**
      * Determines the elements to register for processing.
@@ -38,7 +40,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_3 = {
             var tabIndexExists = top.querySelector('*[tabindex]');
 
             if (tabIndexExists) {
-                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.', 'H4.2');
+                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'もし、tabindex 属性を使用する場合はタブ移動順序とコンテンツ順序の関係を確認してください。 If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.', 'H4.2');
             }
         }
     }

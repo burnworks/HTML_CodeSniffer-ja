@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_1 = {
     /**
      * Determines the elements to register for processing.
@@ -44,11 +46,11 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_1 = {
         var nodeName = element.nodeName.toLowerCase();
 
         if (nodeName !== 'video') {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.', 'G158');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'もしこの埋め込みオブジェクトが収録済の音声しか含まず、かつそれがテキストの代替メディアでない場合、代替コンテンツが提供され、ユーザーが利用可能か確認してください。 If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.', 'G158');
         }
 
         if ((nodeName !== 'bgsound') && (nodeName !== 'audio')) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.', 'G159,G166');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'もしこの埋め込みオブジェクトが収録済の映像しか含まず、かつそれがテキストの代替メディアでない場合、代替コンテンツ、または映像と同期した音声解説が提供され、ユーザーが利用可能か確認してください。 If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.', 'G159,G166');
         }
 
     }

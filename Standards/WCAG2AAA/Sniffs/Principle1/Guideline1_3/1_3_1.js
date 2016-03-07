@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
     _labelNames: null,
 
@@ -121,18 +123,18 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
                     if (refNode === null) {
                         var level = HTMLCS.ERROR;
-                        var msg   = 'This label\'s "for" attribute contains an ID that does not exist in the document.';
+                        var msg   = 'この label 要素の for 属性値には、文書内に存在しない id 属性値が指定されています。 This label\'s "for" attribute contains an ID that does not exist in the document.';
                         var code  = 'H44.NonExistent';
                         if ((HTMLCS.isFullDoc(top) === true) || (top.nodeName.toLowerCase() === 'body')) {
                             level = HTMLCS.WARNING;
-                            msg   = 'This label\'s "for" attribute contains an ID that does not exist in the document fragment.';
+                            msg   = 'この label 要素の for 属性値には、文書内に存在しない id 属性値が指定されています。 This label\'s "for" attribute contains an ID that does not exist in the document fragment.';
                             var code  = 'H44.NonExistentFragment';
                         }
                         HTMLCS.addMessage(level, labels[i], msg, code);
                     } else {
                         var nodeName = refNode.nodeName.toLowerCase();
                         if ('input|select|textarea|button|keygen|meter|output|progress'.indexOf(nodeName) === -1) {
-                            HTMLCS.addMessage(HTMLCS.WARNING, labels[i], 'This label\'s "for" attribute contains an ID for an element that is not a form control. Ensure that you have entered the correct ID for the intended element.', 'H44.NotFormControl');
+                            HTMLCS.addMessage(HTMLCS.WARNING, labels[i], 'この label 要素の for 属性値には、入力コントロール以外に指定された id 属性値が指定されています。意図した指定か確認してください。 This label\'s "for" attribute contains an ID for an element that is not a form control. Ensure that you have entered the correct ID for the intended element.', 'H44.NotFormControl');
                         }
                     }
                 }
@@ -223,7 +225,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 HTMLCS.addMessage(
                     HTMLCS.WARNING,
                     element,
-                    'This form control has a "title" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
+                    'この入力コントロールは、空、もしくは空白文字のみの属性値が指定された title 属性を持っています。この title 属性はユーザーエージェントや支援技術から無視されます。 This form control has a "title" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
                     'H65'
                 );
             } else {
@@ -238,7 +240,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 HTMLCS.addMessage(
                     HTMLCS.WARNING,
                     element,
-                    'This form control has an "aria-label" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
+                    'この入力コントロールは、空、もしくは空白文字のみの属性値が指定された aria-label 属性を持っています。この aria-label 属性はユーザーエージェントや支援技術から無視されます。 This form control has an "aria-label" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
                     'ARIA6'
                 );
             } else {
@@ -259,7 +261,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                     HTMLCS.addMessage(
                         HTMLCS.WARNING,
                         element,
-                        'This form control contains an aria-labelledby attribute, however it includes an ID "' + labelledByIds[x] + '" that does not exist on an element. The aria-labelledby attribute will be ignored for labelling test purposes.',
+                        'この入力コントロールは、文書内に存在しない "' + labelledByIds[x] + '" という id 属性値が指定された aria-labelledby 属性を持っています。この aria-labelledby 属性はユーザーエージェントや支援技術から無視されます。 This form control contains an aria-labelledby attribute, however it includes an ID "' + labelledByIds[x] + '" that does not exist on an element. The aria-labelledby attribute will be ignored for labelling test purposes.',
                         'ARIA16,ARIA9'
                     );
                     ok = false;
@@ -284,14 +286,14 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                     HTMLCS.addMessage(
                         HTMLCS.WARNING,
                         element,
-                        'This hidden form field is labelled in some way. There should be no need to label a hidden form field.',
+                        'この隠し入力コントロールは、何らかの方法によってラベルが提示されています。隠し入力コントロールにはラベルを提示しないでください。 This hidden form field is labelled in some way. There should be no need to label a hidden form field.',
                         'F68.Hidden'
                     );
                 } else if (element.getAttribute('hidden') !== null) {
                     HTMLCS.addMessage(
                         HTMLCS.WARNING,
                         element,
-                        'This form field is intended to be hidden (using the "hidden" attribute), but is also labelled in some way. There should be no need to label a hidden form field.',
+                        'この入力コントロールは、hidden 属性によって非表示にすることが意図されていますが、何らかの方法によってラベルが提示されています。非表示の入力コントロールにはラベルを提示しないでください。 This form field is intended to be hidden (using the "hidden" attribute), but is also labelled in some way. There should be no need to label a hidden form field.',
                         'F68.HiddenAttr'
                     );
                 }
@@ -300,8 +302,8 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 HTMLCS.addMessage(
                     HTMLCS.ERROR,
                     element,
-                    'This form field should be labelled in some way.' + ' ' +
-                    'Use the label element (either with a "for" attribute or wrapped around the form field), or "title", "aria-label" or "aria-labelledby" attributes as appropriate.',
+                    'この入力コントロールは、何らかの方法によってラベルを提示するべきです。 This form field should be labelled in some way.' + ' ' +
+                    'label 要素に for 属性を指定するか、入力コントロール自体を label 要素で内包します。または、title 属性、aria-label 属性、aria-labelledby 属性など適切な属性を使用することもできます。 Use the label element (either with a "for" attribute or wrapped around the form field), or "title", "aria-label" or "aria-labelledby" attributes as appropriate.',
                     'F68'
                 );
             }//end if
@@ -327,7 +329,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'H49.' + tags[i].nodeName.substr(0, 1).toUpperCase() + tags[i].nodeName.substr(1).toLowerCase();
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'セマンティックな要素は適切なテキストのマークアップに使用されるべきです。 Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
 
         // Align attributes, too.
@@ -335,7 +337,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'H49.AlignAttr';
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'セマンティックな要素は適切なテキストのマークアップに使用されるべきです。 Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
     },
 
@@ -360,7 +362,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 var childTag = children[0].nodeName.toLowerCase();
 
                 if (/^(strong|em|b|i|u)$/.test(childTag) === true) {
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'Heading markup should be used if this content is intended as a heading.', 'H42');
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'もしこのコンテンツに見出しとしての意味がある場合、適切な見出し要素でマークアップされる必要があります。 Heading markup should be used if this content is intended as a heading.', 'H42');
                 }
             }
         }
@@ -394,13 +396,13 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         // Invalid scope attribute - emit always if scope tested.
         for (var i = 0; i < scopeAttr.invalid.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, scopeAttr.invalid[i], 'Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.', 'H63.3');
+            HTMLCS.addMessage(HTMLCS.ERROR, scopeAttr.invalid[i], 'セルが不正な scope 属性値を持っています。正しい値は、row、col、rowgroup、colgroup のいずれかです。 Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.', 'H63.3');
         }
 
         // TDs with scope attributes are obsolete in HTML5 - emit warnings if
         // scope tested, but not as errors as they are valid HTML4.
         for (var i = 0; i < scopeAttr.obsoleteTd.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, scopeAttr.obsoleteTd[i], 'Scope attributes on td elements that act as headings for other elements are obsolete in HTML5. Use a th element instead.', 'H63.2');
+            HTMLCS.addMessage(HTMLCS.WARNING, scopeAttr.obsoleteTd[i], 'HTML5 において、scope 属性を td 要素に使用することはできません。th 要素に使用してください。 Scope attributes on td elements that act as headings for other elements are obsolete in HTML5. Use a th element instead.', 'H63.2');
         }
 
         if (headersAttr.allowScope === true) {
@@ -412,30 +414,30 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
             }
         } else {
             if (scopeAttr.used === true) {
-                HTMLCS.addMessage(HTMLCS.WARNING, table, 'Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.', 'H43.ScopeAmbiguous');
+                HTMLCS.addMessage(HTMLCS.WARNING, table, '行見出しが複数あるテーブルで、th 要素に指定された scope 属性では関連付けが曖昧な場合、td 要素に headers 属性を使用します。 Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.', 'H43.ScopeAmbiguous');
                 scopeAttr = null;
             }
         }//end if
 
         // Incorrect usage of headers - error; emit always.
         for (var i = 0; i < headersAttr.wrongHeaders.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, 'Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'H43.IncorrectAttr');
+            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, '間違った headers 属性値がこの td 要素に付与されています。恐らく正しいのは "' + headersAttr.wrongHeaders[i].expected + '" ですが、見つかった値は "' + headersAttr.wrongHeaders[i].actual + '" です。 Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'H43.IncorrectAttr');
         }
 
         // Errors where headers are compulsory.
         if ((headersAttr.required === true) && (headersAttr.allowScope === false)) {
             if (headersAttr.used === false) {
                 // Headers not used at all, and they are mandatory.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'H43.HeadersRequired');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, '見出しセル（th 要素）とデータセル（td 要素）の関係性が定義されていません。このテーブルには行見出しが複数あるため、td 要素に headers 属性を使用する必要があります The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'H43.HeadersRequired');
             } else {
                 // Missing TH IDs - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingThId.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての th 要素には id 属性が付与されていません。td 要素に headers 属性を用いて参照するためには、id 属性を持っている必要があります。 Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
                 }
 
                 // Missing TD headers attributes - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingTd.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての td 要素には headers 属性が付与されていません。headers 属性には関連付ける th 要素が持つ id 属性値をすべて指定する必要があります。 Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
                 }
             }//end if
         }//end if
@@ -448,23 +450,23 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         if ((headersAttr.required === true) && (headersAttr.allowScope === true) && (headersAttr.correct === false) && (scopeAttr.correct === false)) {
             if ((scopeAttr.used === false) && (headersAttr.used === false)) {
                 // Nothing used at all.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, '見出しセル（th 要素）とデータセル（td 要素）の関係性が定義されていません。scope 属性や headers 属性を用いて関係性を示す必要があります。 The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
             } else if ((scopeAttr.used === false) && ((headersAttr.missingThId.length > 0) || (headersAttr.missingTd.length > 0))) {
                 // Headers attribute is used, but not all th elements have ids.
                 if (headersAttr.missingThId.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての th 要素には id 属性が付与されていません。td 要素に headers 属性を用いて参照するためには、id 属性を持っている必要があります。 Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
                 }
 
                 // Headers attribute is used, but not all td elements have headers attrs.
                 if (headersAttr.missingTd.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての td 要素には headers 属性が付与されていません。headers 属性には関連付ける th 要素が持つ id 属性値をすべて指定する必要があります。 Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
                 }
             } else if ((scopeAttr.missing.length > 0) && (headersAttr.used === false)) {
                 // Scope is used rather than headers, but not all th elements have them.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.', 'H63.1');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブル内のすべての th 要素には scope 属性が付与されていません。データセルと関連付けるため、scope 属性を付与する必要があります。 Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.', 'H63.1');
             } else if ((scopeAttr.missing.length > 0) && ((headersAttr.missingThId.length > 0) || (headersAttr.missingTd.length > 0))) {
                 // Both are used and both were done incorrectly. Provide generic message.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, '見出しセル（th 要素）とデータセル（td 要素）の関係性が定義されていません。scope 属性や headers 属性を用いて関係性を示す必要があります。 The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
             }
         }
     },
@@ -562,29 +564,29 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         if (summary !== '') {
             if (HTMLCS.util.isLayoutTable(table) === true) {
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'This table appears to be used for layout, but contains a summary attribute. Layout tables must not contain summary attributes, or if supplied, must be empty.', 'H73.3.LayoutTable');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブルはレイアウトのために使用されていると思われますが、summary 属性が付与されています。レイアウトテーブルは summary 属性を持たないか、属性値が空の必要があります。 This table appears to be used for layout, but contains a summary attribute. Layout tables must not contain summary attributes, or if supplied, must be empty.', 'H73.3.LayoutTable');
             } else {
                 if (caption === summary) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.', 'H39,H73.4');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'もしこのテーブルがデータテーブルで summary 属性と caption 要素が同時に存在する場合、summary 属性には caption 要素と同じ内容を入れることはできません。 If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.', 'H39,H73.4');
                 }
 
-                HTMLCS.addMessage(HTMLCS.NOTICE, table, 'If this table is a data table, check that the summary attribute describes the table\'s organization or explains how to use the table.', 'H73.3.Check');
+                HTMLCS.addMessage(HTMLCS.NOTICE, table, 'もしこのテーブルがデータテーブルの場合、summary 属性がテーブルの内容について適切に説明しているか確認してください。 If this table is a data table, check that the summary attribute describes the table\'s organization or explains how to use the table.', 'H73.3.Check');
             }
         } else {
             if (HTMLCS.util.isLayoutTable(table) === false) {
-                HTMLCS.addMessage(HTMLCS.WARNING, table, 'If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.', 'H73.3.NoSummary');
+                HTMLCS.addMessage(HTMLCS.WARNING, table, 'もしこのテーブルがデータテーブルの場合、summary 属性を用いてこのテーブルの概要を提供することを検討してください。 If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.', 'H73.3.NoSummary');
             }
         }//end if
 
         if (caption !== '') {
             if (HTMLCS.util.isLayoutTable(table) === true) {
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'This table appears to be used for layout, but contains a caption element. Layout tables must not contain captions.', 'H39.3.LayoutTable');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'このテーブルはレイアウトのために使用されていると思われますが、caption 要素が含まれています。レイアウトテーブルは caption 要素を持つべきではありません。 This table appears to be used for layout, but contains a caption element. Layout tables must not contain captions.', 'H39.3.LayoutTable');
             } else {
-                HTMLCS.addMessage(HTMLCS.NOTICE, table, 'If this table is a data table, check that the caption element accurately describes this table.', 'H39.3.Check');
+                HTMLCS.addMessage(HTMLCS.NOTICE, table, 'もしこのテーブルがデータテーブルの場合、caption 要素がテーブルの表題について適切に示しているか確認してください。 If this table is a data table, check that the caption element accurately describes this table.', 'H39.3.Check');
             }
         } else {
             if (HTMLCS.util.isLayoutTable(table) === false) {
-                HTMLCS.addMessage(HTMLCS.WARNING, table, 'If this table is a data table, consider using a caption element to the table element to identify this table.', 'H39.3.NoCaption');
+                HTMLCS.addMessage(HTMLCS.WARNING, table, 'もしこのテーブルがデータテーブルの場合、このテーブルを識別できるように caption 要素を使用して表題を提供することを検討してください。 If this table is a data table, consider using a caption element to the table element to identify this table.', 'H39.3.NoCaption');
             }
         }//end if
     },
@@ -598,7 +600,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         var legend = fieldset.querySelector('legend');
 
         if ((legend === null) || (legend.parentNode !== fieldset)) {
-            HTMLCS.addMessage(HTMLCS.ERROR, fieldset, 'Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.', 'H71.NoLegend');
+            HTMLCS.addMessage(HTMLCS.ERROR, fieldset, 'fieldset 要素に legend 要素が含まれていません。すべての fieldset 要素には legend 要素によって説明文を記述する必要があります。 Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.', 'H71.NoLegend');
         }
     },
 
@@ -614,7 +616,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         if (optgroup === null) {
             // Optgroup isn't being used.
-            HTMLCS.addMessage(HTMLCS.WARNING, select, 'If this selection list contains groups of related options, they should be grouped with optgroup.', 'H85.2');
+            HTMLCS.addMessage(HTMLCS.WARNING, select, 'もしこのセレクトメニューの選択肢の中に関連する選択肢のグループが含まれる場合、optgroup 要素によってグループ化する必要があります。 If this selection list contains groups of related options, they should be grouped with optgroup.', 'H85.2');
         }
     },
 
@@ -657,7 +659,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 // Multiple names detected = should be in a fieldset.
                 // Either first instance or this one wasn't in a fieldset, or they
                 // are in different fieldsets.
-                HTMLCS.addMessage(HTMLCS.WARNING, form, 'If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.', 'H71.SameName');
+                HTMLCS.addMessage(HTMLCS.WARNING, form, 'もしこれらのラジオボタン、チェックボックスをグループ化したい場合、それらは fieldset 要素内に含まれるべきです。 If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.', 'H71.SameName');
                 break;
             }//end if
         }//end for
@@ -711,11 +713,11 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
             for (var i = 0; i < items.length; i++) {
                 if (/^[\-*]\s+/.test(items[0]) === true) {
                     // Test for "- " or "* " cases.
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'This content looks like it is simulating an unordered list using plain text. If so, marking up this content with a ul element would add proper structure information to the document.', 'H48.1');
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'このコンテンツはプレーンテキストを使用して箇条書きを再現しているように見えます。その場合、ul 要素によってマークアップすることで、適切な文書構造を持つことができます。 This content looks like it is simulating an unordered list using plain text. If so, marking up this content with a ul element would add proper structure information to the document.', 'H48.1');
                     break;
                 } if (/^\d+[:\/\-.]?\s+/.test(items[0]) === true) {
                     // Test for "1 " cases (or "1. ", "1: ", "1- ").
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.', 'H48.2');
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'このコンテンツはプレーンテキストを使用して順序付きリストを再現しているように見えます。その場合、ol 要素によってマークアップすることで、適切な文書構造を持つことができます。 This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.', 'H48.2');
                     break;
                 }
             }//end for
@@ -729,14 +731,14 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         for (var i = 0; i < headings.length; i++) {
             var headingNum = parseInt(headings[i].nodeName.substr(1, 1));
             if (headingNum - lastHeading > 1) {
-                var exampleMsg = 'should be an h' + (lastHeading + 1) + ' to be properly nested';
+                var exampleMsg = '適切なネストのために h' + (lastHeading + 1) + ' 要素でマークアップされるべきです。 should be an h' + (lastHeading + 1) + ' to be properly nested';
                 if (lastHeading === 0) {
                     // If last heading is empty, we are at document top and we are
                     // expecting a H1, generally speaking.
-                    exampleMsg = 'appears to be the primary document heading, so should be an h1 element';
+                    exampleMsg = '文書内の最初の見出しと思われるため、h1 要素でマークアップされるべきです。 appears to be the primary document heading, so should be an h1 element';
                 }
 
-                HTMLCS.addMessage(level, headings[i], 'The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'G141');
+                HTMLCS.addMessage(level, headings[i], 'この見出し構造は適切にネストされていません。この h' + headingNum + ' 要素は ' + exampleMsg + ' The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'G141');
             }
 
             lastHeading = headingNum;
@@ -758,7 +760,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         }
 
         if (/^\s*$/.test(text) === true) {
-            HTMLCS.addMessage(HTMLCS.ERROR, element, 'Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.', 'H42.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, element, '見出し要素が空、もしくはテキストコンテンツ以外が見出し要素でマークアップされています。画像を見出しにする場合は適切な代替テキストが指定されていることを確認してください。 Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.', 'H42.2');
         }
     },
 
@@ -794,7 +796,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
             }
 
             if (parent === null) {
-                HTMLCS.addMessage(HTMLCS.WARNING, element, 'If this element contains a navigation section, it is recommended that it be marked up as a list.', 'H48');
+                HTMLCS.addMessage(HTMLCS.WARNING, element, 'もしこの要素がナビゲーションセクションを含む場合、リスト要素でマークアップすることを推奨します。 If this element contains a navigation section, it is recommended that it be marked up as a list.', 'H48');
             }
         }//end if
     },
@@ -809,9 +811,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
      */
     testGeneralTable: function(table) {
         if (HTMLCS.util.isLayoutTable(table) === true) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, table, 'This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.', 'LayoutTable');
+            HTMLCS.addMessage(HTMLCS.NOTICE, table, 'このテーブルはレイアウトテーブルと思われます。もしデータテーブルを意図している場合は、th 要素を使用して見出しセルが認識できることを確認してください。 This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.', 'LayoutTable');
         } else {
-            HTMLCS.addMessage(HTMLCS.NOTICE, table, 'This table appears to be a data table. If it is meant to instead be a layout table, ensure there are no th elements, and no summary or caption.', 'DataTable');
+            HTMLCS.addMessage(HTMLCS.NOTICE, table, 'このテーブルはデータテーブルと思われます。もしレイアウトテーブルを意図している場合は、th 要素や caption 要素が含まれていたり、summary 属性が指定されていないことを確認してください。 This table appears to be a data table. If it is meant to instead be a layout table, ensure there are no th elements, and no summary or caption.', 'DataTable');
         }
     }
 };

@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_O = {
     /**
      * Determines the elements to register for processing.
@@ -39,7 +41,7 @@ var HTMLCS_Section508_Sniffs_O = {
     process: function(element, top)
     {
         if (element === top) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'SkipLinks');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, '複数のWebページ上で繰り返されているナビゲーションなどの要素をスキップできる機能が提供されているか確認してください。 Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'SkipLinks');
         } else {
             if (element.hasAttribute('href') === true) {
                 var href = element.getAttribute('href');
@@ -62,9 +64,9 @@ var HTMLCS_Section508_Sniffs_O = {
 
                         if ((target === null) || (HTMLCS.util.contains(top, target) === false)) {
                             if ((HTMLCS.isFullDoc(top) === true) || (top.nodeName.toLowerCase() === 'body')) {
-                                HTMLCS.addMessage(HTMLCS.ERROR, element, 'This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'NoSuchID');
+                                HTMLCS.addMessage(HTMLCS.ERROR, element, 'このリンクは "' + id + '" という名前のアンカーにリンクされていますが、この文書内で該当する名前が見つかりません。 This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'NoSuchID');
                             } else {
-                                HTMLCS.addMessage(HTMLCS.WARNING, element, 'This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'NoSuchIDFragment');
+                                HTMLCS.addMessage(HTMLCS.WARNING, element, 'このリンクは "' + id + '" という名前のアンカーにリンクされていますが、この文書内で該当する名前が見つかりません。 This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'NoSuchIDFragment');
                             }
                         }
                     } catch (ex) {

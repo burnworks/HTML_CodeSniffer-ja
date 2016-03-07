@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_3_2_3_1 = {
     /**
      * Determines the elements to register for processing.
@@ -41,7 +43,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_3_2_3_1 = {
         // 22-26 inches, at 1024 x 768 resolution). A 10-degree field of vision is
         // approximately 341 x 256 pixels in this environment, and a flashing area
         // needs to be no more than 25% of this (not necessarily rectangular).
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.', 'G19,G176');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, '任意のどの 1 秒間においても、3 回よりも多く閃光を放つ部分がないこと、あるいはその部分のサイズが十分に小さいことを確認してください。 Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.', 'G19,G176');
 
     }
 };

@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_9 = {
     /**
      * Determines the elements to register for processing.
@@ -40,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_9 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains live audio-only content, check that an alternative text version of the content is provided.', 'G150,G151,G157');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'もしこの埋め込みオブジェクトがライブの音声しか含まない場合、代替コンテンツが提供され、ユーザーが利用可能か確認してください。 If this embedded object contains live audio-only content, check that an alternative text version of the content is provided.', 'G150,G151,G157');
 
     }
 };

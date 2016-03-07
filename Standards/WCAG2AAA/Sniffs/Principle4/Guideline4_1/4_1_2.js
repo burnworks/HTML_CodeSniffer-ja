@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
     /**
      * Determines the elements to register for processing.
@@ -52,27 +54,27 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
     {
         var errors = this.processLinks(top);
         for (var i = 0; i < errors.empty.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.empty[i], 'Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.', 'H91.A.Empty');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.empty[i], 'リンクテキスト、もしくは href 属性を持たず、id 属性が指定された a 要素が見つかりました。親要素や付近の要素にその id 属性を移動することを検討してください。 Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.', 'H91.A.Empty');
         }
 
         for (var i = 0; i < errors.emptyWithName.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.emptyWithName[i], 'Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.', 'H91.A.EmptyWithName');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.emptyWithName[i], 'リンクテキスト、もしくは href 属性を持たず、name 属性が指定された a 要素が見つかりました。id 属性に変更した上で、親要素や付近の要素に移動することを検討してください。 Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.', 'H91.A.EmptyWithName');
         }
 
         for (var i = 0; i < errors.emptyNoId.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'Anchor element found with no link content and no name and/or ID attribute.', 'H91.A.EmptyNoId');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'リンクテキストを持たず、name 属性、または id 属性のいずれか、あるいはその両方を持たない a 要素が見つかりました。 Anchor element found with no link content and no name and/or ID attribute.', 'H91.A.EmptyNoId');
         }
 
         for (var i = 0; i < errors.noHref.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.noHref[i], 'Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.', 'H91.A.NoHref');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.noHref[i], 'ページ内リンクのターゲットを定義するために a 要素を使用すべきではありません。他の目的（例えばスタイルシートやスクリプトからの参照）で id 属性を使用していない場合は、親要素に移動することを検討してください。 Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.', 'H91.A.NoHref');
         }
 
         for (var i = 0; i < errors.placeholder.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'Anchor element found with link content, but no href, ID or name attribute has been supplied.', 'H91.A.Placeholder');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'リンクテキストを含む a 要素が見つかりましたが、href 属性を持たず、name 属性、id 属性のいずれかも指定されていません。 Anchor element found with link content, but no href, ID or name attribute has been supplied.', 'H91.A.Placeholder');
         }
 
         for (var i = 0; i < errors.noContent.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'Anchor element found with a valid href attribute, but no link content has been supplied.', 'H91.A.NoContent');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'href 属性を持つ a 要素が見つかりましたが、リンクテキストが空です。 Anchor element found with a valid href attribute, but no link content has been supplied.', 'H91.A.NoContent');
         }
     },
 
@@ -235,9 +237,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
                 }//end for
 
                 if (i === requiredNames[nodeName].length) {
-                    var msgNodeType = nodeName + ' element';
+                    var msgNodeType = nodeName + ' 要素';
                     if (nodeName.substr(0, 6) === 'input_') {
-                        msgNodeType = nodeName.substr(6) + ' input element';
+                        msgNodeType = nodeName.substr(6) + ' input 要素';
                     }
 
                     var builtAttrs = requiredNames[nodeName].slice(0, requiredNames[nodeName].length);
@@ -245,13 +247,13 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
                         if (builtAttrs[a] === '_content') {
                             builtAttrs[a] = 'element content';
                         } else if (builtAttrs[a].charAt(0) === '@') {
-                            builtAttrs[a] = builtAttrs[a].substr(1) + ' attribute';
+                            builtAttrs[a] = builtAttrs[a].substr(1) + ' 属性';
                         } else {
-                            builtAttrs[a] = builtAttrs[a] + ' element';
+                            builtAttrs[a] = builtAttrs[a] + ' 要素';
                         }
                     }
 
-                    var msg = 'This ' + msgNodeType + ' does not have a name available to an accessibility API. Valid names are: ' + builtAttrs.join(', ') + '.';
+                    var msg = 'この ' + msgNodeType + ' にはアクセシビリティ API で利用可能な識別名がありません。妥当な識別名は ' + builtAttrs.join(', ') + ' です。 This ' + msgNodeType + ' does not have a name available to an accessibility API. Valid names are: ' + builtAttrs.join(', ') + '.';
                     errors.push({
                         element: element,
                         msg: msg,
@@ -293,12 +295,12 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
             }//end if
 
             if (valueFound === false) {
-                var msgNodeType = nodeName + ' element';
+                var msgNodeType = nodeName + ' 要素';
                 if (nodeName.substr(0, 6) === 'input_') {
-                    msgNodeType = nodeName.substr(6) + ' input element';
+                    msgNodeType = nodeName.substr(6) + ' input 要素';
                 }
 
-                var msg = 'This ' + msgNodeType + ' does not have a value available to an accessibility API.';
+                var msg = 'この ' + msgNodeType + ' にはアクセシビリティ API で利用可能な値がありません。 This ' + msgNodeType + ' does not have a value available to an accessibility API.';
                 
                 var builtAttr = '';
                 var warning   = false;
@@ -309,12 +311,12 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
                     // in HTML5 the first option in a single select dropdown is automatically selected.
                     // Because of this, it should also be sent out as a warning, not an error.
                     warning = true;
-                    msg = 'This ' + msgNodeType + ' does not have an initially selected option.' + ' ' +
-                        'Depending on your HTML version, the value exposed to an accessibility API may be undefined.';
+                    msg = 'この ' + msgNodeType + ' には initially selected option がありません。 This ' + msgNodeType + ' does not have an initially selected option.' + ' ' +
+                        '使用されている HTML のバージョンによって、アクセシビリティ API に提供される値は一定ではない場合があります。 Depending on your HTML version, the value exposed to an accessibility API may be undefined.';
                 } else if (requiredValue.charAt(0) === '@') {
-                    builtAttr = ' A value is exposed using the "' + requiredValue + '" attribute.';
+                    builtAttr = ' 値は "' + requiredValue + '" 属性を用いて提供されます。 A value is exposed using the "' + requiredValue + '" attribute.';
                 } else {
-                    builtAttr = ' A value is exposed using the "' + requiredValue + '" element.';
+                    builtAttr = ' 値は "' + requiredValue + '" 要素を用いて提供されます。 A value is exposed using the "' + requiredValue + '" element.';
                 }
 
                 msg += builtAttr;

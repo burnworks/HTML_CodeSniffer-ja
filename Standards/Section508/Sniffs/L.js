@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_L = {
     /**
      * Determines the elements to register for processing.
@@ -44,15 +46,15 @@ var HTMLCS_Section508_Sniffs_L = {
     {
         var errors = this.processLinks(top);
         for (var i = 0; i < errors.emptyNoId.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'Anchor element found with no link content and no name and/or ID attribute.', 'EmptyAnchorNoId');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'リンクテキストを持たず、name 属性、または id 属性のいずれか、あるいはその両方を持たない a 要素が見つかりました。 Anchor element found with no link content and no name and/or ID attribute.', 'EmptyAnchorNoId');
         }
 
         for (var i = 0; i < errors.placeholder.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'Anchor element found with link content, but no href, ID, or name attribute has been supplied.', 'PlaceholderAnchor');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'リンクテキストを含む a 要素が見つかりましたが、href 属性を持たず、name 属性、id 属性のいずれかも指定されていません。 Anchor element found with link content, but no href, ID, or name attribute has been supplied.', 'PlaceholderAnchor');
         }
 
         for (var i = 0; i < errors.noContent.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'Anchor element found with a valid href attribute, but no link content has been supplied.', 'NoContentAnchor');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'href 属性を持つ a 要素が見つかりましたが、リンクテキストが空です。 Anchor element found with a valid href attribute, but no link content has been supplied.', 'NoContentAnchor');
         }
     },
 
@@ -142,32 +144,32 @@ var HTMLCS_Section508_Sniffs_L = {
         // tied to the default action of a link or button - not merely a click.
         var dblClickEls = top.querySelectorAll('*[ondblclick]');
         for (var i = 0; i < dblClickEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, dblClickEls[i], 'Ensure the functionality provided by double-clicking on this element is available through the keyboard.', 'DblClick');
+            HTMLCS.addMessage(HTMLCS.WARNING, dblClickEls[i], 'その要素をダブルクリックした際に提供される機能が、キーボード操作でも利用可能なことを確認してください。 Ensure the functionality provided by double-clicking on this element is available through the keyboard.', 'DblClick');
         }
 
         var mouseOverEls = top.querySelectorAll('*[onmouseover]');
         for (var i = 0; i < mouseOverEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseOverEls[i], 'Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.', 'MouseOver');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseOverEls[i], 'その要素にマウスカーソルを重ねた際に提供される機能が、キーボード操作でも利用可能なことを確認してください（例えば focus イベントを使用して）。 Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.', 'MouseOver');
         }
 
         var mouseOutEls = top.querySelectorAll('*[onmouseout]');
         for (var i = 0; i < mouseOutEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseOutEls[i], 'Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.', 'MouseOut');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseOutEls[i], 'その要素の外にマウスカーソルを移動した際に提供される機能が、キーボード操作でも利用可能なことを確認してください（例えば blur イベントを使用して）。 Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.', 'MouseOut');
         }
 
         var mouseMoveEls = top.querySelectorAll('*[onmousemove]');
         for (var i = 0; i < mouseMoveEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseMoveEls[i], 'Ensure the functionality provided by moving the mouse on this element is available through the keyboard.', 'MouseMove');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseMoveEls[i], 'その要素の上でマウスカーソルを動かした際に提供される機能が、キーボード操作でも利用可能なことを確認してください。 Ensure the functionality provided by moving the mouse on this element is available through the keyboard.', 'MouseMove');
         }
 
         var mouseDownEls = top.querySelectorAll('*[onmousedown]');
         for (var i = 0; i < mouseDownEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseDownEls[i], 'Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.', 'MouseDown');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseDownEls[i], 'その要素の上でマウスボタンを押下した際に提供される機能が、キーボード操作でも利用可能なことを確認してください（例えば KeyDown イベントを使用して）。 Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.', 'MouseDown');
         }
 
         var mouseUpEls = top.querySelectorAll('*[onmouseup]');
         for (var i = 0; i < mouseUpEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseUpEls[i], 'Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.', 'MouseUp');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseUpEls[i], 'その要素の上でマウスボタンを放した際に提供される機能が、キーボード操作でも利用可能なことを確認してください（例えば KeyUp イベントを使用して）。 Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.', 'MouseUp');
         }
     }
 

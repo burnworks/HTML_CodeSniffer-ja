@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_C = {
     /**
      * Determines the elements to register for processing.
@@ -34,7 +36,7 @@ var HTMLCS_Section508_Sniffs_C = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Ensure that any information conveyed using colour alone is also available without colour, such as through context or markup.', 'Colour');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, '色が情報を伝える、あるいは視覚的な要素を判別するための唯一の視覚的手段になっていないことを確認してください。 Ensure that any information conveyed using colour alone is also available without colour, such as through context or markup.', 'Colour');
 
     }
 };

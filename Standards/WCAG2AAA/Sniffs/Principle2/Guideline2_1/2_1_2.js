@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_1_2_1_2 = {
     /**
      * Determines the elements to register for processing.
@@ -38,7 +40,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_1_2_1_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.WARNING, element, 'Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.', 'F10');
+        HTMLCS.addMessage(HTMLCS.WARNING, element, 'キーボード操作によってプラグイン、または埋め込みアプリケーションによって描写されるコンポーネントにフォーカスが移動できる場合、キーボード操作だけを用いてそのコンポーネントからフォーカスを外すことが可能であることを確認してください。 Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.', 'F10');
 
     }
 };

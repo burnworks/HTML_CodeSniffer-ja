@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_1 = {
     /**
      * Determines the elements to register for processing.
@@ -34,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_1 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that any information conveyed using colour alone is also available in text, or through other visual cues.', 'G14,G182');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, '色の違いで伝えている情報は、テキスト、または他の視覚的な方法によってもユーザーが理解できる手段が提供されていることを確認してください。 Check that any information conveyed using colour alone is also available in text, or through other visual cues.', 'G14,G182');
 
     }
 };

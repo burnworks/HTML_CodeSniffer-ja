@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_Section508_Sniffs_J = {
     /**
      * Determines the elements to register for processing.
@@ -35,6 +37,6 @@ var HTMLCS_Section508_Sniffs_J = {
     process: function(element, top)
     {
         // The term in Sec. 508 is "flicker" rather than flash.
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that no component of the content flickers at a rate of greater than 2 and less than 55 times per second.', 'Flicker');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, '毎秒 2 回を超え、55 回未満の頻度で点滅する部分がないか確認してください。 Check that no component of the content flickers at a rate of greater than 2 and less than 55 times per second.', 'Flicker');
     }
 };

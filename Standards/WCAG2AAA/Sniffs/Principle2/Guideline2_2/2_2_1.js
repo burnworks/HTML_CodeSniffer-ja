@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_1 = {
     /**
      * Determines the elements to register for processing.
@@ -43,10 +45,10 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_1 = {
                 if (/^[1-9]\d*/.test(element.getAttribute('content').toLowerCase()) === true) {
                     if (/url=/.test(element.getAttribute('content').toLowerCase()) === true) {
                         // Redirect.
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.', 'F40.2');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta 要素によるリダイレクトが 0 秒以外で指定されています。ユーザーはこの制限時間を変更、または解除することができません。 Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.', 'F40.2');
                     } else {
                         // Just a refresh.
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.', 'F41.2');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta 要素による Web ページの再読込が行われています。ユーザーはこの制限時間を変更、または解除することができません。 Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.', 'F41.2');
                     }
                 }
             }//end if

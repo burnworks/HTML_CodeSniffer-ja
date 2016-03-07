@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_2 = {
     /**
      * Determines the elements to register for processing.
@@ -34,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'G57');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'スタイルシートが無効な場合でも、コンテンツが意味のある順序で並べられていることを確認してください。 Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'G57');
 
     }
 };

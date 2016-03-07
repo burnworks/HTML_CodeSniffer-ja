@@ -11,6 +11,8 @@
  *
  */
 
+/* Japanese translation by Yoshiki Kato @burnworks - v1.0.0 - 2016-03-01 */
+
 var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_6 = {
     /**
      * Determines the elements to register for processing.
@@ -41,9 +43,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_6 = {
             // the presumption is that we are using HTML5 that uses the body of the ruby
             // element for the same purpose (otherwise, assume XHTML 1.1 with rb element).
             if (rb.length === 0) {
-                HTMLCS.addMessage(HTMLCS.ERROR, element, 'Ruby element does not contain an rt element containing pronunciation information for its body text.', 'H62.1.HTML5');
+                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby 要素に読み方を示す rt 要素が含まれていません。 Ruby element does not contain an rt element containing pronunciation information for its body text.', 'H62.1.HTML5');
             } else {
-                HTMLCS.addMessage(HTMLCS.ERROR, element, 'Ruby element does not contain an rt element containing pronunciation information for the text inside the rb element.', 'H62.1.XHTML11');
+                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby 要素に rb 要素でマークアップしたテキストの読み方を示す rt 要素が含まれていません。 Ruby element does not contain an rt element containing pronunciation information for the text inside the rb element.', 'H62.1.XHTML11');
             }
         }
 
@@ -51,7 +53,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_6 = {
         if (rp.length === 0) {
             // No "ruby parentheses" tags for those user agents that don't support
             // ruby at all.
-            HTMLCS.addMessage(HTMLCS.ERROR, element, 'Ruby element does not contain rp elements, which provide extra punctuation to browsers not supporting ruby text.', 'H62.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby 要素に、ルビに対応していない環境でもテキストとルビテキストの区切りがわかるようにするために用いられる rp 要素が含まれていません。 Ruby element does not contain rp elements, which provide extra punctuation to browsers not supporting ruby text.', 'H62.2');
         }
     }
 };
