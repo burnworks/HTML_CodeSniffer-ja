@@ -4,7 +4,7 @@ Squiz 社 （Squiz Pty Ltd） が開発している [HTML_CodeSniffer](https://g
 
 ## pa11y での使用方法
 
-必要に応じて日本語版 HTMLCS.js をビルドしてください。ビルド済みの HTMLCS-ja.js は下記に置いてあります。
+必要に応じて日本語版 HTMLCS.js をビルドしてください。ビルド済みの HTMLCS.js は下記に置いてあります。
 
 - https://burnworks.com/docs/HTML_CodeSniffer-ja/HTMLCS.js
 
