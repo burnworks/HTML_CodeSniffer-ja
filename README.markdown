@@ -1,6 +1,6 @@
 # HTML_CodeSniffer-ja README
 
-Squiz Pty 氏 が開発されている [HTML_CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) のメッセージ部分を日本語化したものです。[pa11y](https://github.com/springernature/pa11y) を日本語で使いたくて翻訳しました。
+Squiz 社 （Squiz Pty Ltd） が開発している [HTML_CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) のメッセージ部分を日本語化したものです。[pa11y](https://github.com/springernature/pa11y) を日本語で使いたくて翻訳しました。
 
 ## pa11y での使用方法
 
