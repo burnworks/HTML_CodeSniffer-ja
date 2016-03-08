@@ -34,6 +34,12 @@ pa11y 実行時にオプションで HTMLCS.js の場所を指定します。
 
 pa11y の詳しい使用方法は [pa11y](https://github.com/springernature/pa11y) のページをご確認ください。
 
+## ブックマークレットで使う場合
+
+日本語版 HTMLCS.js を本家同様にブックマークレットから使用する場合は、下記のリンクをブックマークバーにドラッグ&ドロップするなどして使用できます。
+
+- [このリンクをブックマークバーにドラッグ&ドロップ](javascript:(function()%20{var%20_p='https://burnworks.com/docs/HTML_CodeSniffer-ja/';var%20_i=function(s,cb)%20{var%20sc=document.createElement('script');sc.onload%20=%20function()%20{sc.onload%20=%20null;sc.onreadystatechange%20=%20null;cb.call(this);};sc.onreadystatechange%20=%20function(){if(/^(complete|loaded)$/.test(this.readyState)%20===%20true){sc.onreadystatechange%20=%20null;sc.onload();}};sc.src=s;if%20(document.head)%20{document.head.appendChild(sc);}%20else%20{document.getElementsByTagName('head')[0].appendChild(sc);}};%20var%20options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();)
+
 ## その他
 
 HTML_CodeSniffer-ja は HTML_CodeSniffer のライセンスに基づいて公開しています。
