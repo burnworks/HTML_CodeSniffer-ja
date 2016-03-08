@@ -97,7 +97,7 @@ window.HTMLCS_WCAG2AAA = {
 
         for (var i = 0; i < techniques.length; i++) {
             techniques[i]  = techniques[i].split('.');
-            techniquesStr.push('<a href="http://www.w3.org/TR/WCAG20-TECHS/' + techniques[i][0] + '" target="_blank">' + techniques[i][0] + '</a>');
+            techniquesStr.push('<a href="http://www.w3.org/TR/WCAG20-TECHS/' + techniques[i][0] + '" target="_blank">' + techniques[i][0] + '</a> (<a href="http://waic.jp/docs/WCAG-TECHS/' + techniques[i][0] + '" target="_blank">日本語訳</a>)');
         }
 
         var principleStr = ['<a href="', principles[principle].link, '" target="_blank">', principles[principle].name, '</a>'].join('');
