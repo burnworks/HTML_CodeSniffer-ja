@@ -835,6 +835,7 @@
     display: inline;
 }
 #HTMLCS-wrapper #HTMLCS-settings-use-standard > select {
+    color: initial;
     float: right;
     margin-top: -0.1em;
 }
