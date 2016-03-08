@@ -1,8 +1,46 @@
 # HTML_CodeSniffer-ja README
 
-Squiz Pty �� ���J������Ă��� [HTML_CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) �̃��b�Z�[�W��������{�ꉻ�������̂ł��B[pa11y](https://github.com/springernature/pa11y) ����{��Ŏg�������Ė|�󂵂܂����B
+Squiz Pty 氏 が開発されている [HTML_CodeSniffer](https://github.com/squizlabs/HTML_CodeSniffer) のメッセージ部分を日本語化したものです。[pa11y](https://github.com/springernature/pa11y) を日本語で使いたくて翻訳しました。
 
-�ȉ��̓I���W�i���� README �ł��B
+## pa11y での使用方法
+
+必要に応じて日本語版 HTMLCS.js をビルドしてください。ビルド済みの HTMLCS-ja.js は下記に置いてあります。
+
+- https://burnworks.com/docs/pa11y/HTMLCS-ja.js
+
+以下のいずれかの方法で使用できます。
+
+### 1. HTMLCS.js を置き換え
+
+ビルドした日本語版 HTMLCS.js を pa11y に同梱されている HTMLCS.js と置き換えてください。
+
+pa11y のインストールディレクトリ以下にある
+
+- /lib/vendor/HTMLCS.js
+
+を上書きすればよいでしょう。
+
+### 2. オプション（--htmlcs）を使用
+
+pa11y 実行時にオプションで HTMLCS.js の場所を指定します。
+
+    pa11y --htmlcs https://burnworks.com/docs/pa11y/HTMLCS-ja.js example.com
+
+### 3. 設定ファイルを使用
+
+    pa11y({
+        htmlcs: 'https://burnworks.com/docs/pa11y/HTMLCS-ja.js'
+    });
+
+pa11y の詳しい使用方法は [pa11y](https://github.com/springernature/pa11y) のページをご確認ください。
+
+## その他
+
+HTML_CodeSniffer-ja は HTML_CodeSniffer のライセンスに基づいて公開しています。
+
+HTML_CodeSniffer、及び pa11y の開発者の方々に対して HTML_CodeSniffer-ja に関する質問をしたりしないようにお願いします。
+
+以下はオリジナルの README です。
 
 ## HTML_CodeSniffer README
 
