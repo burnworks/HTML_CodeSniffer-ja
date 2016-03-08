@@ -6,7 +6,7 @@ Squiz Pty 氏 が開発されている [HTML_CodeSniffer](https://github.com/squ
 
 必要に応じて日本語版 HTMLCS.js をビルドしてください。ビルド済みの HTMLCS-ja.js は下記に置いてあります。
 
-- https://burnworks.com/docs/pa11y/HTMLCS-ja.js
+- https://burnworks.com/docs/HTML_CodeSniffer-ja/HTMLCS.js
 
 以下のいずれかの方法で使用できます。
 
@@ -24,12 +24,12 @@ pa11y のインストールディレクトリ以下にある
 
 pa11y 実行時にオプションで HTMLCS.js の場所を指定します。
 
-    pa11y --htmlcs https://burnworks.com/docs/pa11y/HTMLCS-ja.js example.com
+    pa11y --htmlcs https://burnworks.com/docs/HTML_CodeSniffer-ja/HTMLCS.js example.com
 
 ### 3. 設定ファイルを使用
 
     pa11y({
-        htmlcs: 'https://burnworks.com/docs/pa11y/HTMLCS-ja.js'
+        htmlcs: 'https://burnworks.com/docs/HTML_CodeSniffer-ja/HTMLCS.js'
     });
 
 pa11y の詳しい使用方法は [pa11y](https://github.com/springernature/pa11y) のページをご確認ください。
