@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_3 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '������ Web �y�[�W��ŌJ��Ԃ���Ă���i�r�Q�[�V�����́A��т��đ��ΓI�ɓ��������ŏo�����Ă��邩�m�F���Ă��������B�������A���[�U�[���ύX�����ꍇ�͏����܂��B Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.', 'G61');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, '複数の Web ページ上で繰り返されているナビゲーションは、一貫して相対的に同じ順序で出現しているか確認してください。ただし、ユーザーが変更した場合は除きます。 Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.', 'G61');
 
     }
 };

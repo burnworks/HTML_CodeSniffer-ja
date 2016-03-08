@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '•¶Í‚ª‘OŠú’†“™‹³ˆçƒŒƒxƒ‹‚ğ’´‚¦‚½“Ç‰ğ—Í‚ğ•K—v‚Æ‚·‚éê‡A•â‘«ƒRƒ“ƒeƒ“ƒcA‚Ü‚½‚Í‘OŠú’†“™‹³ˆçƒŒƒxƒ‹‚ğ’´‚¦‚½“Ç‰ğ—Í‚ğ•K—v‚Æ‚µ‚È‚¢‘ã‘Öƒo[ƒWƒ‡ƒ“‚ª—˜—p‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Where the content requires reading ability more advanced than the lower secondary education level, supplemental content or an alternative version should be provided.', 'G86,G103,G79,G153,G160');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'æ–‡ç« ãŒå‰æœŸä¸­ç­‰æ•™è‚²ãƒ¬ãƒ™ãƒ«ã‚’è¶…ãˆãŸèª­è§£åŠ›ã‚’å¿…è¦ã¨ã™ã‚‹å ´åˆã€è£œè¶³ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã€ã¾ãŸã¯å‰æœŸä¸­ç­‰æ•™è‚²ãƒ¬ãƒ™ãƒ«ã‚’è¶…ãˆãŸèª­è§£åŠ›ã‚’å¿…è¦ã¨ã—ãªã„ä»£æ›¿ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒåˆ©ç”¨ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Where the content requires reading ability more advanced than the lower secondary education level, supplemental content or an alternative version should be provided.', 'G86,G103,G79,G153,G160');
 
     }
 };

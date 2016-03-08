@@ -40,17 +40,17 @@ var HTMLCS_Section508_Sniffs_P = {
     process: function(element, top)
     {
         if (element === top) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, '‚à‚µAˆê’è‚ÌŠÔ“à‚É‰“š‚·‚é•K—v‚ª‚ ‚éê‡A‚»‚Ì|‚ğƒ†[ƒU[‚ÉŒx‚µAŠÔ‚Ì‰„’·‚ª•K—v‚Å‚ ‚é‚±‚Æ‚ğw¦‚·‚é‚½‚ß‚Ì\•ª‚È—P—\‚ğƒ†[ƒU[‚É—^‚¦‚é•K—v‚ª‚ ‚è‚Ü‚·B If a timed response is required on this page, alert the user and provide sufficient time to allow them to indicate that more time is required.', 'TimeLimit');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ã‚‚ã—ã€ä¸€å®šã®æ™‚é–“å†…ã«å¿œç­”ã™ã‚‹å¿…è¦ãŒã‚ã‚‹å ´åˆã€ãã®æ—¨ã‚’ãƒ¦ãƒ¼ã‚¶ãƒ¼ã«è­¦å‘Šã—ã€æ™‚é–“ã®å»¶é•·ãŒå¿…è¦ã§ã‚ã‚‹ã“ã¨ã‚’æŒ‡ç¤ºã™ã‚‹ãŸã‚ã®ååˆ†ãªçŒ¶äºˆã‚’ãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ä¸ãˆã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ If a timed response is required on this page, alert the user and provide sufficient time to allow them to indicate that more time is required.', 'TimeLimit');
         } else {
             if (element.hasAttribute('http-equiv') === true) {
                 if ((String(element.getAttribute('http-equiv'))).toLowerCase() === 'refresh') {
                     if (/^[1-9]\d*/.test(element.getAttribute('content').toLowerCase()) === true) {
                         if (/url=/.test(element.getAttribute('content').toLowerCase()) === true) {
                             // Redirect.
-                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta —v‘f‚É‚æ‚éƒŠƒ_ƒCƒŒƒNƒg‚ª 0 •bˆÈŠO‚Åw’è‚³‚ê‚Ä‚¢‚Ü‚·Bƒ†[ƒU[‚Í‚±‚Ì§ŒÀŠÔ‚ğ•ÏXA‚Ü‚½‚Í‰ğœ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.', 'MetaRedirect');
+                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta è¦ç´ ã«ã‚ˆã‚‹ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆãŒ 0 ç§’ä»¥å¤–ã§æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã“ã®åˆ¶é™æ™‚é–“ã‚’å¤‰æ›´ã€ã¾ãŸã¯è§£é™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚ Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.', 'MetaRedirect');
                         } else {
                             // Just a refresh.
-                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta —v‘f‚É‚æ‚é Web ƒy[ƒW‚ÌÄ“Ç‚ªs‚í‚ê‚Ä‚¢‚Ü‚·Bƒ†[ƒU[‚Í‚±‚Ì§ŒÀŠÔ‚ğ•ÏXA‚Ü‚½‚Í‰ğœ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.', 'MetaRefresh');
+                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta è¦ç´ ã«ã‚ˆã‚‹ Web ãƒšãƒ¼ã‚¸ã®å†èª­è¾¼ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã“ã®åˆ¶é™æ™‚é–“ã‚’å¤‰æ›´ã€ã¾ãŸã¯è§£é™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚ Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.', 'MetaRefresh');
                         }
                     }
                 }//end if

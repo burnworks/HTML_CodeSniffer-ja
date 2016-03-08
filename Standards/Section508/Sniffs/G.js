@@ -38,7 +38,7 @@ var HTMLCS_Section508_Sniffs_G = {
     {
         // If no table headers, emit notice about the table.
         if (HTMLCS.util.isLayoutTable(element) === true) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '���̃e�[�u���ɂ͌��o���s������܂���B���̃e�[�u�����f�[�^�e�[�u���̏ꍇ�A���o���ƂȂ�s�A�������͗�� th �v�f���g�p���ėp�ӂ��܂��B This table has no headers. If this is a data table, ensure row and column headers are identified using th elements.', 'TableHeaders');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'このテーブルには見出し行がありません。このテーブルがデータテーブルの場合、見出しとなる行、もしくは列を th 要素を使用して用意します。 This table has no headers. If this is a data table, ensure row and column headers are identified using th elements.', 'TableHeaders');
         }
     }
 

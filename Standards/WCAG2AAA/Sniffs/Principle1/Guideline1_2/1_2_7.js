@@ -42,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_7 = {
     process: function(element, top)
     {
         // Check for elements that could potentially contain video.
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ‚±‚Ì–„‚ß‚İƒIƒuƒWƒFƒNƒg‚ªû˜^Ï‚Ì“¯Šú‚µ‚½ƒƒfƒBƒA‚Ìê‡‚ÅA‘OŒi‰¹‚ª‰f‘œ‚Æ“¯“™‚ÌˆÓ–¡‚ğ“`’B‚·‚é‰¹ºƒKƒCƒh‚ğ‘}“ü‚·‚é‚½‚ß‚Ì\•ª‚È’·‚³‚Ì‡ŠÔ‚ğŠÜ‚Ü‚È‚¢ê‡A“¯Šú‚µ‚½ƒƒfƒBƒA‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚·‚×‚Ä‚Ìû˜^Ï‚Ì‰f‘œƒRƒ“ƒeƒ“ƒc‚É‘Î‚µ‚ÄAŠg’£‚µ‚½‰¹ºƒKƒCƒh‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this embedded object contains synchronised media, and where pauses in foreground audio is not sufficient to allow audio descriptions to convey the sense of pre-recorded video, check that an extended audio description is provided, either through scripting or an alternate version.', 'G8');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã“ã®åŸ‹ã‚è¾¼ã¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒåéŒ²æ¸ˆã®åŒæœŸã—ãŸãƒ¡ãƒ‡ã‚£ã‚¢ã®å ´åˆã§ã€å‰æ™¯éŸ³ãŒæ˜ åƒã¨åŒç­‰ã®æ„å‘³ã‚’ä¼é”ã™ã‚‹éŸ³å£°ã‚¬ã‚¤ãƒ‰ã‚’æŒ¿å…¥ã™ã‚‹ãŸã‚ã®ååˆ†ãªé•·ã•ã®åˆé–“ã‚’å«ã¾ãªã„å ´åˆã€åŒæœŸã—ãŸãƒ¡ãƒ‡ã‚£ã‚¢ã«å«ã¾ã‚Œã¦ã„ã‚‹ã™ã¹ã¦ã®åéŒ²æ¸ˆã®æ˜ åƒã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«å¯¾ã—ã¦ã€æ‹¡å¼µã—ãŸéŸ³å£°ã‚¬ã‚¤ãƒ‰ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this embedded object contains synchronised media, and where pauses in foreground audio is not sufficient to allow audio descriptions to convey the sense of pre-recorded video, check that an extended audio description is provided, either through scripting or an alternate version.', 'G8');
 
     }
 };

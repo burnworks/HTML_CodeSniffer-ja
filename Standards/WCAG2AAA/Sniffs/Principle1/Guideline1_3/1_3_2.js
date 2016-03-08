@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ƒXƒ^ƒCƒ‹ƒV[ƒg‚ª–³Œø‚Èê‡‚Å‚àAƒRƒ“ƒeƒ“ƒc‚ªˆÓ–¡‚Ì‚ ‚é‡˜‚Å•À‚×‚ç‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'G57');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆãŒç„¡åŠ¹ãªå ´åˆã§ã‚‚ã€ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæ„å‘³ã®ã‚ã‚‹é †åºã§ä¸¦ã¹ã‚‰ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'G57');
 
     }
 };

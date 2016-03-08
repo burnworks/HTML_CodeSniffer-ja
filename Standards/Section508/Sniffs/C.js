@@ -36,7 +36,7 @@ var HTMLCS_Section508_Sniffs_C = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'F‚ªî•ñ‚ğ“`‚¦‚éA‚ ‚é‚¢‚Í‹Šo“I‚È—v‘f‚ğ”»•Ê‚·‚é‚½‚ß‚Ì—Bˆê‚Ì‹Šo“Iè’i‚É‚È‚Á‚Ä‚¢‚È‚¢‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that any information conveyed using colour alone is also available without colour, such as through context or markup.', 'Colour');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'è‰²ãŒæƒ…å ±ã‚’ä¼ãˆã‚‹ã€ã‚ã‚‹ã„ã¯è¦–è¦šçš„ãªè¦ç´ ã‚’åˆ¤åˆ¥ã™ã‚‹ãŸã‚ã®å”¯ä¸€ã®è¦–è¦šçš„æ‰‹æ®µã«ãªã£ã¦ã„ãªã„ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that any information conveyed using colour alone is also available without colour, such as through context or markup.', 'Colour');
 
     }
 };

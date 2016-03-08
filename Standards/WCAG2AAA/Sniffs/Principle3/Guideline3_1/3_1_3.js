@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_3 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Šµ—p‹å‚âê–å—pŒê‚È‚Çˆê”Ê“I‚Å‚Í‚È‚¢A‚Ü‚½‚ÍŒÀ’è‚³‚ê‚½—p–@‚Åg‚í‚ê‚Ä‚¢‚é’PŒêAŒê‹å‚Ì–¾Šm‚È’è‹`‚ğ“Á’è‚·‚éd‘g‚İ‚ª—˜—p‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that there is a mechanism available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.', 'H40,H54,H60,G62,G70');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'æ…£ç”¨å¥ã‚„å°‚é–€ç”¨èªãªã©ä¸€èˆ¬çš„ã§ã¯ãªã„ã€ã¾ãŸã¯é™å®šã•ã‚ŒãŸç”¨æ³•ã§ä½¿ã‚ã‚Œã¦ã„ã‚‹å˜èªã€èªå¥ã®æ˜ç¢ºãªå®šç¾©ã‚’ç‰¹å®šã™ã‚‹ä»•çµ„ã¿ãŒåˆ©ç”¨ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that there is a mechanism available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.', 'H40,H54,H60,G62,G70');
 
     }
 };

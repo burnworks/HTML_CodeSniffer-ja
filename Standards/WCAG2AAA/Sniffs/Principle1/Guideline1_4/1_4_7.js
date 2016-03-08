@@ -42,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_7 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‘OŒi‚É‚ ‚éå‰¹ºiƒiƒŒ[ƒVƒ‡ƒ“‚â”­Œ¾‚È‚Çj‚ğ”wŒi‰¹‚æ‚è­‚È‚­‚Æ‚à 20 ƒfƒWƒxƒ‹‘å‚«‚­A‚Ü‚½‚Íå‰¹º‚Í”wŒi‰¹‚æ‚è‚à 4 ”{‘å‚«‚­‚È‚é‚æ‚¤‚É‰¹ºƒRƒ“ƒeƒ“ƒc‚ª—pˆÓ‚³‚ê‚Ä‚¢‚éA‚ ‚é‚¢‚Í”wŒi‰¹‚ğÁ‚·‚±‚Æ‚ª‚Å‚«‚é•K—v‚ª‚ ‚è‚Ü‚·B For pre-recorded audio-only content in this element that is primarily speech (such as narration), any background sounds should be muteable, or be at least 20 dB (or about 4 times) quieter than the speech.', 'G56');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'å‰æ™¯ã«ã‚ã‚‹ä¸»éŸ³å£°ï¼ˆãƒŠãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚„ç™ºè¨€ãªã©ï¼‰ã‚’èƒŒæ™¯éŸ³ã‚ˆã‚Šå°‘ãªãã¨ã‚‚ 20 ãƒ‡ã‚¸ãƒ™ãƒ«å¤§ããã€ã¾ãŸã¯ä¸»éŸ³å£°ã¯èƒŒæ™¯éŸ³ã‚ˆã‚Šã‚‚ 4 å€å¤§ãããªã‚‹ã‚ˆã†ã«éŸ³å£°ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒç”¨æ„ã•ã‚Œã¦ã„ã‚‹ã€ã‚ã‚‹ã„ã¯èƒŒæ™¯éŸ³ã‚’æ¶ˆã™ã“ã¨ãŒã§ãã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ For pre-recorded audio-only content in this element that is primarily speech (such as narration), any background sounds should be muteable, or be at least 20 dB (or about 4 times) quieter than the speech.', 'G56');
 
     }
 };

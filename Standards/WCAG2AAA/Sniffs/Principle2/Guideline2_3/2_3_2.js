@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_3_2_3_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '”CˆÓ‚Ì‚Ç‚Ì 1 •bŠÔ‚É‚¨‚¢‚Ä‚àA3 ‰ñ‚æ‚è‚à‘½‚­‘MŒõ‚ğ•ú‚Â•”•ª‚ª‚È‚¢‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that no component of the content flashes more than three times in any 1-second period.', 'G19');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ä»»æ„ã®ã©ã® 1 ç§’é–“ã«ãŠã„ã¦ã‚‚ã€3 å›ã‚ˆã‚Šã‚‚å¤šãé–ƒå…‰ã‚’æ”¾ã¤éƒ¨åˆ†ãŒãªã„ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that no component of the content flashes more than three times in any 1-second period.', 'G19');
 
     }
 };

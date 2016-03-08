@@ -37,9 +37,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_4 = {
     process: function(element, top)
     {
         if (element.hasAttribute('title') === true) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ƒŠƒ“ƒNƒeƒLƒXƒg©‘ÌA‹y‚Ñ‘OŒã‚Ì•¶–¬‚â title ‘®«‚Ì’l‚©‚çƒŠƒ“ƒN‚Ì–Ú“I‚ª³‚µ‚­—‰ğ‚Å‚«‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.', 'H77,H78,H79,H80,H81,H33');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆè‡ªä½“ã€åŠã³å‰å¾Œã®æ–‡è„ˆã‚„ title å±æ€§ã®å€¤ã‹ã‚‰ãƒªãƒ³ã‚¯ã®ç›®çš„ãŒæ­£ã—ãç†è§£ã§ãã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that the link text combined with programmatically determined link context, or its title attribute, identifies the purpose of the link.', 'H77,H78,H79,H80,H81,H33');
         } else {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ƒŠƒ“ƒNƒeƒLƒXƒg©‘ÌA‹y‚Ñ‘OŒã‚Ì•¶–¬‚©‚çƒŠƒ“ƒN‚Ì–Ú“I‚ª³‚µ‚­—‰ğ‚Å‚«‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that the link text combined with programmatically determined link context identifies the purpose of the link.', 'H77,H78,H79,H80,H81');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆè‡ªä½“ã€åŠã³å‰å¾Œã®æ–‡è„ˆã‹ã‚‰ãƒªãƒ³ã‚¯ã®ç›®çš„ãŒæ­£ã—ãç†è§£ã§ãã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that the link text combined with programmatically determined link context identifies the purpose of the link.', 'H77,H78,H79,H80,H81');
         }
 
     }

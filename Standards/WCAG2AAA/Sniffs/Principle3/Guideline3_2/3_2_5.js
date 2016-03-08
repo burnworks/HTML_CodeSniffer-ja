@@ -55,7 +55,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_5 = {
         if (hasTarget === true) {
             var target = link.getAttribute('target') || '';
             if ((target === '_blank') && (/new window/i.test(link.innerHTML) === false)) {
-                HTMLCS.addMessage(HTMLCS.WARNING, link, '‚±‚ÌƒŠƒ“ƒN‚ÍV‚µ‚¢ƒEƒBƒ“ƒhƒEi‚Ü‚½‚Íƒ^ƒuj‚ªŠJ‚­‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·‚ªA‚»‚Ì‚±‚Æ‚ªƒ†[ƒU[‚É“`‚í‚éî•ñ‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that this link\'s link text contains information indicating that the link will open in a new window.', 'H83.3');
+                HTMLCS.addMessage(HTMLCS.WARNING, link, 'ã“ã®ãƒªãƒ³ã‚¯ã¯æ–°ã—ã„ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ï¼ˆã¾ãŸã¯ã‚¿ãƒ–ï¼‰ãŒé–‹ãã‚ˆã†ã«ãªã£ã¦ã„ã¾ã™ãŒã€ãã®ã“ã¨ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ä¼ã‚ã‚‹æƒ…å ±ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that this link\'s link text contains information indicating that the link will open in a new window.', 'H83.3');
             }
         }
     }

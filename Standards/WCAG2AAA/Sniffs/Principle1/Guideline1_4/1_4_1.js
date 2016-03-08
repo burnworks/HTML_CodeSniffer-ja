@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_1 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'F‚Ìˆá‚¢‚Å“`‚¦‚Ä‚¢‚éî•ñ‚ÍAƒeƒLƒXƒgA‚Ü‚½‚Í‘¼‚Ì‹Šo“I‚È•û–@‚É‚æ‚Á‚Ä‚àƒ†[ƒU[‚ª—‰ğ‚Å‚«‚éè’i‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that any information conveyed using colour alone is also available in text, or through other visual cues.', 'G14,G182');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'è‰²ã®é•ã„ã§ä¼ãˆã¦ã„ã‚‹æƒ…å ±ã¯ã€ãƒ†ã‚­ã‚¹ãƒˆã€ã¾ãŸã¯ä»–ã®è¦–è¦šçš„ãªæ–¹æ³•ã«ã‚ˆã£ã¦ã‚‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒç†è§£ã§ãã‚‹æ‰‹æ®µãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that any information conveyed using colour alone is also available in text, or through other visual cues.', 'G14,G182');
 
     }
 };

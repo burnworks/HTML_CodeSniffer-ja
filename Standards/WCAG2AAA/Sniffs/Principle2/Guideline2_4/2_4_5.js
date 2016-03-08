@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Web ƒy[ƒWˆê®‚Ì’†‚ÅA‚ ‚é Web ƒy[ƒW‚ğŒ©‚Â‚¯‚é•¡”‚Ìè’i‚ª—˜—p‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B‚½‚¾‚µA‚±‚Ì Web ƒy[ƒW‚ªˆê˜A‚ÌƒvƒƒZƒX‚Ì’†‚Ì 1 ƒXƒeƒbƒvA‚ ‚é‚¢‚ÍŒ‹‰Ê‚Å‚ ‚éê‡‚Íœ‚«‚Ü‚·B If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.', 'G125,G64,G63,G161,G126,G185');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Web ãƒšãƒ¼ã‚¸ä¸€å¼ã®ä¸­ã§ã€ã‚ã‚‹ Web ãƒšãƒ¼ã‚¸ã‚’è¦‹ã¤ã‘ã‚‹è¤‡æ•°ã®æ‰‹æ®µãŒåˆ©ç”¨ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ãŸã ã—ã€ã“ã® Web ãƒšãƒ¼ã‚¸ãŒä¸€é€£ã®ãƒ—ãƒ­ã‚»ã‚¹ã®ä¸­ã® 1 ã‚¹ãƒ†ãƒƒãƒ—ã€ã‚ã‚‹ã„ã¯çµæœã§ã‚ã‚‹å ´åˆã¯é™¤ãã¾ã™ã€‚ If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.', 'G125,G64,G63,G161,G126,G185');
 
     }
 };

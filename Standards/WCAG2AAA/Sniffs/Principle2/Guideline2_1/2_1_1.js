@@ -42,32 +42,32 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_1_2_1_1 = {
         if (element === top) {
             var dblClickEls = top.querySelectorAll('*[ondblclick]');
             for (var i = 0; i < dblClickEls.length; i++) {
-                HTMLCS.addMessage(HTMLCS.WARNING, dblClickEls[i], '‚»‚Ì—v‘f‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure the functionality provided by double-clicking on this element is available through the keyboard.', 'SCR20.DblClick');
+                HTMLCS.addMessage(HTMLCS.WARNING, dblClickEls[i], 'ãã®è¦ç´ ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure the functionality provided by double-clicking on this element is available through the keyboard.', 'SCR20.DblClick');
             }
 
             var mouseOverEls = top.querySelectorAll('*[onmouseover]');
             for (var i = 0; i < mouseOverEls.length; i++) {
-                HTMLCS.addMessage(HTMLCS.WARNING, mouseOverEls[i], '‚»‚Ì—v‘f‚Éƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ðd‚Ë‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î focus ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.', 'SCR20.MouseOver');
+                HTMLCS.addMessage(HTMLCS.WARNING, mouseOverEls[i], 'ãã®è¦ç´ ã«ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’é‡ã­ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° focus ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.', 'SCR20.MouseOver');
             }
 
             var mouseOutEls = top.querySelectorAll('*[onmouseout]');
             for (var i = 0; i < mouseOutEls.length; i++) {
-                HTMLCS.addMessage(HTMLCS.WARNING, mouseOutEls[i], '‚»‚Ì—v‘f‚ÌŠO‚Éƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ðˆÚ“®‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î blur ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.', 'SCR20.MouseOut');
+                HTMLCS.addMessage(HTMLCS.WARNING, mouseOutEls[i], 'ãã®è¦ç´ ã®å¤–ã«ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’ç§»å‹•ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° blur ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.', 'SCR20.MouseOut');
             }
 
             var mouseMoveEls = top.querySelectorAll('*[onmousemove]');
             for (var i = 0; i < mouseMoveEls.length; i++) {
-                HTMLCS.addMessage(HTMLCS.WARNING, mouseMoveEls[i], '‚»‚Ì—v‘f‚Ìã‚Åƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ð“®‚©‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure the functionality provided by moving the mouse on this element is available through the keyboard.', 'SCR20.MouseMove');
+                HTMLCS.addMessage(HTMLCS.WARNING, mouseMoveEls[i], 'ãã®è¦ç´ ã®ä¸Šã§ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’å‹•ã‹ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure the functionality provided by moving the mouse on this element is available through the keyboard.', 'SCR20.MouseMove');
             }
 
             var mouseDownEls = top.querySelectorAll('*[onmousedown]');
             for (var i = 0; i < mouseDownEls.length; i++) {
-                HTMLCS.addMessage(HTMLCS.WARNING, mouseDownEls[i], '‚»‚Ì—v‘f‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ð‰Ÿ‰º‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î KeyDown ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.', 'SCR20.MouseDown');
+                HTMLCS.addMessage(HTMLCS.WARNING, mouseDownEls[i], 'ãã®è¦ç´ ã®ä¸Šã§ãƒžã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ä¸‹ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° KeyDown ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.', 'SCR20.MouseDown');
             }
 
             var mouseUpEls = top.querySelectorAll('*[onmouseup]');
             for (var i = 0; i < mouseUpEls.length; i++) {
-                HTMLCS.addMessage(HTMLCS.WARNING, mouseUpEls[i], '‚»‚Ì—v‘f‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ð•ú‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î KeyUp ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.', 'SCR20.MouseUp');
+                HTMLCS.addMessage(HTMLCS.WARNING, mouseUpEls[i], 'ãã®è¦ç´ ã®ä¸Šã§ãƒžã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æ”¾ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° KeyUp ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.', 'SCR20.MouseUp');
             }
         }
 

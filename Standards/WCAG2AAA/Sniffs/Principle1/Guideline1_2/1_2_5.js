@@ -41,7 +41,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ‚±‚Ì–„‚ß‚İƒIƒuƒWƒFƒNƒg‚ªû˜^Ï‚Ì“¯Šú‚µ‚½ƒƒfƒBƒA‚Ìê‡A‰f‘œ‚Æ“¯Šú‚µ‚½‰¹º‰ğà‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this embedded object contains pre-recorded synchronised media, check that an audio description is provided for its video content.', 'G78,G173,G8');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã“ã®åŸ‹ã‚è¾¼ã¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒåéŒ²æ¸ˆã®åŒæœŸã—ãŸãƒ¡ãƒ‡ã‚£ã‚¢ã®å ´åˆã€æ˜ åƒã¨åŒæœŸã—ãŸéŸ³å£°è§£èª¬ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this embedded object contains pre-recorded synchronised media, check that an audio description is provided for its video content.', 'G78,G173,G8');
 
     }
 };

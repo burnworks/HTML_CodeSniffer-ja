@@ -43,7 +43,7 @@ var HTMLCS_Section508_Sniffs_M = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ŠO•”ƒƒfƒBƒA‚Ì‰{——‚Éƒvƒ‰ƒOƒCƒ“‚âƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ğ•K—v‚Æ‚·‚éê‡AƒŠƒnƒrƒŠƒe[ƒVƒ‡ƒ“–@‘æ 508 ğ‚ÌƒAƒNƒZƒVƒrƒŠƒeƒB‹K’è‚É€‹’‚µ‚½ƒvƒ‰ƒOƒCƒ“‚âƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ö‚ÌƒŠƒ“ƒN‚ğ’ñ‹Ÿ‚µ‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If external media requires a plugin or application to view, ensure a link is provided to a plugin or application that complies with Section 508 accessibility requirements for applications.', 'PluginLink');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'å¤–éƒ¨ãƒ¡ãƒ‡ã‚£ã‚¢ã®é–²è¦§ã«ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚„ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å¿…è¦ã¨ã™ã‚‹å ´åˆã€ãƒªãƒãƒ“ãƒªãƒ†ãƒ¼ã‚·ãƒ§ãƒ³æ³•ç¬¬ 508 æ¡ã®ã‚¢ã‚¯ã‚»ã‚·ãƒ“ãƒªãƒ†ã‚£è¦å®šã«æº–æ‹ ã—ãŸãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚„ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã¸ã®ãƒªãƒ³ã‚¯ã‚’æä¾›ã—ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If external media requires a plugin or application to view, ensure a link is provided to a plugin or application that complies with Section 508 accessibility requirements for applications.', 'PluginLink');
     }
 
 };

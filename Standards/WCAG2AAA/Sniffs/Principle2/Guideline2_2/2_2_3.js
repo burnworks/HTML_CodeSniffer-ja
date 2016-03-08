@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_3 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ƒCƒ“ƒ^ƒ‰ƒNƒeƒBƒu‚Å‚Í‚È‚¢“¯Šú‚µ‚½ƒƒfƒBƒAA‹y‚ÑƒŠƒAƒ‹ƒ^ƒCƒ€‚ÌƒCƒxƒ“ƒg‚ğœ‚«A§ŒÀŠÔ‚ªƒRƒ“ƒeƒ“ƒc‚ª’ñ¦‚·‚éƒCƒxƒ“ƒgA‚Ü‚½‚Í“®ì‚Ì•K—v•s‰ÂŒ‡‚È•”•ª‚Å‚Í‚È‚¢‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.', 'G5');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚¤ãƒ³ã‚¿ãƒ©ã‚¯ãƒ†ã‚£ãƒ–ã§ã¯ãªã„åŒæœŸã—ãŸãƒ¡ãƒ‡ã‚£ã‚¢ã€åŠã³ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’é™¤ãã€åˆ¶é™æ™‚é–“ãŒã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæç¤ºã™ã‚‹ã‚¤ãƒ™ãƒ³ãƒˆã€ã¾ãŸã¯å‹•ä½œã®å¿…è¦ä¸å¯æ¬ ãªéƒ¨åˆ†ã§ã¯ãªã„ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.', 'G5');
 
     }
 };

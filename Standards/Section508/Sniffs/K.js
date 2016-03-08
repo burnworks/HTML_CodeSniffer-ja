@@ -36,7 +36,7 @@ var HTMLCS_Section508_Sniffs_K = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '�����AWeb �y�[�W���K��ɏ�����������@���Ȃ��ꍇ�́A�����̏��܂��͋@�\��������e�L�X�g�݂̂̑�փy�[�W��񋟂���K�v������܂��B�܂��A��փy�[�W�͂��̃y�[�W�Ƃ��킹�čX�V�����K�v������܂��B If this page cannot be made compliant, a text-only page with equivalent information or functionality should be provided. The alternative page needs to be updated in line with this page\'s content.', 'AltVersion');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'もし、Web ページを規定に準拠させる方法がない場合は、等価の情報または機能を備えたテキストのみの代替ページを提供する必要があります。また、代替ページはこのページとあわせて更新される必要があります。 If this page cannot be made compliant, a text-only page with equivalent information or functionality should be provided. The alternative page needs to be updated in line with this page\'s content.', 'AltVersion');
     }
 
 };

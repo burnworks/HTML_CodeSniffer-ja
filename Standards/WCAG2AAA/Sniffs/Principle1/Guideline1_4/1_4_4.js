@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_4 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ƒeƒLƒXƒg‚ÍƒRƒ“ƒeƒ“ƒcA‚Ü‚½‚Í‹@”\‚ğ‘¹‚È‚¤‚±‚Æ‚È‚­Ax‰‡‹Zp‚È‚µ‚Å 200% ‚Ü‚ÅƒTƒCƒY‚ğ•ÏX‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.', 'G142');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ãƒ†ã‚­ã‚¹ãƒˆã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã€ã¾ãŸã¯æ©Ÿèƒ½ã‚’æãªã†ã“ã¨ãªãã€æ”¯æ´æŠ€è¡“ãªã—ã§ 200% ã¾ã§ã‚µã‚¤ã‚ºã‚’å¤‰æ›´ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.', 'G142');
 
     }
 };

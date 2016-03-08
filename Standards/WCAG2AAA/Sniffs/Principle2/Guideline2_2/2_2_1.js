@@ -45,10 +45,10 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_1 = {
                 if (/^[1-9]\d*/.test(element.getAttribute('content').toLowerCase()) === true) {
                     if (/url=/.test(element.getAttribute('content').toLowerCase()) === true) {
                         // Redirect.
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta —v‘f‚É‚æ‚éƒŠƒ_ƒCƒŒƒNƒg‚ª 0 •bˆÈŠO‚Åw’è‚³‚ê‚Ä‚¢‚Ü‚·Bƒ†[ƒU[‚Í‚±‚Ì§ŒÀŠÔ‚ğ•ÏXA‚Ü‚½‚Í‰ğœ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.', 'F40.2');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta è¦ç´ ã«ã‚ˆã‚‹ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆãŒ 0 ç§’ä»¥å¤–ã§æŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã“ã®åˆ¶é™æ™‚é–“ã‚’å¤‰æ›´ã€ã¾ãŸã¯è§£é™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚ Meta refresh tag used to redirect to another page, with a time limit that is not zero. Users cannot control this time limit.', 'F40.2');
                     } else {
                         // Just a refresh.
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta —v‘f‚É‚æ‚é Web ƒy[ƒW‚ÌÄ“Ç‚ªs‚í‚ê‚Ä‚¢‚Ü‚·Bƒ†[ƒU[‚Í‚±‚Ì§ŒÀŠÔ‚ğ•ÏXA‚Ü‚½‚Í‰ğœ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.', 'F41.2');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'meta è¦ç´ ã«ã‚ˆã‚‹ Web ãƒšãƒ¼ã‚¸ã®å†èª­è¾¼ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã“ã®åˆ¶é™æ™‚é–“ã‚’å¤‰æ›´ã€ã¾ãŸã¯è§£é™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚ Meta refresh tag used to refresh the current page. Users cannot control the time limit for this refresh.', 'F41.2');
                     }
                 }
             }//end if

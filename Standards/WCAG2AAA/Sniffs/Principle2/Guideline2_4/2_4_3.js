@@ -40,7 +40,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_3 = {
             var tabIndexExists = top.querySelector('*[tabindex]');
 
             if (tabIndexExists) {
-                HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µAtabindex ‘®«‚ğg—p‚·‚éê‡‚Íƒ^ƒuˆÚ“®‡˜‚ÆƒRƒ“ƒeƒ“ƒc‡˜‚ÌŠÖŒW‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.', 'H4.2');
+                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã€tabindex å±æ€§ã‚’ä½¿ç”¨ã™ã‚‹å ´åˆã¯ã‚¿ãƒ–ç§»å‹•é †åºã¨ã‚³ãƒ³ãƒ†ãƒ³ãƒ„é †åºã®é–¢ä¿‚ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.', 'H4.2');
             }
         }
     }

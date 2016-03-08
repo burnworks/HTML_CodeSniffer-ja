@@ -41,7 +41,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_1 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '���̓��̓R���g���[�����t�H�[�J�X���󂯎�����Ƃ��ɏ󋵂̕ω����������Ȃ����Ƃ��m�F���Ă��������B�Ⴆ�΃t�H�[�J�X���邱�Ƃŏ���Ƀt�H�[�������M���ꂽ��Ƃ������\�����ʃC�x���g���������邱�Ƃ͔����Ă��������B Check that a change of context does not occur when this input field receives focus.', 'G107');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'この入力コントロールがフォーカスを受け取ったときに状況の変化が発生しないことを確認してください。例えばフォーカスすることで勝手にフォームが送信されたりといった予期せぬイベントが発生することは避けてください。 Check that a change of context does not occur when this input field receives focus.', 'G107');
 
     }
 };

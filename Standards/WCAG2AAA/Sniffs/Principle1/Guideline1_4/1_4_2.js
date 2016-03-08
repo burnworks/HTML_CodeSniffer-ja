@@ -43,7 +43,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '‚à‚µ Web ƒy[ƒWã‚É‚ ‚é‰¹º‚ª©“®“I‚ÉA3•bˆÈãÄ¶‚éê‡A‚»‚Ì‰¹º‚ğˆê’â~A‚Ü‚½‚Í’â~A‚ ‚é‚¢‚Í‰¹—Ê‚ğ’²®‰Â”\‚Èd‘g‚İ‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this element contains audio that plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.', 'F23');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ã‚‚ã— Web ãƒšãƒ¼ã‚¸ä¸Šã«ã‚ã‚‹éŸ³å£°ãŒè‡ªå‹•çš„ã«ã€3ç§’ä»¥ä¸Šå†ç”Ÿã‚‹å ´åˆã€ãã®éŸ³å£°ã‚’ä¸€æ™‚åœæ­¢ã€ã¾ãŸã¯åœæ­¢ã€ã‚ã‚‹ã„ã¯éŸ³é‡ã‚’èª¿æ•´å¯èƒ½ãªä»•çµ„ã¿ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this element contains audio that plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.', 'F23');
 
     }
 };

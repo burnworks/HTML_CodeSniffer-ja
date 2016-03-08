@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_4 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‹Ù‹}‚ğ—v‚·‚é’†’f‚ğœ‚«Aƒ†[ƒU[‚ª’†’f‚ğ‰„ŠúA‚Ü‚½‚Í—}§‚·‚é‚±‚Æ‚ª‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that all interruptions (including updates to content) can be postponed or suppressed by the user, except interruptions involving an emergency.', 'SCR14');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ç·Šæ€¥ã‚’è¦ã™ã‚‹ä¸­æ–­ã‚’é™¤ãã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒä¸­æ–­ã‚’å»¶æœŸã€ã¾ãŸã¯æŠ‘åˆ¶ã™ã‚‹ã“ã¨ãŒã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that all interruptions (including updates to content) can be postponed or suppressed by the user, except interruptions involving an emergency.', 'SCR14');
 
     }
 };

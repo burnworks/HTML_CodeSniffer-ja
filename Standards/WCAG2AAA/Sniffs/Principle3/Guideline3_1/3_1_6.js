@@ -43,9 +43,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_6 = {
             // the presumption is that we are using HTML5 that uses the body of the ruby
             // element for the same purpose (otherwise, assume XHTML 1.1 with rb element).
             if (rb.length === 0) {
-                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby —v‘f‚É“Ç‚İ•û‚ğ¦‚· rt —v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚¹‚ñB Ruby element does not contain an rt element containing pronunciation information for its body text.', 'H62.1.HTML5');
+                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby è¦ç´ ã«èª­ã¿æ–¹ã‚’ç¤ºã™ rt è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ Ruby element does not contain an rt element containing pronunciation information for its body text.', 'H62.1.HTML5');
             } else {
-                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby —v‘f‚É rb —v‘f‚Åƒ}[ƒNƒAƒbƒv‚µ‚½ƒeƒLƒXƒg‚Ì“Ç‚İ•û‚ğ¦‚· rt —v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚¹‚ñB Ruby element does not contain an rt element containing pronunciation information for the text inside the rb element.', 'H62.1.XHTML11');
+                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby è¦ç´ ã« rb è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã—ãŸãƒ†ã‚­ã‚¹ãƒˆã®èª­ã¿æ–¹ã‚’ç¤ºã™ rt è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ Ruby element does not contain an rt element containing pronunciation information for the text inside the rb element.', 'H62.1.XHTML11');
             }
         }
 
@@ -53,7 +53,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_6 = {
         if (rp.length === 0) {
             // No "ruby parentheses" tags for those user agents that don't support
             // ruby at all.
-            HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby —v‘f‚ÉAƒ‹ƒr‚É‘Î‰‚µ‚Ä‚¢‚È‚¢ŠÂ‹«‚Å‚àƒeƒLƒXƒg‚Æƒ‹ƒrƒeƒLƒXƒg‚Ì‹æØ‚è‚ª‚í‚©‚é‚æ‚¤‚É‚·‚é‚½‚ß‚É—p‚¢‚ç‚ê‚é rp —v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚¹‚ñB Ruby element does not contain rp elements, which provide extra punctuation to browsers not supporting ruby text.', 'H62.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, element, 'ruby è¦ç´ ã«ã€ãƒ«ãƒ“ã«å¯¾å¿œã—ã¦ã„ãªã„ç’°å¢ƒã§ã‚‚ãƒ†ã‚­ã‚¹ãƒˆã¨ãƒ«ãƒ“ãƒ†ã‚­ã‚¹ãƒˆã®åŒºåˆ‡ã‚ŠãŒã‚ã‹ã‚‹ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã«ç”¨ã„ã‚‰ã‚Œã‚‹ rp è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ Ruby element does not contain rp elements, which provide extra punctuation to browsers not supporting ruby text.', 'H62.2');
         }
     }
 };

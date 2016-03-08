@@ -46,15 +46,15 @@ var HTMLCS_Section508_Sniffs_L = {
     {
         var errors = this.processLinks(top);
         for (var i = 0; i < errors.emptyNoId.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'ƒŠƒ“ƒNƒeƒLƒXƒg‚ðŽ‚½‚¸Aname ‘®«A‚Ü‚½‚Í id ‘®«‚Ì‚¢‚¸‚ê‚©A‚ ‚é‚¢‚Í‚»‚Ì—¼•û‚ðŽ‚½‚È‚¢ a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½B Anchor element found with no link content and no name and/or ID attribute.', 'EmptyAnchorNoId');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã‚’æŒãŸãšã€name å±žæ€§ã€ã¾ãŸã¯ id å±žæ€§ã®ã„ãšã‚Œã‹ã€ã‚ã‚‹ã„ã¯ãã®ä¸¡æ–¹ã‚’æŒãŸãªã„ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚ Anchor element found with no link content and no name and/or ID attribute.', 'EmptyAnchorNoId');
         }
 
         for (var i = 0; i < errors.placeholder.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'ƒŠƒ“ƒNƒeƒLƒXƒg‚ðŠÜ‚Þ a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½‚ªAhref ‘®«‚ðŽ‚½‚¸Aname ‘®«Aid ‘®«‚Ì‚¢‚¸‚ê‚©‚àŽw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB Anchor element found with link content, but no href, ID, or name attribute has been supplied.', 'PlaceholderAnchor');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã‚’å«ã‚€ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸãŒã€href å±žæ€§ã‚’æŒãŸãšã€name å±žæ€§ã€id å±žæ€§ã®ã„ãšã‚Œã‹ã‚‚æŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ Anchor element found with link content, but no href, ID, or name attribute has been supplied.', 'PlaceholderAnchor');
         }
 
         for (var i = 0; i < errors.noContent.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'href ‘®«‚ðŽ‚Â a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½‚ªAƒŠƒ“ƒNƒeƒLƒXƒg‚ª‹ó‚Å‚·B Anchor element found with a valid href attribute, but no link content has been supplied.', 'NoContentAnchor');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'href å±žæ€§ã‚’æŒã¤ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸãŒã€ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆãŒç©ºã§ã™ã€‚ Anchor element found with a valid href attribute, but no link content has been supplied.', 'NoContentAnchor');
         }
     },
 
@@ -144,32 +144,32 @@ var HTMLCS_Section508_Sniffs_L = {
         // tied to the default action of a link or button - not merely a click.
         var dblClickEls = top.querySelectorAll('*[ondblclick]');
         for (var i = 0; i < dblClickEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, dblClickEls[i], '‚»‚Ì—v‘f‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure the functionality provided by double-clicking on this element is available through the keyboard.', 'DblClick');
+            HTMLCS.addMessage(HTMLCS.WARNING, dblClickEls[i], 'ãã®è¦ç´ ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure the functionality provided by double-clicking on this element is available through the keyboard.', 'DblClick');
         }
 
         var mouseOverEls = top.querySelectorAll('*[onmouseover]');
         for (var i = 0; i < mouseOverEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseOverEls[i], '‚»‚Ì—v‘f‚Éƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ðd‚Ë‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î focus ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.', 'MouseOver');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseOverEls[i], 'ãã®è¦ç´ ã«ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’é‡ã­ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° focus ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing over this element is available through the keyboard; for instance, using the focus event.', 'MouseOver');
         }
 
         var mouseOutEls = top.querySelectorAll('*[onmouseout]');
         for (var i = 0; i < mouseOutEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseOutEls[i], '‚»‚Ì—v‘f‚ÌŠO‚Éƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ðˆÚ“®‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î blur ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.', 'MouseOut');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseOutEls[i], 'ãã®è¦ç´ ã®å¤–ã«ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’ç§»å‹•ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° blur ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing out of this element is available through the keyboard; for instance, using the blur event.', 'MouseOut');
         }
 
         var mouseMoveEls = top.querySelectorAll('*[onmousemove]');
         for (var i = 0; i < mouseMoveEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseMoveEls[i], '‚»‚Ì—v‘f‚Ìã‚Åƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ð“®‚©‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure the functionality provided by moving the mouse on this element is available through the keyboard.', 'MouseMove');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseMoveEls[i], 'ãã®è¦ç´ ã®ä¸Šã§ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’å‹•ã‹ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure the functionality provided by moving the mouse on this element is available through the keyboard.', 'MouseMove');
         }
 
         var mouseDownEls = top.querySelectorAll('*[onmousedown]');
         for (var i = 0; i < mouseDownEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseDownEls[i], '‚»‚Ì—v‘f‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ð‰Ÿ‰º‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î KeyDown ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.', 'MouseDown');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseDownEls[i], 'ãã®è¦ç´ ã®ä¸Šã§ãƒžã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ä¸‹ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° KeyDown ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing down on this element is available through the keyboard; for instance, using the keydown event.', 'MouseDown');
         }
 
         var mouseUpEls = top.querySelectorAll('*[onmouseup]');
         for (var i = 0; i < mouseUpEls.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, mouseUpEls[i], '‚»‚Ì—v‘f‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ð•ú‚µ‚½Û‚É’ñ‹Ÿ‚³‚ê‚é‹@”\‚ªAƒL[ƒ{[ƒh‘€ì‚Å‚à—˜—p‰Â”\‚È‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢i—á‚¦‚Î KeyUp ƒCƒxƒ“ƒg‚ðŽg—p‚µ‚ÄjB Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.', 'MouseUp');
+            HTMLCS.addMessage(HTMLCS.WARNING, mouseUpEls[i], 'ãã®è¦ç´ ã®ä¸Šã§ãƒžã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æ”¾ã—ãŸéš›ã«æä¾›ã•ã‚Œã‚‹æ©Ÿèƒ½ãŒã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§ã‚‚åˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ï¼ˆä¾‹ãˆã° KeyUp ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ï¼‰ã€‚ Ensure the functionality provided by mousing up on this element is available through the keyboard; for instance, using the keyup event.', 'MouseUp');
         }
     }
 

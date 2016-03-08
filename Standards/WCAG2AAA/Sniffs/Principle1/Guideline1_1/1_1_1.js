@@ -67,39 +67,39 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_1_1_1_1 = {
         var errors = this.testNullAltText(top);
 
         for (var i = 0; i < errors.img.emptyAltInLink.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.emptyAltInLink[i], 'ƒŠƒ“ƒN‚Ì“à—e‚ª img —v‘f‚Ì‚Ý‚Å‚·‚ªAalt ‘®«‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñBalt ‘®«’l‚É“ü‚ê‚½‘ã‘ÖƒeƒLƒXƒg‚É‚æ‚Á‚ÄƒŠƒ“ƒN‚Ì–Ú“I‚ð“KØ‚Éà–¾‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.', 'H30.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.emptyAltInLink[i], 'ãƒªãƒ³ã‚¯ã®å†…å®¹ãŒ img è¦ç´ ã®ã¿ã§ã™ãŒã€alt å±žæ€§ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚alt å±žæ€§å€¤ã«å…¥ã‚ŒãŸä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã«ã‚ˆã£ã¦ãƒªãƒ³ã‚¯ã®ç›®çš„ã‚’é©åˆ‡ã«èª¬æ˜Žã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Img element is the only content of the link, but is missing alt text. The alt text should describe the purpose of the link.', 'H30.2');
         }
 
         for (var i = 0; i < errors.img.nullAltWithTitle.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.nullAltWithTitle[i], 'alt ‘®«’l‚ª‹ó‚Ì img —v‘f‚Í title ‘®«‚ðŽ‚½‚È‚¢‚©Atitle ‘®«’l‚ª‹ó‚Å‚ ‚é•K—v‚ª‚ ‚è‚Ü‚·B Img element with empty alt text must have absent or empty title attribute.', 'H67.1');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.nullAltWithTitle[i], 'alt å±žæ€§å€¤ãŒç©ºã® img è¦ç´ ã¯ title å±žæ€§ã‚’æŒãŸãªã„ã‹ã€title å±žæ€§å€¤ãŒç©ºã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Img element with empty alt text must have absent or empty title attribute.', 'H67.1');
         }
 
         for (var i = 0; i < errors.img.ignored.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.img.ignored[i], '‚±‚Ì img —v‘f‚ÍŽx‰‡‹Zp‚©‚ç–³Ž‹‚³‚ê‚é‚æ‚¤‚Éƒ}[ƒNƒAƒbƒv‚³‚ê‚Ä‚¢‚Ü‚·B‘•ü‰æ‘œ‚È‚Ç‚Å alt ‘®«‚ª‹ó‚Ìê‡‚ªl‚¦‚ç‚ê‚Ü‚·B‹ó‚Ì alt ‘®«‚ªˆÓ}‚µ‚½‚à‚Ì‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Img element is marked so that it is ignored by Assistive Technology.', 'H67.2');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.img.ignored[i], 'ã“ã® img è¦ç´ ã¯æ”¯æ´æŠ€è¡“ã‹ã‚‰ç„¡è¦–ã•ã‚Œã‚‹ã‚ˆã†ã«ãƒžãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã¦ã„ã¾ã™ã€‚è£…é£¾ç”»åƒãªã©ã§ alt å±žæ€§ãŒç©ºã®å ´åˆãŒè€ƒãˆã‚‰ã‚Œã¾ã™ã€‚ç©ºã® alt å±žæ€§ãŒæ„å›³ã—ãŸã‚‚ã®ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Img element is marked so that it is ignored by Assistive Technology.', 'H67.2');
         }
 
         for (var i = 0; i < errors.img.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.missingAlt[i], 'img —v‘f‚É alt ‘®«‚ª‚ ‚è‚Ü‚¹‚ñBalt ‘®«‚ðŽg—p‚µ‚Ä“KØ‚È‘ã‘ÖƒeƒLƒXƒg‚ð’ñ‹Ÿ‚µ‚Ü‚µ‚å‚¤B Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.', 'H37');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.img.missingAlt[i], 'img è¦ç´ ã« alt å±žæ€§ãŒã‚ã‚Šã¾ã›ã‚“ã€‚alt å±žæ€§ã‚’ä½¿ç”¨ã—ã¦é©åˆ‡ãªä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’æä¾›ã—ã¾ã—ã‚‡ã†ã€‚ Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.', 'H37');
         }
 
         for (var i = 0; i < errors.img.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.img.generalAlt[i], '‰æ‘œ‚Ì‘ã‘ÖƒeƒLƒXƒg‚ª‰æ‘œ‚Ì“à—e‚ð³‚µ‚­Ž¦‚µ‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.', 'G94.Image');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.img.generalAlt[i], 'ç”»åƒã®ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆãŒç”»åƒã®å†…å®¹ã‚’æ­£ã—ãç¤ºã—ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that the img element\'s alt text serves the same purpose and presents the same information as the image.', 'G94.Image');
         }
 
         for (var i = 0; i < errors.inputImage.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.inputImage.missingAlt[i], '‘—M / ŽÀsƒ{ƒ^ƒ“‚Æ‚µ‚ÄŽg—p‚³‚ê‚Ä‚¢‚é‰æ‘œ‚É alt ‘®«‚ªŒ©“–‚½‚è‚Ü‚¹‚ñBalt ‘®«‚É‚æ‚Á‚Ä‘ã‘ÖƒeƒLƒXƒg‚ð’ñ‹Ÿ‚µAƒ{ƒ^ƒ“‚Ì‹@”\‚ð“KØ‚Éà–¾‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute.', 'H36');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.inputImage.missingAlt[i], 'é€ä¿¡ / å®Ÿè¡Œãƒœã‚¿ãƒ³ã¨ã—ã¦ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ç”»åƒã« alt å±žæ€§ãŒè¦‹å½“ãŸã‚Šã¾ã›ã‚“ã€‚alt å±žæ€§ã«ã‚ˆã£ã¦ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’æä¾›ã—ã€ãƒœã‚¿ãƒ³ã®æ©Ÿèƒ½ã‚’é©åˆ‡ã«èª¬æ˜Žã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Image submit button missing an alt attribute. Specify a text alternative that describes the button\'s function, using the alt attribute.', 'H36');
         }
 
         for (var i = 0; i < errors.inputImage.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.inputImage.generalAlt[i], '‰æ‘œ‚É‚æ‚é‘—M / ŽÀsƒ{ƒ^ƒ“‚É•t—^‚³‚ê‚½ alt ‘®«’l‚É‚æ‚Á‚Äƒ{ƒ^ƒ“‚Ì–Ú“I‚ª“KØ‚Éà–¾‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that the image submit button\'s alt text identifies the purpose of the button.', 'G94.Button');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.inputImage.generalAlt[i], 'ç”»åƒã«ã‚ˆã‚‹é€ä¿¡ / å®Ÿè¡Œãƒœã‚¿ãƒ³ã«ä»˜ä¸Žã•ã‚ŒãŸ alt å±žæ€§å€¤ã«ã‚ˆã£ã¦ãƒœã‚¿ãƒ³ã®ç›®çš„ãŒé©åˆ‡ã«èª¬æ˜Žã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that the image submit button\'s alt text identifies the purpose of the button.', 'G94.Button');
         }
 
         for (var i = 0; i < errors.area.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.area.missingAlt[i], 'ƒCƒ[ƒWƒ}ƒbƒv“à‚Ì area —v‘f‚É alt ‘®«‚ªŒ©“–‚½‚è‚Ü‚¹‚ñBŠe area —v‘f‚É‚Í alt ‘®«‚É‚æ‚Á‚Ä‘ã‘ÖƒeƒLƒXƒg‚ð’ñ‹Ÿ‚µA‚»‚Ì—Ìˆæ‚Ì‹@”\‚â–Ú“I‚ð“KØ‚Éà–¾‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.', 'H24');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.area.missingAlt[i], 'ã‚¤ãƒ¡ãƒ¼ã‚¸ãƒžãƒƒãƒ—å†…ã® area è¦ç´ ã« alt å±žæ€§ãŒè¦‹å½“ãŸã‚Šã¾ã›ã‚“ã€‚å„ area è¦ç´ ã«ã¯ alt å±žæ€§ã«ã‚ˆã£ã¦ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’æä¾›ã—ã€ãã®é ˜åŸŸã®æ©Ÿèƒ½ã‚„ç›®çš„ã‚’é©åˆ‡ã«èª¬æ˜Žã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Area element in an image map missing an alt attribute. Each area element must have a text alternative that describes the function of the image map area.', 'H24');
         }
 
         for (var i = 0; i < errors.area.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.area.generalAlt[i], 'area —v‘f‚Ì‘ã‘ÖƒeƒLƒXƒg‚ªƒCƒ[ƒWƒ}ƒbƒv“à‚ÌŠY“–‚·‚é‘I‘ð‰Â”\—Ìˆæ‚Ì“à—e‚ð³‚µ‚­Ž¦‚µ‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.', 'H24.2');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.area.generalAlt[i], 'area è¦ç´ ã®ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆãŒã‚¤ãƒ¡ãƒ¼ã‚¸ãƒžãƒƒãƒ—å†…ã®è©²å½“ã™ã‚‹é¸æŠžå¯èƒ½é ˜åŸŸã®å†…å®¹ã‚’æ­£ã—ãç¤ºã—ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that the area element\'s text alternative serves the same purpose as the part of image map image it references.', 'H24.2');
         }
     },
 
@@ -234,7 +234,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_1_1_1_1 = {
      */
     testLongdesc: function(element)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‰æ‘œ‚Ì“à—e‚ð‘ã‘ÖƒeƒLƒXƒg‚Ì‚Ý‚Åà–¾‚Å‚«‚È‚¢ê‡‚ÍA‘OŒã‚Ì•¶–¬‚â•Ê“r—pˆÓ‚µ‚½à–¾•¶i‚Ü‚½‚Íƒy[ƒWj‚É‚æ‚Á‚Ä³‚µ‚­“à—e‚ª—‰ð‚Å‚«‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.', 'G73,G74');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ç”»åƒã®å†…å®¹ã‚’ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã®ã¿ã§èª¬æ˜Žã§ããªã„å ´åˆã¯ã€å‰å¾Œã®æ–‡è„ˆã‚„åˆ¥é€”ç”¨æ„ã—ãŸèª¬æ˜Žæ–‡ï¼ˆã¾ãŸã¯ãƒšãƒ¼ã‚¸ï¼‰ã«ã‚ˆã£ã¦æ­£ã—ãå†…å®¹ãŒç†è§£ã§ãã‚‹ã‚ˆã†ã«ãªã£ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.', 'G73,G74');
 
     },
 
@@ -276,7 +276,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_1_1_1_1 = {
                     // H2 "Failure Example 5": they're in one link, but the alt text
                     // duplicates the link text. Trimmed and lowercased because they
                     // would sound the same to a screen reader.
-                    HTMLCS.addMessage(HTMLCS.ERROR, element, 'ƒŠƒ“ƒN“à‚É‚ ‚é img —v‘f‚Ì‘ã‘ÖƒeƒLƒXƒg‚ÆƒŠƒ“ƒNƒeƒLƒXƒg‚ªd•¡‚µ‚Ä‚¢‚Ü‚·B Img element inside a link must not use alt text that duplicates the text content of the link.', 'H2.EG5');
+                    HTMLCS.addMessage(HTMLCS.ERROR, element, 'ãƒªãƒ³ã‚¯å†…ã«ã‚ã‚‹ img è¦ç´ ã®ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã¨ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆãŒé‡è¤‡ã—ã¦ã„ã¾ã™ã€‚ Img element inside a link must not use alt text that duplicates the text content of the link.', 'H2.EG5');
                 }
             }
 
@@ -318,18 +318,18 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_1_1_1_1 = {
                 // Test against the following link, if any.
                 if (nodes.next && (nodes.next.href !== '') && (nodes.next.href !== null) && (nodes.anchor.href === nodes.next.href)) {
                     if ((nodes.next.text !== '') && (nodes.anchor.alt === '')) {
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, '‘ã‘ÖƒeƒLƒXƒg‚ðŽ‚½‚È‚¢ img —v‘f‚ðŠÜ‚ÞƒŠƒ“ƒN‚ÆƒŠƒ“ƒNƒeƒLƒXƒg‚ðŠÜ‚ÞƒŠƒ“ƒN‚ª—×Ú‚µ‚Ä‚¢‚Ü‚·B2‚Â‚ÌƒŠƒ“ƒN‚Ì“‡‚ðŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.', 'H2.EG4');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’æŒãŸãªã„ img è¦ç´ ã‚’å«ã‚€ãƒªãƒ³ã‚¯ã¨ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã‚’å«ã‚€ãƒªãƒ³ã‚¯ãŒéš£æŽ¥ã—ã¦ã„ã¾ã™ã€‚2ã¤ã®ãƒªãƒ³ã‚¯ã®çµ±åˆã‚’æ¤œè¨Žã—ã¦ãã ã•ã„ã€‚ Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.', 'H2.EG4');
                     } else if (nodes.next.text.toLowerCase() === nodes.anchor.alt.toLowerCase()) {
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'ƒŠƒ“ƒN“à‚É‚ ‚é img —v‘f‚Ì‘ã‘ÖƒeƒLƒXƒg‚Æ—×Ú‚·‚éƒŠƒ“ƒNƒeƒLƒXƒg‚ªd•¡‚µ‚Ä‚¢‚Ü‚·B Img element inside a link must not use alt text that duplicates the content of a text link beside it.', 'H2.EG3');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'ãƒªãƒ³ã‚¯å†…ã«ã‚ã‚‹ img è¦ç´ ã®ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã¨éš£æŽ¥ã™ã‚‹ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆãŒé‡è¤‡ã—ã¦ã„ã¾ã™ã€‚ Img element inside a link must not use alt text that duplicates the content of a text link beside it.', 'H2.EG3');
                     }
                 }
 
                 // Test against the preceding link, if any.
                 if (nodes.previous && (nodes.previous.href !== '') && (nodes.previous.href !== null) && (nodes.anchor.href === nodes.previous.href)) {
                     if ((nodes.previous.text !== '') && (nodes.anchor.alt === '')) {
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, '‘ã‘ÖƒeƒLƒXƒg‚ðŽ‚½‚È‚¢ img —v‘f‚ðŠÜ‚ÞƒŠƒ“ƒN‚ÆƒŠƒ“ƒNƒeƒLƒXƒg‚ðŠÜ‚ÞƒŠƒ“ƒN‚ª—×Ú‚µ‚Ä‚¢‚Ü‚·B2‚Â‚ÌƒŠƒ“ƒN‚Ì“‡‚ðŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.', 'H2.EG4');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’æŒãŸãªã„ img è¦ç´ ã‚’å«ã‚€ãƒªãƒ³ã‚¯ã¨ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã‚’å«ã‚€ãƒªãƒ³ã‚¯ãŒéš£æŽ¥ã—ã¦ã„ã¾ã™ã€‚2ã¤ã®ãƒªãƒ³ã‚¯ã®çµ±åˆã‚’æ¤œè¨Žã—ã¦ãã ã•ã„ã€‚ Img element inside a link has empty or missing alt text when a link beside it contains link text. Consider combining the links.', 'H2.EG4');
                     } else if (nodes.previous.text.toLowerCase() === nodes.anchor.alt.toLowerCase()) {
-                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'ƒŠƒ“ƒN“à‚É‚ ‚é img —v‘f‚Ì‘ã‘ÖƒeƒLƒXƒg‚Æ—×Ú‚·‚éƒŠƒ“ƒNƒeƒLƒXƒg‚ªd•¡‚µ‚Ä‚¢‚Ü‚·B Img element inside a link must not use alt text that duplicates the content of a text link beside it.', 'H2.EG3');
+                        HTMLCS.addMessage(HTMLCS.ERROR, element, 'ãƒªãƒ³ã‚¯å†…ã«ã‚ã‚‹ img è¦ç´ ã®ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã¨éš£æŽ¥ã™ã‚‹ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆãŒé‡è¤‡ã—ã¦ã„ã¾ã™ã€‚ Img element inside a link must not use alt text that duplicates the content of a text link beside it.', 'H2.EG3');
                     }
                 }
             }//end if
@@ -349,23 +349,23 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_1_1_1_1 = {
         var errors = this.testMediaTextAlternatives(top);
 
         for (var i = 0; i < errors.object.missingBody.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.object.missingBody[i], 'object —v‘f‚Ì“à—e‚Æ‚µ‚ÄA‘ã‘ÖƒeƒLƒXƒg‚ð‹Lq‚·‚é•K—v‚ª‚ ‚è‚Ü‚·Bobject —v‘f‚É–¢‘Î‰ž‚ÌŠÂ‹«‚Å—˜—p‚³‚ê‚Ü‚·B Object elements must contain a text alternative after all other alternatives are exhausted.', 'H53');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.object.missingBody[i], 'object è¦ç´ ã®å†…å®¹ã¨ã—ã¦ã€ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’è¨˜è¿°ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚object è¦ç´ ã«æœªå¯¾å¿œã®ç’°å¢ƒã§åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚ Object elements must contain a text alternative after all other alternatives are exhausted.', 'H53');
         }
 
         for (var i = 0; i < errors.object.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.object.generalAlt[i], '”ñƒeƒLƒXƒgƒRƒ“ƒeƒ“ƒc‚É‘Î‚µ‚Ä‚»‚ê‚Æ“¯‚¶–Ú“I‚ð‰Ê‚½‚µ“¯‚¶î•ñ‚ð’ñ‹Ÿ‚·‚éŠÈŒ‰‚Èi‚Ü‚½‚Í“KØ‚Å‚ ‚ê‚Î’·‚¢j‘ã‘ÖƒeƒLƒXƒg‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'G94,G92.Object');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.object.generalAlt[i], 'éžãƒ†ã‚­ã‚¹ãƒˆã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«å¯¾ã—ã¦ãã‚Œã¨åŒã˜ç›®çš„ã‚’æžœãŸã—åŒã˜æƒ…å ±ã‚’æä¾›ã™ã‚‹ç°¡æ½”ãªï¼ˆã¾ãŸã¯é©åˆ‡ã§ã‚ã‚Œã°é•·ã„ï¼‰ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'G94,G92.Object');
         }
 
         for (var i = 0; i < errors.applet.missingBody.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingBody[i], 'applet —v‘f‚Ì“à—e‚Æ‚µ‚ÄA‘ã‘ÖƒeƒLƒXƒg‚ð‹Lq‚·‚é•K—v‚ª‚ ‚è‚Ü‚·Bapplet —v‘f‚É–¢‘Î‰ž‚ÌŠÂ‹«‚Å—˜—p‚³‚ê‚Ü‚·B Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.', 'H35.3');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingBody[i], 'applet è¦ç´ ã®å†…å®¹ã¨ã—ã¦ã€ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’è¨˜è¿°ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚applet è¦ç´ ã«æœªå¯¾å¿œã®ç’°å¢ƒã§åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚ Applet elements must contain a text alternative in the element\'s body, for browsers without support for the applet element.', 'H35.3');
         }
 
         for (var i = 0; i < errors.applet.missingAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingAlt[i], 'applet —v‘f‚É‚Í alt ‘®«‚É‚æ‚Á‚Ä‘ã‘ÖƒeƒLƒXƒg‚ð’ñ‹Ÿ‚·‚é•K—v‚ª‚ ‚è‚Ü‚·Bapplet —v‘f‚É–¢‘Î‰ž‚ÌŠÂ‹«‚Å—˜—p‚³‚ê‚Ü‚·B Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.', 'H35.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.applet.missingAlt[i], 'applet è¦ç´ ã«ã¯ alt å±žæ€§ã«ã‚ˆã£ã¦ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆã‚’æä¾›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚applet è¦ç´ ã«æœªå¯¾å¿œã®ç’°å¢ƒã§åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚ Applet elements must contain an alt attribute, to provide a text alternative to browsers supporting the element but are unable to load the applet.', 'H35.2');
         }
 
         for (var i = 0; i < errors.applet.generalAlt.length; i++) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, errors.applet.generalAlt[i], '”ñƒeƒLƒXƒgƒRƒ“ƒeƒ“ƒc‚É‘Î‚µ‚Ä‚»‚ê‚Æ“¯‚¶–Ú“I‚ð‰Ê‚½‚µ“¯‚¶î•ñ‚ð’ñ‹Ÿ‚·‚éŠÈŒ‰‚Èi‚Ü‚½‚Í“KØ‚Å‚ ‚ê‚Î’·‚¢j‘ã‘ÖƒeƒLƒXƒg‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'G94,G92.Applet');
+            HTMLCS.addMessage(HTMLCS.NOTICE, errors.applet.generalAlt[i], 'éžãƒ†ã‚­ã‚¹ãƒˆã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«å¯¾ã—ã¦ãã‚Œã¨åŒã˜ç›®çš„ã‚’æžœãŸã—åŒã˜æƒ…å ±ã‚’æä¾›ã™ã‚‹ç°¡æ½”ãªï¼ˆã¾ãŸã¯é©åˆ‡ã§ã‚ã‚Œã°é•·ã„ï¼‰ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'G94,G92.Applet');
         }
     },
 

@@ -123,18 +123,18 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
                     if (refNode === null) {
                         var level = HTMLCS.ERROR;
-                        var msg   = '‚±‚Ì label —v‘f‚Ì for ‘®«’l‚É‚ÍA•¶‘“à‚É‘¶İ‚µ‚È‚¢ id ‘®«’l‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚·B This label\'s "for" attribute contains an ID that does not exist in the document.';
+                        var msg   = 'ã“ã® label è¦ç´ ã® for å±æ€§å€¤ã«ã¯ã€æ–‡æ›¸å†…ã«å­˜åœ¨ã—ãªã„ id å±æ€§å€¤ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ This label\'s "for" attribute contains an ID that does not exist in the document.';
                         var code  = 'H44.NonExistent';
                         if ((HTMLCS.isFullDoc(top) === true) || (top.nodeName.toLowerCase() === 'body')) {
                             level = HTMLCS.WARNING;
-                            msg   = '‚±‚Ì label —v‘f‚Ì for ‘®«’l‚É‚ÍA•¶‘“à‚É‘¶İ‚µ‚È‚¢ id ‘®«’l‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚·B This label\'s "for" attribute contains an ID that does not exist in the document fragment.';
+                            msg   = 'ã“ã® label è¦ç´ ã® for å±æ€§å€¤ã«ã¯ã€æ–‡æ›¸å†…ã«å­˜åœ¨ã—ãªã„ id å±æ€§å€¤ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ This label\'s "for" attribute contains an ID that does not exist in the document fragment.';
                             var code  = 'H44.NonExistentFragment';
                         }
                         HTMLCS.addMessage(level, labels[i], msg, code);
                     } else {
                         var nodeName = refNode.nodeName.toLowerCase();
                         if ('input|select|textarea|button|keygen|meter|output|progress'.indexOf(nodeName) === -1) {
-                            HTMLCS.addMessage(HTMLCS.WARNING, labels[i], '‚±‚Ì label —v‘f‚Ì for ‘®«’l‚É‚ÍA“ü—ÍƒRƒ“ƒgƒ[ƒ‹ˆÈŠO‚Éw’è‚³‚ê‚½ id ‘®«’l‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚·BˆÓ}‚µ‚½w’è‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B This label\'s "for" attribute contains an ID for an element that is not a form control. Ensure that you have entered the correct ID for the intended element.', 'H44.NotFormControl');
+                            HTMLCS.addMessage(HTMLCS.WARNING, labels[i], 'ã“ã® label è¦ç´ ã® for å±æ€§å€¤ã«ã¯ã€å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ä»¥å¤–ã«æŒ‡å®šã•ã‚ŒãŸ id å±æ€§å€¤ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚æ„å›³ã—ãŸæŒ‡å®šã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ This label\'s "for" attribute contains an ID for an element that is not a form control. Ensure that you have entered the correct ID for the intended element.', 'H44.NotFormControl');
                         }
                     }
                 }
@@ -225,7 +225,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 HTMLCS.addMessage(
                     HTMLCS.WARNING,
                     element,
-                    '‚±‚Ì“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚ÍA‹óA‚à‚µ‚­‚Í‹ó”’•¶š‚Ì‚İ‚Ì‘®«’l‚ªw’è‚³‚ê‚½ title ‘®«‚ğ‚Á‚Ä‚¢‚Ü‚·B‚±‚Ì title ‘®«‚Íƒ†[ƒU[ƒG[ƒWƒFƒ“ƒg‚âx‰‡‹Zp‚©‚ç–³‹‚³‚ê‚Ü‚·B This form control has a "title" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
+                    'ã“ã®å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã¯ã€ç©ºã€ã‚‚ã—ãã¯ç©ºç™½æ–‡å­—ã®ã¿ã®å±æ€§å€¤ãŒæŒ‡å®šã•ã‚ŒãŸ title å±æ€§ã‚’æŒã£ã¦ã„ã¾ã™ã€‚ã“ã® title å±æ€§ã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã‚„æ”¯æ´æŠ€è¡“ã‹ã‚‰ç„¡è¦–ã•ã‚Œã¾ã™ã€‚ This form control has a "title" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
                     'H65'
                 );
             } else {
@@ -240,7 +240,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 HTMLCS.addMessage(
                     HTMLCS.WARNING,
                     element,
-                    '‚±‚Ì“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚ÍA‹óA‚à‚µ‚­‚Í‹ó”’•¶š‚Ì‚İ‚Ì‘®«’l‚ªw’è‚³‚ê‚½ aria-label ‘®«‚ğ‚Á‚Ä‚¢‚Ü‚·B‚±‚Ì aria-label ‘®«‚Íƒ†[ƒU[ƒG[ƒWƒFƒ“ƒg‚âx‰‡‹Zp‚©‚ç–³‹‚³‚ê‚Ü‚·B This form control has an "aria-label" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
+                    'ã“ã®å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã¯ã€ç©ºã€ã‚‚ã—ãã¯ç©ºç™½æ–‡å­—ã®ã¿ã®å±æ€§å€¤ãŒæŒ‡å®šã•ã‚ŒãŸ aria-label å±æ€§ã‚’æŒã£ã¦ã„ã¾ã™ã€‚ã“ã® aria-label å±æ€§ã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã‚„æ”¯æ´æŠ€è¡“ã‹ã‚‰ç„¡è¦–ã•ã‚Œã¾ã™ã€‚ This form control has an "aria-label" attribute that is empty or contains only spaces. It will be ignored for labelling test purposes.',
                     'ARIA6'
                 );
             } else {
@@ -261,7 +261,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                     HTMLCS.addMessage(
                         HTMLCS.WARNING,
                         element,
-                        '‚±‚Ì“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚ÍA•¶‘“à‚É‘¶İ‚µ‚È‚¢ "' + labelledByIds[x] + '" ‚Æ‚¢‚¤ id ‘®«’l‚ªw’è‚³‚ê‚½ aria-labelledby ‘®«‚ğ‚Á‚Ä‚¢‚Ü‚·B‚±‚Ì aria-labelledby ‘®«‚Íƒ†[ƒU[ƒG[ƒWƒFƒ“ƒg‚âx‰‡‹Zp‚©‚ç–³‹‚³‚ê‚Ü‚·B This form control contains an aria-labelledby attribute, however it includes an ID "' + labelledByIds[x] + '" that does not exist on an element. The aria-labelledby attribute will be ignored for labelling test purposes.',
+                        'ã“ã®å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã¯ã€æ–‡æ›¸å†…ã«å­˜åœ¨ã—ãªã„ "' + labelledByIds[x] + '" ã¨ã„ã† id å±æ€§å€¤ãŒæŒ‡å®šã•ã‚ŒãŸ aria-labelledby å±æ€§ã‚’æŒã£ã¦ã„ã¾ã™ã€‚ã“ã® aria-labelledby å±æ€§ã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã‚„æ”¯æ´æŠ€è¡“ã‹ã‚‰ç„¡è¦–ã•ã‚Œã¾ã™ã€‚ This form control contains an aria-labelledby attribute, however it includes an ID "' + labelledByIds[x] + '" that does not exist on an element. The aria-labelledby attribute will be ignored for labelling test purposes.',
                         'ARIA16,ARIA9'
                     );
                     ok = false;
@@ -286,14 +286,14 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                     HTMLCS.addMessage(
                         HTMLCS.WARNING,
                         element,
-                        '‚±‚Ì‰B‚µ“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚ÍA‰½‚ç‚©‚Ì•û–@‚É‚æ‚Á‚Äƒ‰ƒxƒ‹‚ª’ñ¦‚³‚ê‚Ä‚¢‚Ü‚·B‰B‚µ“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚É‚Íƒ‰ƒxƒ‹‚ğ’ñ¦‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B This hidden form field is labelled in some way. There should be no need to label a hidden form field.',
+                        'ã“ã®éš ã—å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã¯ã€ä½•ã‚‰ã‹ã®æ–¹æ³•ã«ã‚ˆã£ã¦ãƒ©ãƒ™ãƒ«ãŒæç¤ºã•ã‚Œã¦ã„ã¾ã™ã€‚éš ã—å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯ãƒ©ãƒ™ãƒ«ã‚’æç¤ºã—ãªã„ã§ãã ã•ã„ã€‚ This hidden form field is labelled in some way. There should be no need to label a hidden form field.',
                         'F68.Hidden'
                     );
                 } else if (element.getAttribute('hidden') !== null) {
                     HTMLCS.addMessage(
                         HTMLCS.WARNING,
                         element,
-                        '‚±‚Ì“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚ÍAhidden ‘®«‚É‚æ‚Á‚Ä”ñ•\¦‚É‚·‚é‚±‚Æ‚ªˆÓ}‚³‚ê‚Ä‚¢‚Ü‚·‚ªA‰½‚ç‚©‚Ì•û–@‚É‚æ‚Á‚Äƒ‰ƒxƒ‹‚ª’ñ¦‚³‚ê‚Ä‚¢‚Ü‚·B”ñ•\¦‚Ì“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚É‚Íƒ‰ƒxƒ‹‚ğ’ñ¦‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B This form field is intended to be hidden (using the "hidden" attribute), but is also labelled in some way. There should be no need to label a hidden form field.',
+                        'ã“ã®å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã¯ã€hidden å±æ€§ã«ã‚ˆã£ã¦éè¡¨ç¤ºã«ã™ã‚‹ã“ã¨ãŒæ„å›³ã•ã‚Œã¦ã„ã¾ã™ãŒã€ä½•ã‚‰ã‹ã®æ–¹æ³•ã«ã‚ˆã£ã¦ãƒ©ãƒ™ãƒ«ãŒæç¤ºã•ã‚Œã¦ã„ã¾ã™ã€‚éè¡¨ç¤ºã®å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¯ãƒ©ãƒ™ãƒ«ã‚’æç¤ºã—ãªã„ã§ãã ã•ã„ã€‚ This form field is intended to be hidden (using the "hidden" attribute), but is also labelled in some way. There should be no need to label a hidden form field.',
                         'F68.HiddenAttr'
                     );
                 }
@@ -302,8 +302,8 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 HTMLCS.addMessage(
                     HTMLCS.ERROR,
                     element,
-                    '‚±‚Ì“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚ÍA‰½‚ç‚©‚Ì•û–@‚É‚æ‚Á‚Äƒ‰ƒxƒ‹‚ğ’ñ¦‚·‚é‚×‚«‚Å‚·B This form field should be labelled in some way.' + ' ' +
-                    'label —v‘f‚É for ‘®«‚ğw’è‚·‚é‚©A“ü—ÍƒRƒ“ƒgƒ[ƒ‹©‘Ì‚ğ label —v‘f‚Å“à•ï‚µ‚Ü‚·B‚Ü‚½‚ÍAtitle ‘®«Aaria-label ‘®«Aaria-labelledby ‘®«‚È‚Ç“KØ‚È‘®«‚ğg—p‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B Use the label element (either with a "for" attribute or wrapped around the form field), or "title", "aria-label" or "aria-labelledby" attributes as appropriate.',
+                    'ã“ã®å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã¯ã€ä½•ã‚‰ã‹ã®æ–¹æ³•ã«ã‚ˆã£ã¦ãƒ©ãƒ™ãƒ«ã‚’æç¤ºã™ã‚‹ã¹ãã§ã™ã€‚ This form field should be labelled in some way.' + ' ' +
+                    'label è¦ç´ ã« for å±æ€§ã‚’æŒ‡å®šã™ã‚‹ã‹ã€å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«è‡ªä½“ã‚’ label è¦ç´ ã§å†…åŒ…ã—ã¾ã™ã€‚ã¾ãŸã¯ã€title å±æ€§ã€aria-label å±æ€§ã€aria-labelledby å±æ€§ãªã©é©åˆ‡ãªå±æ€§ã‚’ä½¿ç”¨ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚ Use the label element (either with a "for" attribute or wrapped around the form field), or "title", "aria-label" or "aria-labelledby" attributes as appropriate.',
                     'F68'
                 );
             }//end if
@@ -329,7 +329,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'H49.' + tags[i].nodeName.substr(0, 1).toUpperCase() + tags[i].nodeName.substr(1).toLowerCase();
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ƒZƒ}ƒ“ƒeƒBƒbƒN‚È—v‘f‚Í“KØ‚ÈƒeƒLƒXƒg‚Ìƒ}[ƒNƒAƒbƒv‚Ég—p‚³‚ê‚é‚×‚«‚Å‚·B Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ã‚»ãƒãƒ³ãƒ†ã‚£ãƒƒã‚¯ãªè¦ç´ ã¯é©åˆ‡ãªãƒ†ã‚­ã‚¹ãƒˆã®ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã«ä½¿ç”¨ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
 
         // Align attributes, too.
@@ -337,7 +337,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'H49.AlignAttr';
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ƒZƒ}ƒ“ƒeƒBƒbƒN‚È—v‘f‚Í“KØ‚ÈƒeƒLƒXƒg‚Ìƒ}[ƒNƒAƒbƒv‚Ég—p‚³‚ê‚é‚×‚«‚Å‚·B Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ã‚»ãƒãƒ³ãƒ†ã‚£ãƒƒã‚¯ãªè¦ç´ ã¯é©åˆ‡ãªãƒ†ã‚­ã‚¹ãƒˆã®ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã«ä½¿ç”¨ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
     },
 
@@ -362,7 +362,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 var childTag = children[0].nodeName.toLowerCase();
 
                 if (/^(strong|em|b|i|u)$/.test(childTag) === true) {
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, '‚à‚µ‚±‚ÌƒRƒ“ƒeƒ“ƒc‚ÉŒ©o‚µ‚Æ‚µ‚Ä‚ÌˆÓ–¡‚ª‚ ‚éê‡A“KØ‚ÈŒ©o‚µ—v‘f‚Åƒ}[ƒNƒAƒbƒv‚³‚ê‚é•K—v‚ª‚ ‚è‚Ü‚·B Heading markup should be used if this content is intended as a heading.', 'H42');
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã‚‚ã—ã“ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«è¦‹å‡ºã—ã¨ã—ã¦ã®æ„å‘³ãŒã‚ã‚‹å ´åˆã€é©åˆ‡ãªè¦‹å‡ºã—è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Heading markup should be used if this content is intended as a heading.', 'H42');
                 }
             }
         }
@@ -396,13 +396,13 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         // Invalid scope attribute - emit always if scope tested.
         for (var i = 0; i < scopeAttr.invalid.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, scopeAttr.invalid[i], 'ƒZƒ‹‚ª•s³‚È scope ‘®«’l‚ğ‚Á‚Ä‚¢‚Ü‚·B³‚µ‚¢’l‚ÍArowAcolArowgroupAcolgroup ‚Ì‚¢‚¸‚ê‚©‚Å‚·B Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.', 'H63.3');
+            HTMLCS.addMessage(HTMLCS.ERROR, scopeAttr.invalid[i], 'ã‚»ãƒ«ãŒä¸æ­£ãª scope å±æ€§å€¤ã‚’æŒã£ã¦ã„ã¾ã™ã€‚æ­£ã—ã„å€¤ã¯ã€rowã€colã€rowgroupã€colgroup ã®ã„ãšã‚Œã‹ã§ã™ã€‚ Table cell has an invalid scope attribute. Valid values are row, col, rowgroup, or colgroup.', 'H63.3');
         }
 
         // TDs with scope attributes are obsolete in HTML5 - emit warnings if
         // scope tested, but not as errors as they are valid HTML4.
         for (var i = 0; i < scopeAttr.obsoleteTd.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, scopeAttr.obsoleteTd[i], 'HTML5 ‚É‚¨‚¢‚ÄAscope ‘®«‚ğ td —v‘f‚Ég—p‚·‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñBth —v‘f‚Ég—p‚µ‚Ä‚­‚¾‚³‚¢B Scope attributes on td elements that act as headings for other elements are obsolete in HTML5. Use a th element instead.', 'H63.2');
+            HTMLCS.addMessage(HTMLCS.WARNING, scopeAttr.obsoleteTd[i], 'HTML5 ã«ãŠã„ã¦ã€scope å±æ€§ã‚’ td è¦ç´ ã«ä½¿ç”¨ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚th è¦ç´ ã«ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚ Scope attributes on td elements that act as headings for other elements are obsolete in HTML5. Use a th element instead.', 'H63.2');
         }
 
         if (headersAttr.allowScope === true) {
@@ -414,30 +414,30 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
             }
         } else {
             if (scopeAttr.used === true) {
-                HTMLCS.addMessage(HTMLCS.WARNING, table, 'sŒ©o‚µ‚ª•¡”‚ ‚éƒe[ƒuƒ‹‚ÅAth —v‘f‚Éw’è‚³‚ê‚½ scope ‘®«‚Å‚ÍŠÖ˜A•t‚¯‚ªB–†‚Èê‡Atd —v‘f‚É headers ‘®«‚ğg—p‚µ‚Ü‚·B Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.', 'H43.ScopeAmbiguous');
+                HTMLCS.addMessage(HTMLCS.WARNING, table, 'è¡Œè¦‹å‡ºã—ãŒè¤‡æ•°ã‚ã‚‹ãƒ†ãƒ¼ãƒ–ãƒ«ã§ã€th è¦ç´ ã«æŒ‡å®šã•ã‚ŒãŸ scope å±æ€§ã§ã¯é–¢é€£ä»˜ã‘ãŒæ›–æ˜§ãªå ´åˆã€td è¦ç´ ã« headers å±æ€§ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚ Scope attributes on th elements are ambiguous in a table with multiple levels of headings. Use the headers attribute on td elements instead.', 'H43.ScopeAmbiguous');
                 scopeAttr = null;
             }
         }//end if
 
         // Incorrect usage of headers - error; emit always.
         for (var i = 0; i < headersAttr.wrongHeaders.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, 'ŠÔˆá‚Á‚½ headers ‘®«’l‚ª‚±‚Ì td —v‘f‚É•t—^‚³‚ê‚Ä‚¢‚Ü‚·B‹°‚ç‚­³‚µ‚¢‚Ì‚Í "' + headersAttr.wrongHeaders[i].expected + '" ‚Å‚·‚ªAŒ©‚Â‚©‚Á‚½’l‚Í "' + headersAttr.wrongHeaders[i].actual + '" ‚Å‚·B Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'H43.IncorrectAttr');
+            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, 'é–“é•ã£ãŸ headers å±æ€§å€¤ãŒã“ã® td è¦ç´ ã«ä»˜ä¸ã•ã‚Œã¦ã„ã¾ã™ã€‚æã‚‰ãæ­£ã—ã„ã®ã¯ "' + headersAttr.wrongHeaders[i].expected + '" ã§ã™ãŒã€è¦‹ã¤ã‹ã£ãŸå€¤ã¯ "' + headersAttr.wrongHeaders[i].actual + '" ã§ã™ã€‚ Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'H43.IncorrectAttr');
         }
 
         // Errors where headers are compulsory.
         if ((headersAttr.required === true) && (headersAttr.allowScope === false)) {
             if (headersAttr.used === false) {
                 // Headers not used at all, and they are mandatory.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'Œ©o‚µƒZƒ‹ith —v‘fj‚Æƒf[ƒ^ƒZƒ‹itd —v‘fj‚ÌŠÖŒW«‚ª’è‹`‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB‚±‚Ìƒe[ƒuƒ‹‚É‚ÍsŒ©o‚µ‚ª•¡”‚ ‚é‚½‚ßAtd —v‘f‚É headers ‘®«‚ğg—p‚·‚é•K—v‚ª‚ ‚è‚Ü‚· The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'H43.HeadersRequired');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'è¦‹å‡ºã—ã‚»ãƒ«ï¼ˆth è¦ç´ ï¼‰ã¨ãƒ‡ãƒ¼ã‚¿ã‚»ãƒ«ï¼ˆtd è¦ç´ ï¼‰ã®é–¢ä¿‚æ€§ãŒå®šç¾©ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã«ã¯è¡Œè¦‹å‡ºã—ãŒè¤‡æ•°ã‚ã‚‹ãŸã‚ã€td è¦ç´ ã« headers å±æ€§ã‚’ä½¿ç”¨ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'H43.HeadersRequired');
             } else {
                 // Missing TH IDs - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingThId.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì th —v‘f‚É‚Í id ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBtd —v‘f‚É headers ‘®«‚ğ—p‚¢‚ÄQÆ‚·‚é‚½‚ß‚É‚ÍAid ‘®«‚ğ‚Á‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® th è¦ç´ ã«ã¯ id å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚td è¦ç´ ã« headers å±æ€§ã‚’ç”¨ã„ã¦å‚ç…§ã™ã‚‹ãŸã‚ã«ã¯ã€id å±æ€§ã‚’æŒã£ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
                 }
 
                 // Missing TD headers attributes - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingTd.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì td —v‘f‚É‚Í headers ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBheaders ‘®«‚É‚ÍŠÖ˜A•t‚¯‚é th —v‘f‚ª‚Â id ‘®«’l‚ğ‚·‚×‚Äw’è‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® td è¦ç´ ã«ã¯ headers å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚headers å±æ€§ã«ã¯é–¢é€£ä»˜ã‘ã‚‹ th è¦ç´ ãŒæŒã¤ id å±æ€§å€¤ã‚’ã™ã¹ã¦æŒ‡å®šã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
                 }
             }//end if
         }//end if
@@ -450,23 +450,23 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         if ((headersAttr.required === true) && (headersAttr.allowScope === true) && (headersAttr.correct === false) && (scopeAttr.correct === false)) {
             if ((scopeAttr.used === false) && (headersAttr.used === false)) {
                 // Nothing used at all.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'Œ©o‚µƒZƒ‹ith —v‘fj‚Æƒf[ƒ^ƒZƒ‹itd —v‘fj‚ÌŠÖŒW«‚ª’è‹`‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBscope ‘®«‚â headers ‘®«‚ğ—p‚¢‚ÄŠÖŒW«‚ğ¦‚·•K—v‚ª‚ ‚è‚Ü‚·B The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'è¦‹å‡ºã—ã‚»ãƒ«ï¼ˆth è¦ç´ ï¼‰ã¨ãƒ‡ãƒ¼ã‚¿ã‚»ãƒ«ï¼ˆtd è¦ç´ ï¼‰ã®é–¢ä¿‚æ€§ãŒå®šç¾©ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚scope å±æ€§ã‚„ headers å±æ€§ã‚’ç”¨ã„ã¦é–¢ä¿‚æ€§ã‚’ç¤ºã™å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
             } else if ((scopeAttr.used === false) && ((headersAttr.missingThId.length > 0) || (headersAttr.missingTd.length > 0))) {
                 // Headers attribute is used, but not all th elements have ids.
                 if (headersAttr.missingThId.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì th —v‘f‚É‚Í id ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBtd —v‘f‚É headers ‘®«‚ğ—p‚¢‚ÄQÆ‚·‚é‚½‚ß‚É‚ÍAid ‘®«‚ğ‚Á‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® th è¦ç´ ã«ã¯ id å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚td è¦ç´ ã« headers å±æ€§ã‚’ç”¨ã„ã¦å‚ç…§ã™ã‚‹ãŸã‚ã«ã¯ã€id å±æ€§ã‚’æŒã£ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'H43.MissingHeaderIds');
                 }
 
                 // Headers attribute is used, but not all td elements have headers attrs.
                 if (headersAttr.missingTd.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì td —v‘f‚É‚Í headers ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBheaders ‘®«‚É‚ÍŠÖ˜A•t‚¯‚é th —v‘f‚ª‚Â id ‘®«’l‚ğ‚·‚×‚Äw’è‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® td è¦ç´ ã«ã¯ headers å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚headers å±æ€§ã«ã¯é–¢é€£ä»˜ã‘ã‚‹ th è¦ç´ ãŒæŒã¤ id å±æ€§å€¤ã‚’ã™ã¹ã¦æŒ‡å®šã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'H43.MissingHeadersAttrs');
                 }
             } else if ((scopeAttr.missing.length > 0) && (headersAttr.used === false)) {
                 // Scope is used rather than headers, but not all th elements have them.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì th —v‘f‚É‚Í scope ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBƒf[ƒ^ƒZƒ‹‚ÆŠÖ˜A•t‚¯‚é‚½‚ßAscope ‘®«‚ğ•t—^‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.', 'H63.1');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® th è¦ç´ ã«ã¯ scope å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ãƒ‡ãƒ¼ã‚¿ã‚»ãƒ«ã¨é–¢é€£ä»˜ã‘ã‚‹ãŸã‚ã€scope å±æ€§ã‚’ä»˜ä¸ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all th elements in this table have a scope attribute. These cells should contain a scope attribute to identify their association with td elements.', 'H63.1');
             } else if ((scopeAttr.missing.length > 0) && ((headersAttr.missingThId.length > 0) || (headersAttr.missingTd.length > 0))) {
                 // Both are used and both were done incorrectly. Provide generic message.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'Œ©o‚µƒZƒ‹ith —v‘fj‚Æƒf[ƒ^ƒZƒ‹itd —v‘fj‚ÌŠÖŒW«‚ª’è‹`‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBscope ‘®«‚â headers ‘®«‚ğ—p‚¢‚ÄŠÖŒW«‚ğ¦‚·•K—v‚ª‚ ‚è‚Ü‚·B The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'è¦‹å‡ºã—ã‚»ãƒ«ï¼ˆth è¦ç´ ï¼‰ã¨ãƒ‡ãƒ¼ã‚¿ã‚»ãƒ«ï¼ˆtd è¦ç´ ï¼‰ã®é–¢ä¿‚æ€§ãŒå®šç¾©ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚scope å±æ€§ã‚„ headers å±æ€§ã‚’ç”¨ã„ã¦é–¢ä¿‚æ€§ã‚’ç¤ºã™å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ The relationship between td elements and their associated th elements is not defined. Use either the scope attribute on th elements, or the headers attribute on td elements.', 'H43,H63');
             }
         }
     },
@@ -564,29 +564,29 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         if (summary !== '') {
             if (HTMLCS.util.isLayoutTable(table) === true) {
-                HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹‚ÍƒŒƒCƒAƒEƒg‚Ì‚½‚ß‚Ég—p‚³‚ê‚Ä‚¢‚é‚Æv‚í‚ê‚Ü‚·‚ªAsummary ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚·BƒŒƒCƒAƒEƒgƒe[ƒuƒ‹‚Í summary ‘®«‚ğ‚½‚È‚¢‚©A‘®«’l‚ª‹ó‚Ì•K—v‚ª‚ ‚è‚Ü‚·B This table appears to be used for layout, but contains a summary attribute. Layout tables must not contain summary attributes, or if supplied, must be empty.', 'H73.3.LayoutTable');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã¯ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã®ãŸã‚ã«ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã¨æ€ã‚ã‚Œã¾ã™ãŒã€summary å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆãƒ†ãƒ¼ãƒ–ãƒ«ã¯ summary å±æ€§ã‚’æŒãŸãªã„ã‹ã€å±æ€§å€¤ãŒç©ºã®å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ This table appears to be used for layout, but contains a summary attribute. Layout tables must not contain summary attributes, or if supplied, must be empty.', 'H73.3.LayoutTable');
             } else {
                 if (caption === summary) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚à‚µ‚±‚Ìƒe[ƒuƒ‹‚ªƒf[ƒ^ƒe[ƒuƒ‹‚Å summary ‘®«‚Æ caption —v‘f‚ª“¯‚É‘¶İ‚·‚éê‡Asummary ‘®«‚É‚Í caption —v‘f‚Æ“¯‚¶“à—e‚ğ“ü‚ê‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.', 'H39,H73.4');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã‚‚ã—ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ãŒãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã§ summary å±æ€§ã¨ caption è¦ç´ ãŒåŒæ™‚ã«å­˜åœ¨ã™ã‚‹å ´åˆã€summary å±æ€§ã«ã¯ caption è¦ç´ ã¨åŒã˜å†…å®¹ã‚’å…¥ã‚Œã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚ If this table is a data table, and both a summary attribute and a caption element are present, the summary should not duplicate the caption.', 'H39,H73.4');
                 }
 
-                HTMLCS.addMessage(HTMLCS.NOTICE, table, '‚à‚µ‚±‚Ìƒe[ƒuƒ‹‚ªƒf[ƒ^ƒe[ƒuƒ‹‚Ìê‡Asummary ‘®«‚ªƒe[ƒuƒ‹‚Ì“à—e‚É‚Â‚¢‚Ä“KØ‚Éà–¾‚µ‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this table is a data table, check that the summary attribute describes the table\'s organization or explains how to use the table.', 'H73.3.Check');
+                HTMLCS.addMessage(HTMLCS.NOTICE, table, 'ã‚‚ã—ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ãŒãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã®å ´åˆã€summary å±æ€§ãŒãƒ†ãƒ¼ãƒ–ãƒ«ã®å†…å®¹ã«ã¤ã„ã¦é©åˆ‡ã«èª¬æ˜ã—ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this table is a data table, check that the summary attribute describes the table\'s organization or explains how to use the table.', 'H73.3.Check');
             }
         } else {
             if (HTMLCS.util.isLayoutTable(table) === false) {
-                HTMLCS.addMessage(HTMLCS.WARNING, table, '‚à‚µ‚±‚Ìƒe[ƒuƒ‹‚ªƒf[ƒ^ƒe[ƒuƒ‹‚Ìê‡Asummary ‘®«‚ğ—p‚¢‚Ä‚±‚Ìƒe[ƒuƒ‹‚ÌŠT—v‚ğ’ñ‹Ÿ‚·‚é‚±‚Æ‚ğŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.', 'H73.3.NoSummary');
+                HTMLCS.addMessage(HTMLCS.WARNING, table, 'ã‚‚ã—ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ãŒãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã®å ´åˆã€summary å±æ€§ã‚’ç”¨ã„ã¦ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã®æ¦‚è¦ã‚’æä¾›ã™ã‚‹ã“ã¨ã‚’æ¤œè¨ã—ã¦ãã ã•ã„ã€‚ If this table is a data table, consider using the summary attribute of the table element to give an overview of this table.', 'H73.3.NoSummary');
             }
         }//end if
 
         if (caption !== '') {
             if (HTMLCS.util.isLayoutTable(table) === true) {
-                HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹‚ÍƒŒƒCƒAƒEƒg‚Ì‚½‚ß‚Ég—p‚³‚ê‚Ä‚¢‚é‚Æv‚í‚ê‚Ü‚·‚ªAcaption —v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚·BƒŒƒCƒAƒEƒgƒe[ƒuƒ‹‚Í caption —v‘f‚ğ‚Â‚×‚«‚Å‚Í‚ ‚è‚Ü‚¹‚ñB This table appears to be used for layout, but contains a caption element. Layout tables must not contain captions.', 'H39.3.LayoutTable');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã¯ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã®ãŸã‚ã«ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã¨æ€ã‚ã‚Œã¾ã™ãŒã€caption è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆãƒ†ãƒ¼ãƒ–ãƒ«ã¯ caption è¦ç´ ã‚’æŒã¤ã¹ãã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ This table appears to be used for layout, but contains a caption element. Layout tables must not contain captions.', 'H39.3.LayoutTable');
             } else {
-                HTMLCS.addMessage(HTMLCS.NOTICE, table, '‚à‚µ‚±‚Ìƒe[ƒuƒ‹‚ªƒf[ƒ^ƒe[ƒuƒ‹‚Ìê‡Acaption —v‘f‚ªƒe[ƒuƒ‹‚Ì•\‘è‚É‚Â‚¢‚Ä“KØ‚É¦‚µ‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this table is a data table, check that the caption element accurately describes this table.', 'H39.3.Check');
+                HTMLCS.addMessage(HTMLCS.NOTICE, table, 'ã‚‚ã—ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ãŒãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã®å ´åˆã€caption è¦ç´ ãŒãƒ†ãƒ¼ãƒ–ãƒ«ã®è¡¨é¡Œã«ã¤ã„ã¦é©åˆ‡ã«ç¤ºã—ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this table is a data table, check that the caption element accurately describes this table.', 'H39.3.Check');
             }
         } else {
             if (HTMLCS.util.isLayoutTable(table) === false) {
-                HTMLCS.addMessage(HTMLCS.WARNING, table, '‚à‚µ‚±‚Ìƒe[ƒuƒ‹‚ªƒf[ƒ^ƒe[ƒuƒ‹‚Ìê‡A‚±‚Ìƒe[ƒuƒ‹‚ğ¯•Ê‚Å‚«‚é‚æ‚¤‚É caption —v‘f‚ğg—p‚µ‚Ä•\‘è‚ğ’ñ‹Ÿ‚·‚é‚±‚Æ‚ğŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B If this table is a data table, consider using a caption element to the table element to identify this table.', 'H39.3.NoCaption');
+                HTMLCS.addMessage(HTMLCS.WARNING, table, 'ã‚‚ã—ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ãŒãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã®å ´åˆã€ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’è­˜åˆ¥ã§ãã‚‹ã‚ˆã†ã« caption è¦ç´ ã‚’ä½¿ç”¨ã—ã¦è¡¨é¡Œã‚’æä¾›ã™ã‚‹ã“ã¨ã‚’æ¤œè¨ã—ã¦ãã ã•ã„ã€‚ If this table is a data table, consider using a caption element to the table element to identify this table.', 'H39.3.NoCaption');
             }
         }//end if
     },
@@ -600,7 +600,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         var legend = fieldset.querySelector('legend');
 
         if ((legend === null) || (legend.parentNode !== fieldset)) {
-            HTMLCS.addMessage(HTMLCS.ERROR, fieldset, 'fieldset —v‘f‚É legend —v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚¹‚ñB‚·‚×‚Ä‚Ì fieldset —v‘f‚É‚Í legend —v‘f‚É‚æ‚Á‚Äà–¾•¶‚ğ‹Lq‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.', 'H71.NoLegend');
+            HTMLCS.addMessage(HTMLCS.ERROR, fieldset, 'fieldset è¦ç´ ã« legend è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã™ã¹ã¦ã® fieldset è¦ç´ ã«ã¯ legend è¦ç´ ã«ã‚ˆã£ã¦èª¬æ˜æ–‡ã‚’è¨˜è¿°ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Fieldset does not contain a legend element. All fieldsets should contain a legend element that describes a description of the field group.', 'H71.NoLegend');
         }
     },
 
@@ -616,7 +616,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
 
         if (optgroup === null) {
             // Optgroup isn't being used.
-            HTMLCS.addMessage(HTMLCS.WARNING, select, '‚à‚µ‚±‚ÌƒZƒŒƒNƒgƒƒjƒ…[‚Ì‘I‘ğˆ‚Ì’†‚ÉŠÖ˜A‚·‚é‘I‘ğˆ‚ÌƒOƒ‹[ƒv‚ªŠÜ‚Ü‚ê‚éê‡Aoptgroup —v‘f‚É‚æ‚Á‚ÄƒOƒ‹[ƒv‰»‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B If this selection list contains groups of related options, they should be grouped with optgroup.', 'H85.2');
+            HTMLCS.addMessage(HTMLCS.WARNING, select, 'ã‚‚ã—ã“ã®ã‚»ãƒ¬ã‚¯ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®é¸æŠè‚¢ã®ä¸­ã«é–¢é€£ã™ã‚‹é¸æŠè‚¢ã®ã‚°ãƒ«ãƒ¼ãƒ—ãŒå«ã¾ã‚Œã‚‹å ´åˆã€optgroup è¦ç´ ã«ã‚ˆã£ã¦ã‚°ãƒ«ãƒ¼ãƒ—åŒ–ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ If this selection list contains groups of related options, they should be grouped with optgroup.', 'H85.2');
         }
     },
 
@@ -659,7 +659,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
                 // Multiple names detected = should be in a fieldset.
                 // Either first instance or this one wasn't in a fieldset, or they
                 // are in different fieldsets.
-                HTMLCS.addMessage(HTMLCS.WARNING, form, '‚à‚µ‚±‚ê‚ç‚Ìƒ‰ƒWƒIƒ{ƒ^ƒ“Aƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚ğƒOƒ‹[ƒv‰»‚µ‚½‚¢ê‡A‚»‚ê‚ç‚Í fieldset —v‘f“à‚ÉŠÜ‚Ü‚ê‚é‚×‚«‚Å‚·B If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.', 'H71.SameName');
+                HTMLCS.addMessage(HTMLCS.WARNING, form, 'ã‚‚ã—ã“ã‚Œã‚‰ã®ãƒ©ã‚¸ã‚ªãƒœã‚¿ãƒ³ã€ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã‚’ã‚°ãƒ«ãƒ¼ãƒ—åŒ–ã—ãŸã„å ´åˆã€ãã‚Œã‚‰ã¯ fieldset è¦ç´ å†…ã«å«ã¾ã‚Œã‚‹ã¹ãã§ã™ã€‚ If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.', 'H71.SameName');
                 break;
             }//end if
         }//end for
@@ -713,11 +713,11 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
             for (var i = 0; i < items.length; i++) {
                 if (/^[\-*]\s+/.test(items[0]) === true) {
                     // Test for "- " or "* " cases.
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚ÌƒRƒ“ƒeƒ“ƒc‚ÍƒvƒŒ[ƒ“ƒeƒLƒXƒg‚ğg—p‚µ‚Ä‰Óğ‘‚«‚ğÄŒ»‚µ‚Ä‚¢‚é‚æ‚¤‚ÉŒ©‚¦‚Ü‚·B‚»‚Ìê‡Aul —v‘f‚É‚æ‚Á‚Äƒ}[ƒNƒAƒbƒv‚·‚é‚±‚Æ‚ÅA“KØ‚È•¶‘\‘¢‚ğ‚Â‚±‚Æ‚ª‚Å‚«‚Ü‚·B This content looks like it is simulating an unordered list using plain text. If so, marking up this content with a ul element would add proper structure information to the document.', 'H48.1');
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã¯ãƒ—ãƒ¬ãƒ¼ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã‚’ä½¿ç”¨ã—ã¦ç®‡æ¡æ›¸ãã‚’å†ç¾ã—ã¦ã„ã‚‹ã‚ˆã†ã«è¦‹ãˆã¾ã™ã€‚ãã®å ´åˆã€ul è¦ç´ ã«ã‚ˆã£ã¦ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã™ã‚‹ã“ã¨ã§ã€é©åˆ‡ãªæ–‡æ›¸æ§‹é€ ã‚’æŒã¤ã“ã¨ãŒã§ãã¾ã™ã€‚ This content looks like it is simulating an unordered list using plain text. If so, marking up this content with a ul element would add proper structure information to the document.', 'H48.1');
                     break;
                 } if (/^\d+[:\/\-.]?\s+/.test(items[0]) === true) {
                     // Test for "1 " cases (or "1. ", "1: ", "1- ").
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚ÌƒRƒ“ƒeƒ“ƒc‚ÍƒvƒŒ[ƒ“ƒeƒLƒXƒg‚ğg—p‚µ‚Ä‡˜•t‚«ƒŠƒXƒg‚ğÄŒ»‚µ‚Ä‚¢‚é‚æ‚¤‚ÉŒ©‚¦‚Ü‚·B‚»‚Ìê‡Aol —v‘f‚É‚æ‚Á‚Äƒ}[ƒNƒAƒbƒv‚·‚é‚±‚Æ‚ÅA“KØ‚È•¶‘\‘¢‚ğ‚Â‚±‚Æ‚ª‚Å‚«‚Ü‚·B This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.', 'H48.2');
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã¯ãƒ—ãƒ¬ãƒ¼ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã‚’ä½¿ç”¨ã—ã¦é †åºä»˜ããƒªã‚¹ãƒˆã‚’å†ç¾ã—ã¦ã„ã‚‹ã‚ˆã†ã«è¦‹ãˆã¾ã™ã€‚ãã®å ´åˆã€ol è¦ç´ ã«ã‚ˆã£ã¦ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã™ã‚‹ã“ã¨ã§ã€é©åˆ‡ãªæ–‡æ›¸æ§‹é€ ã‚’æŒã¤ã“ã¨ãŒã§ãã¾ã™ã€‚ This content looks like it is simulating an ordered list using plain text. If so, marking up this content with an ol element would add proper structure information to the document.', 'H48.2');
                     break;
                 }
             }//end for
@@ -731,14 +731,14 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         for (var i = 0; i < headings.length; i++) {
             var headingNum = parseInt(headings[i].nodeName.substr(1, 1));
             if (headingNum - lastHeading > 1) {
-                var exampleMsg = '“KØ‚ÈƒlƒXƒg‚Ì‚½‚ß‚É h' + (lastHeading + 1) + ' —v‘f‚Åƒ}[ƒNƒAƒbƒv‚³‚ê‚é‚×‚«‚Å‚·B should be an h' + (lastHeading + 1) + ' to be properly nested';
+                var exampleMsg = 'é©åˆ‡ãªãƒã‚¹ãƒˆã®ãŸã‚ã« h' + (lastHeading + 1) + ' è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ should be an h' + (lastHeading + 1) + ' to be properly nested';
                 if (lastHeading === 0) {
                     // If last heading is empty, we are at document top and we are
                     // expecting a H1, generally speaking.
-                    exampleMsg = '•¶‘“à‚ÌÅ‰‚ÌŒ©o‚µ‚Æv‚í‚ê‚é‚½‚ßAh1 —v‘f‚Åƒ}[ƒNƒAƒbƒv‚³‚ê‚é‚×‚«‚Å‚·B appears to be the primary document heading, so should be an h1 element';
+                    exampleMsg = 'æ–‡æ›¸å†…ã®æœ€åˆã®è¦‹å‡ºã—ã¨æ€ã‚ã‚Œã‚‹ãŸã‚ã€h1 è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ appears to be the primary document heading, so should be an h1 element';
                 }
 
-                HTMLCS.addMessage(level, headings[i], '‚±‚ÌŒ©o‚µ\‘¢‚Í“KØ‚ÉƒlƒXƒg‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB‚±‚Ì h' + headingNum + ' —v‘f‚Í ' + exampleMsg + ' The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'G141');
+                HTMLCS.addMessage(level, headings[i], 'ã“ã®è¦‹å‡ºã—æ§‹é€ ã¯é©åˆ‡ã«ãƒã‚¹ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã“ã® h' + headingNum + ' è¦ç´ ã¯ ' + exampleMsg + ' The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'G141');
             }
 
             lastHeading = headingNum;
@@ -760,7 +760,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         }
 
         if (/^\s*$/.test(text) === true) {
-            HTMLCS.addMessage(HTMLCS.ERROR, element, 'Œ©o‚µ—v‘f‚ª‹óA‚à‚µ‚­‚ÍƒeƒLƒXƒgƒRƒ“ƒeƒ“ƒcˆÈŠO‚ªŒ©o‚µ—v‘f‚Åƒ}[ƒNƒAƒbƒv‚³‚ê‚Ä‚¢‚Ü‚·B‰æ‘œ‚ğŒ©o‚µ‚É‚·‚éê‡‚Í“KØ‚È‘ã‘ÖƒeƒLƒXƒg‚ªw’è‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.', 'H42.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, element, 'è¦‹å‡ºã—è¦ç´ ãŒç©ºã€ã‚‚ã—ãã¯ãƒ†ã‚­ã‚¹ãƒˆã‚³ãƒ³ãƒ†ãƒ³ãƒ„ä»¥å¤–ãŒè¦‹å‡ºã—è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã¦ã„ã¾ã™ã€‚ç”»åƒã‚’è¦‹å‡ºã—ã«ã™ã‚‹å ´åˆã¯é©åˆ‡ãªä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Heading tag found with no content. Text that is not intended as a heading should not be marked up with heading tags.', 'H42.2');
         }
     },
 
@@ -796,7 +796,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
             }
 
             if (parent === null) {
-                HTMLCS.addMessage(HTMLCS.WARNING, element, '‚à‚µ‚±‚Ì—v‘f‚ªƒiƒrƒQ[ƒVƒ‡ƒ“ƒZƒNƒVƒ‡ƒ“‚ğŠÜ‚Şê‡AƒŠƒXƒg—v‘f‚Åƒ}[ƒNƒAƒbƒv‚·‚é‚±‚Æ‚ğ„§‚µ‚Ü‚·B If this element contains a navigation section, it is recommended that it be marked up as a list.', 'H48');
+                HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã‚‚ã—ã“ã®è¦ç´ ãŒãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’å«ã‚€å ´åˆã€ãƒªã‚¹ãƒˆè¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã™ã‚‹ã“ã¨ã‚’æ¨å¥¨ã—ã¾ã™ã€‚ If this element contains a navigation section, it is recommended that it be marked up as a list.', 'H48');
             }
         }//end if
     },
@@ -811,9 +811,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
      */
     testGeneralTable: function(table) {
         if (HTMLCS.util.isLayoutTable(table) === true) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, table, '‚±‚Ìƒe[ƒuƒ‹‚ÍƒŒƒCƒAƒEƒgƒe[ƒuƒ‹‚Æv‚í‚ê‚Ü‚·B‚à‚µƒf[ƒ^ƒe[ƒuƒ‹‚ğˆÓ}‚µ‚Ä‚¢‚éê‡‚ÍAth —v‘f‚ğg—p‚µ‚ÄŒ©o‚µƒZƒ‹‚ª”F¯‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.', 'LayoutTable');
+            HTMLCS.addMessage(HTMLCS.NOTICE, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã¯ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆãƒ†ãƒ¼ãƒ–ãƒ«ã¨æ€ã‚ã‚Œã¾ã™ã€‚ã‚‚ã—ãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’æ„å›³ã—ã¦ã„ã‚‹å ´åˆã¯ã€th è¦ç´ ã‚’ä½¿ç”¨ã—ã¦è¦‹å‡ºã—ã‚»ãƒ«ãŒèªè­˜ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.', 'LayoutTable');
         } else {
-            HTMLCS.addMessage(HTMLCS.NOTICE, table, '‚±‚Ìƒe[ƒuƒ‹‚Íƒf[ƒ^ƒe[ƒuƒ‹‚Æv‚í‚ê‚Ü‚·B‚à‚µƒŒƒCƒAƒEƒgƒe[ƒuƒ‹‚ğˆÓ}‚µ‚Ä‚¢‚éê‡‚ÍAth —v‘f‚â caption —v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚½‚èAsummary ‘®«‚ªw’è‚³‚ê‚Ä‚¢‚È‚¢‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B This table appears to be a data table. If it is meant to instead be a layout table, ensure there are no th elements, and no summary or caption.', 'DataTable');
+            HTMLCS.addMessage(HTMLCS.NOTICE, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã¯ãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã¨æ€ã‚ã‚Œã¾ã™ã€‚ã‚‚ã—ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆãƒ†ãƒ¼ãƒ–ãƒ«ã‚’æ„å›³ã—ã¦ã„ã‚‹å ´åˆã¯ã€th è¦ç´ ã‚„ caption è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ãŸã‚Šã€summary å±æ€§ãŒæŒ‡å®šã•ã‚Œã¦ã„ãªã„ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ This table appears to be a data table. If it is meant to instead be a layout table, ensure there are no th elements, and no summary or caption.', 'DataTable');
         }
     }
 };

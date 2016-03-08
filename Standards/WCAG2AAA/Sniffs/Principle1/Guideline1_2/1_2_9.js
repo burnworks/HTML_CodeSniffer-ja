@@ -42,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_9 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ‚±‚Ì–„‚ß‚İƒIƒuƒWƒFƒNƒg‚ªƒ‰ƒCƒu‚Ì‰¹º‚µ‚©ŠÜ‚Ü‚È‚¢ê‡A‘ã‘ÖƒRƒ“ƒeƒ“ƒc‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this embedded object contains live audio-only content, check that an alternative text version of the content is provided.', 'G150,G151,G157');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã“ã®åŸ‹ã‚è¾¼ã¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒãƒ©ã‚¤ãƒ–ã®éŸ³å£°ã—ã‹å«ã¾ãªã„å ´åˆã€ä»£æ›¿ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this embedded object contains live audio-only content, check that an alternative text version of the content is provided.', 'G150,G151,G157');
 
     }
 };

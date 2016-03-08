@@ -79,9 +79,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
             }
 
             if (hasTitle === false) {
-                HTMLCS.addMessage(HTMLCS.ERROR, element, 'iframe —v‘f‚É‚Í‚»‚Ì“à—e‚ğà–¾‚·‚é‚½‚ß‚Ì title ‘®«‚ª•K—v‚Å‚·B Iframe element requires a non-empty title attribute that identifies the frame.', 'H64.1');
+                HTMLCS.addMessage(HTMLCS.ERROR, element, 'iframe è¦ç´ ã«ã¯ãã®å†…å®¹ã‚’èª¬æ˜ã™ã‚‹ãŸã‚ã® title å±æ€§ãŒå¿…è¦ã§ã™ã€‚ Iframe element requires a non-empty title attribute that identifies the frame.', 'H64.1');
             } else {
-                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'iframe —v‘f‚É‚Í‚»‚Ì“à—e‚ğà–¾‚·‚é‚½‚ß‚Ì title ‘®«‚ª•K—v‚Å‚·B(Iframe element requires a non-empty title attribute that identifies the frame.)","H64.1"):HTMLCS.addMessage(HTMLCS.NOTICE,a,"iframe —v‘f‚É•t—^‚³‚ê‚½ title ‘®«‚Ì’l‚ª‚»‚ÌƒtƒŒ[ƒ€‚Ì“à—e‚ğ“KØ‚É¦‚µ‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that the title attribute of this element contains text that identifies the frame.', 'H64.2');
+                HTMLCS.addMessage(HTMLCS.NOTICE, element, 'iframe è¦ç´ ã«ã¯ãã®å†…å®¹ã‚’èª¬æ˜ã™ã‚‹ãŸã‚ã® title å±æ€§ãŒå¿…è¦ã§ã™ã€‚(Iframe element requires a non-empty title attribute that identifies the frame.)","H64.1"):HTMLCS.addMessage(HTMLCS.NOTICE,a,"iframe è¦ç´ ã«ä»˜ä¸ã•ã‚ŒãŸ title å±æ€§ã®å€¤ãŒãã®ãƒ•ãƒ¬ãƒ¼ãƒ ã®å†…å®¹ã‚’é©åˆ‡ã«ç¤ºã—ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that the title attribute of this element contains text that identifies the frame.', 'H64.2');
             }
         }//end if
     },
@@ -95,7 +95,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
      */
     testGenericBypassMsg: function(top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '•¡”‚Ì Web ƒy[ƒWã‚ÅŒJ‚è•Ô‚³‚ê‚Ä‚¢‚éƒiƒrƒQ[ƒVƒ‡ƒ“‚È‚Ç‚Ì—v‘f‚ğƒXƒLƒbƒv‚Å‚«‚é‹@”\‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'G1,G123,G124,H69');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'è¤‡æ•°ã® Web ãƒšãƒ¼ã‚¸ä¸Šã§ç¹°ã‚Šè¿”ã•ã‚Œã¦ã„ã‚‹ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ãªã©ã®è¦ç´ ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã‚‹æ©Ÿèƒ½ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'G1,G123,G124,H69');
     },
 
     /**
@@ -133,9 +133,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_1 = {
 
                     if ((target === null) || (HTMLCS.util.contains(top, target) === false)) {
                         if ((HTMLCS.isFullDoc(top) === true) || (top.nodeName.toLowerCase() === 'body')) {
-                            HTMLCS.addMessage(HTMLCS.ERROR, element, '‚±‚ÌƒŠƒ“ƒN‚Í "' + id + '" ‚Æ‚¢‚¤–¼‘O‚ÌƒAƒ“ƒJ[‚ÉƒŠƒ“ƒN‚³‚ê‚Ä‚¢‚Ü‚·‚ªA‚±‚Ì•¶‘“à‚ÅŠY“–‚·‚é–¼‘O‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'G1,G123,G124.NoSuchID');
+                            HTMLCS.addMessage(HTMLCS.ERROR, element, 'ã“ã®ãƒªãƒ³ã‚¯ã¯ "' + id + '" ã¨ã„ã†åå‰ã®ã‚¢ãƒ³ã‚«ãƒ¼ã«ãƒªãƒ³ã‚¯ã•ã‚Œã¦ã„ã¾ã™ãŒã€ã“ã®æ–‡æ›¸å†…ã§è©²å½“ã™ã‚‹åå‰ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'G1,G123,G124.NoSuchID');
                         } else {
-                            HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚ÌƒŠƒ“ƒN‚Í "' + id + '" ‚Æ‚¢‚¤–¼‘O‚ÌƒAƒ“ƒJ[‚ÉƒŠƒ“ƒN‚³‚ê‚Ä‚¢‚Ü‚·‚ªA‚±‚Ì•¶‘“à‚ÅŠY“–‚·‚é–¼‘O‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'G1,G123,G124.NoSuchIDFragment');
+                            HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®ãƒªãƒ³ã‚¯ã¯ "' + id + '" ã¨ã„ã†åå‰ã®ã‚¢ãƒ³ã‚«ãƒ¼ã«ãƒªãƒ³ã‚¯ã•ã‚Œã¦ã„ã¾ã™ãŒã€ã“ã®æ–‡æ›¸å†…ã§è©²å½“ã™ã‚‹åå‰ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'G1,G123,G124.NoSuchIDFragment');
                         }
                     }
                 } catch (ex) {

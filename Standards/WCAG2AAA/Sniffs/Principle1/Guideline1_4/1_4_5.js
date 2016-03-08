@@ -39,7 +39,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_5 = {
         var imgObj = top.querySelector('img');
 
         if (imgObj !== null) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, '‰æ‘œ‰»‚³‚ê‚½•¶š‚ªƒ†[ƒU[‚Ì—v‹‚É‰‚¶‚Ä‹Šo“I‚ÉƒJƒXƒ^ƒ}ƒCƒY‚Å‚«‚éê‡A‚Ü‚½‚Íƒˆ‚È‘•ü–Ú“IA‚à‚µ‚­‚Í‚»‚Ìî•ñ‚ğ“`‚¦‚éã‚ÅƒeƒLƒXƒg‚ğ“Á’è‚ÌŒ`‚Å•\Œ»‚·‚é‚±‚Æ‚ª•K—v•s‰ÂŒ‡‚Å‚ ‚éê‡‚ÉŒÀ‚Á‚ÄA•¶š‰æ‘œ‚ªg—p‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B If the technologies being used can achieve the visual presentation, check that text is used to convey information rather than images of text, except when the image of text is essential to the information being conveyed, or can be visually customised to the user\'s requirements.', 'G140,C22,C30.AALevel');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ç”»åƒåŒ–ã•ã‚ŒãŸæ–‡å­—ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã®è¦æ±‚ã«å¿œã˜ã¦è¦–è¦šçš„ã«ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºã§ãã‚‹å ´åˆã€ã¾ãŸã¯ç´”ç²‹ãªè£…é£¾ç›®çš„ã€ã‚‚ã—ãã¯ãã®æƒ…å ±ã‚’ä¼ãˆã‚‹ä¸Šã§ãƒ†ã‚­ã‚¹ãƒˆã‚’ç‰¹å®šã®å½¢ã§è¡¨ç¾ã™ã‚‹ã“ã¨ãŒå¿…è¦ä¸å¯æ¬ ã§ã‚ã‚‹å ´åˆã«é™ã£ã¦ã€æ–‡å­—ç”»åƒãŒä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If the technologies being used can achieve the visual presentation, check that text is used to convey information rather than images of text, except when the image of text is essential to the information being conveyed, or can be visually customised to the user\'s requirements.', 'G140,C22,C30.AALevel');
         }
 
     }

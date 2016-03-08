@@ -41,7 +41,7 @@ var HTMLCS_Section508_Sniffs_O = {
     process: function(element, top)
     {
         if (element === top) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, '•¡”‚ÌWebƒy[ƒWã‚ÅŒJ‚è•Ô‚³‚ê‚Ä‚¢‚éƒiƒrƒQ[ƒVƒ‡ƒ“‚È‚Ç‚Ì—v‘f‚ğƒXƒLƒbƒv‚Å‚«‚é‹@”\‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'SkipLinks');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'è¤‡æ•°ã®Webãƒšãƒ¼ã‚¸ä¸Šã§ç¹°ã‚Šè¿”ã•ã‚Œã¦ã„ã‚‹ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ãªã©ã®è¦ç´ ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã‚‹æ©Ÿèƒ½ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.', 'SkipLinks');
         } else {
             if (element.hasAttribute('href') === true) {
                 var href = element.getAttribute('href');
@@ -64,9 +64,9 @@ var HTMLCS_Section508_Sniffs_O = {
 
                         if ((target === null) || (HTMLCS.util.contains(top, target) === false)) {
                             if ((HTMLCS.isFullDoc(top) === true) || (top.nodeName.toLowerCase() === 'body')) {
-                                HTMLCS.addMessage(HTMLCS.ERROR, element, '‚±‚ÌƒŠƒ“ƒN‚Í "' + id + '" ‚Æ‚¢‚¤–¼‘O‚ÌƒAƒ“ƒJ[‚ÉƒŠƒ“ƒN‚³‚ê‚Ä‚¢‚Ü‚·‚ªA‚±‚Ì•¶‘“à‚ÅŠY“–‚·‚é–¼‘O‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'NoSuchID');
+                                HTMLCS.addMessage(HTMLCS.ERROR, element, 'ã“ã®ãƒªãƒ³ã‚¯ã¯ "' + id + '" ã¨ã„ã†åå‰ã®ã‚¢ãƒ³ã‚«ãƒ¼ã«ãƒªãƒ³ã‚¯ã•ã‚Œã¦ã„ã¾ã™ãŒã€ã“ã®æ–‡æ›¸å†…ã§è©²å½“ã™ã‚‹åå‰ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name.', 'NoSuchID');
                             } else {
-                                HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚ÌƒŠƒ“ƒN‚Í "' + id + '" ‚Æ‚¢‚¤–¼‘O‚ÌƒAƒ“ƒJ[‚ÉƒŠƒ“ƒN‚³‚ê‚Ä‚¢‚Ü‚·‚ªA‚±‚Ì•¶‘“à‚ÅŠY“–‚·‚é–¼‘O‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'NoSuchIDFragment');
+                                HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®ãƒªãƒ³ã‚¯ã¯ "' + id + '" ã¨ã„ã†åå‰ã®ã‚¢ãƒ³ã‚«ãƒ¼ã«ãƒªãƒ³ã‚¯ã•ã‚Œã¦ã„ã¾ã™ãŒã€ã“ã®æ–‡æ›¸å†…ã§è©²å½“ã™ã‚‹åå‰ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ This link points to a named anchor "' + id + '" within the document, but no anchor exists with that name in the fragment tested.', 'NoSuchIDFragment');
                             }
                         }
                     } catch (ex) {

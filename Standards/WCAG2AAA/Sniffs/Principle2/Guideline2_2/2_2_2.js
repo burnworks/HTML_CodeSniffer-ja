@@ -40,7 +40,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_2 = {
     process: function(element, top)
     {
         if (element === top) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '©“®“I‚ÉŠJn‚µA‚©‚Â 5 •bˆÈãŒp‘±‚µ‚Ä“®‚«‚Ì‚ ‚éA“_–Å‚µ‚Ä‚¢‚éAƒXƒNƒ[ƒ‹‚·‚éî•ñA‚Ü‚½‚Í©“®XV‚·‚éî•ñ‚É‚Â‚¢‚ÄA‚»‚ê‚ç‚ğˆê’â~A’â~A‚Ü‚½‚Í”ñ•\¦‚É‚·‚éd‘g‚İ‚ª—˜—p‰Â”\‚È‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.', 'SCR33,SCR22,G187,G152,G186,G191');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'è‡ªå‹•çš„ã«é–‹å§‹ã—ã€ã‹ã¤ 5 ç§’ä»¥ä¸Šç¶™ç¶šã—ã¦å‹•ãã®ã‚ã‚‹ã€ç‚¹æ»…ã—ã¦ã„ã‚‹ã€ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã™ã‚‹æƒ…å ±ã€ã¾ãŸã¯è‡ªå‹•æ›´æ–°ã™ã‚‹æƒ…å ±ã«ã¤ã„ã¦ã€ãã‚Œã‚‰ã‚’ä¸€æ™‚åœæ­¢ã€åœæ­¢ã€ã¾ãŸã¯éè¡¨ç¤ºã«ã™ã‚‹ä»•çµ„ã¿ãŒåˆ©ç”¨å¯èƒ½ãªã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.', 'SCR33,SCR22,G187,G152,G186,G191');
 
             var elements = top.querySelectorAll('*');
             for (var i = 0; i < elements.length; i++) {
@@ -48,12 +48,12 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_2 = {
 
                 if (computedStyle) {
                     if (/blink/.test(computedStyle['text-decoration']) === true) {
-                        HTMLCS.addMessage(HTMLCS.WARNING, elements[i], 'ƒ†[ƒU[‚ª“_–Å‚·‚éƒRƒ“ƒeƒ“ƒc‚ğ 5 •b–¢–‚Å’â~‰Â”\‚Èd‘g‚İ‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure there is a mechanism available to stop this blinking element in less than five seconds.', 'F4');
+                        HTMLCS.addMessage(HTMLCS.WARNING, elements[i], 'ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒç‚¹æ»…ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’ 5 ç§’æœªæº€ã§åœæ­¢å¯èƒ½ãªä»•çµ„ã¿ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure there is a mechanism available to stop this blinking element in less than five seconds.', 'F4');
                     }
                 }
             }//end for
         } else if (element.nodeName.toLowerCase() === 'blink') {
-            HTMLCS.addMessage(HTMLCS.ERROR, element, 'ƒ†[ƒU[‚ª“_–Å‚·‚éƒRƒ“ƒeƒ“ƒc‚ğ 5 •b–¢–‚Å’â~‰Â”\‚Èd‘g‚İ‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB Blink elements cannot satisfy the requirement that blinking information can be stopped within five seconds.', 'F47');
+            HTMLCS.addMessage(HTMLCS.ERROR, element, 'ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒç‚¹æ»…ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’ 5 ç§’æœªæº€ã§åœæ­¢å¯èƒ½ãªä»•çµ„ã¿ãŒæä¾›ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ Blink elements cannot satisfy the requirement that blinking information can be stopped within five seconds.', 'F47');
         }//end if
 
     }

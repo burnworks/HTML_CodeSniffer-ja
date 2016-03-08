@@ -42,7 +42,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_7 = {
         var inputField = top.querySelector('input, textarea, button, select, a');
 
         if (inputField !== null) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ƒtƒH[ƒJƒX‚ğó‚¯æ‚Á‚½Û‚ÉAƒtƒH[ƒJƒXƒCƒ“ƒWƒP[ƒ^‚É‚æ‚Á‚Ä‚»‚ê‚ª”F¯‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.', 'G149,G165,G195,C15,SCR31');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’å—ã‘å–ã£ãŸéš›ã«ã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚¤ãƒ³ã‚¸ã‚±ãƒ¼ã‚¿ã«ã‚ˆã£ã¦ãã‚ŒãŒèªè­˜ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.', 'G149,G165,G195,C15,SCR31');
         }
 
     }

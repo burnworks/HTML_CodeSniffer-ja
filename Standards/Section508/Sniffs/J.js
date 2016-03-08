@@ -37,6 +37,6 @@ var HTMLCS_Section508_Sniffs_J = {
     process: function(element, top)
     {
         // The term in Sec. 508 is "flicker" rather than flash.
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '–ˆ•b 2 ‰ñ‚ğ’´‚¦A55 ‰ñ–¢–‚Ì•p“x‚Å“_–Å‚·‚é•”•ª‚ª‚È‚¢‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that no component of the content flickers at a rate of greater than 2 and less than 55 times per second.', 'Flicker');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'æ¯ç§’ 2 å›ã‚’è¶…ãˆã€55 å›æœªæº€ã®é »åº¦ã§ç‚¹æ»…ã™ã‚‹éƒ¨åˆ†ãŒãªã„ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that no component of the content flickers at a rate of greater than 2 and less than 55 times per second.', 'Flicker');
     }
 };

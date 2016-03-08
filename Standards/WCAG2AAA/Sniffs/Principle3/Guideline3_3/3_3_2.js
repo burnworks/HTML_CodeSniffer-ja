@@ -39,6 +39,6 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_2 = {
         // Only the generic message will be displayed here. If there were problems
         // with input boxes not having labels, it will be pulled up as errors in
         // other Success Criteria (eg. 1.3.1, 4.1.2).
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚Ì–Ú“I‚â“à—e‚ª‚í‚©‚éƒ‰ƒxƒ‹‚âà–¾i•K{“ü—Í‚Ì€–Ú‚Å‚ ‚é‚±‚Æ‚ª‚í‚©‚é‚æ‚¤‚É‚·‚é‚È‚Çj‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.', 'G131,G89,G184,H90');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ç›®çš„ã‚„å†…å®¹ãŒã‚ã‹ã‚‹ãƒ©ãƒ™ãƒ«ã‚„èª¬æ˜ï¼ˆå¿…é ˆå…¥åŠ›ã®é …ç›®ã§ã‚ã‚‹ã“ã¨ãŒã‚ã‹ã‚‹ã‚ˆã†ã«ã™ã‚‹ãªã©ï¼‰ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.', 'G131,G89,G184,H90');
     }
 };

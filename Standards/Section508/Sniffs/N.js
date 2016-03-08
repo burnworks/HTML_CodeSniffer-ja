@@ -38,9 +38,9 @@ var HTMLCS_Section508_Sniffs_N = {
     {
         var nodeName = element.nodeName.toLowerCase();
         if (nodeName === 'form') {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ“ü—ÍƒGƒ‰[‚ª©“®“I‚ÉŒŸo‚³‚ê‚½ê‡‚ÍAƒGƒ‰[‚Æ‚È‚Á‚Ä‚¢‚é‰ÓŠ‚ª“Á’è‚³‚êA‚»‚ÌƒGƒ‰[‚ªƒ†[ƒU[‚ÉƒeƒLƒXƒg‚Åà–¾‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.', 'Errors');
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '“ü—ÍƒRƒ“ƒgƒ[ƒ‹‚Ì–Ú“I‚â“à—e‚ª‚í‚©‚éƒ‰ƒxƒ‹‚âà–¾i•K{“ü—Í‚Ì€–Ú‚Å‚ ‚é‚±‚Æ‚ª‚í‚©‚é‚æ‚¤‚É‚·‚é‚È‚Çj‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.', 'Labels');
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚±‚ÌƒtƒH[ƒ€‚ªƒL[ƒ{[ƒhA‹y‚Ñ‘¼‚ÌƒAƒNƒZƒVƒrƒŠƒeƒBƒc[ƒ‹‚ğg—p‚µ‚Ä‘€ì‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that this form can be navigated using the keyboard and other accessibility tools.', 'KeyboardNav');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—å…¥åŠ›ã‚¨ãƒ©ãƒ¼ãŒè‡ªå‹•çš„ã«æ¤œå‡ºã•ã‚ŒãŸå ´åˆã¯ã€ã‚¨ãƒ©ãƒ¼ã¨ãªã£ã¦ã„ã‚‹ç®‡æ‰€ãŒç‰¹å®šã•ã‚Œã€ãã®ã‚¨ãƒ©ãƒ¼ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ãƒ†ã‚­ã‚¹ãƒˆã§èª¬æ˜ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.', 'Errors');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'å…¥åŠ›ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ç›®çš„ã‚„å†…å®¹ãŒã‚ã‹ã‚‹ãƒ©ãƒ™ãƒ«ã‚„èª¬æ˜ï¼ˆå¿…é ˆå…¥åŠ›ã®é …ç›®ã§ã‚ã‚‹ã“ã¨ãŒã‚ã‹ã‚‹ã‚ˆã†ã«ã™ã‚‹ãªã©ï¼‰ãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.', 'Labels');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã“ã®ãƒ•ã‚©ãƒ¼ãƒ ãŒã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã€åŠã³ä»–ã®ã‚¢ã‚¯ã‚»ã‚·ãƒ“ãƒªãƒ†ã‚£ãƒ„ãƒ¼ãƒ«ã‚’ä½¿ç”¨ã—ã¦æ“ä½œã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that this form can be navigated using the keyboard and other accessibility tools.', 'KeyboardNav');
         }
     }
 

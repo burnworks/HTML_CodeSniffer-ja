@@ -36,6 +36,6 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_1 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ“ü—ÍƒGƒ‰[‚ª©“®“I‚ÉŒŸo‚³‚ê‚½ê‡‚ÍAƒGƒ‰[‚Æ‚È‚Á‚Ä‚¢‚é‰ÓŠ‚ª“Á’è‚³‚êA‚»‚ÌƒGƒ‰[‚ªƒ†[ƒU[‚ÉƒeƒLƒXƒg‚Åà–¾‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.', 'G83,G84,G85');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—å…¥åŠ›ã‚¨ãƒ©ãƒ¼ãŒè‡ªå‹•çš„ã«æ¤œå‡ºã•ã‚ŒãŸå ´åˆã¯ã€ã‚¨ãƒ©ãƒ¼ã¨ãªã£ã¦ã„ã‚‹ç®‡æ‰€ãŒç‰¹å®šã•ã‚Œã€ãã®ã‚¨ãƒ©ãƒ¼ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ãƒ†ã‚­ã‚¹ãƒˆã§èª¬æ˜ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.', 'G83,G84,G85');
     }
 };

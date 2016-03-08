@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_9 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ƒŠƒ“ƒN‚Ì–Ú“I‚ğà–¾‚·‚éƒŠƒ“ƒNƒeƒLƒXƒg‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that text of the link describes the purpose of the link.', 'H30');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ãƒªãƒ³ã‚¯ã®ç›®çš„ã‚’èª¬æ˜ã™ã‚‹ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that text of the link describes the purpose of the link.', 'H30');
 
     }
 };

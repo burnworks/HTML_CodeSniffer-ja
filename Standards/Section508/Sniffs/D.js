@@ -37,7 +37,7 @@ var HTMLCS_Section508_Sniffs_D = {
     process: function(element, top)
     {
         if (element === top) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ƒXƒ^ƒCƒ‹ƒV[ƒg‚ª–³Œø‚Èê‡‚Å‚àAƒRƒ“ƒeƒ“ƒc‚ªˆÓ–¡‚Ì‚ ‚é‡˜‚Å•À‚×‚ç‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'Linearised');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆãŒç„¡åŠ¹ãªå ´åˆã§ã‚‚ã€ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæ„å‘³ã®ã‚ã‚‹é †åºã§ä¸¦ã¹ã‚‰ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'Linearised');
             this.testPresentationMarkup(top);
             this.testHeadingOrder(top);
 
@@ -47,7 +47,7 @@ var HTMLCS_Section508_Sniffs_D = {
             // a container through AJAX (and thus not accessible with scripting off).
             var hasScript = top.querySelectorAll('script, link[rel="stylesheet"]');
             if (hasScript.length > 0) {
-                HTMLCS.addMessage(HTMLCS.NOTICE, top, '‰Šúó‘Ô‚ª”ñ•\¦‚ÅAƒNƒŠƒbƒN‘€ì‚È‚Ç‚É‚æ‚Á‚Ä•\¦‚³‚ê‚é‚æ‚¤‚È‹@”\i—á‚¦‚ÎƒAƒR[ƒfƒBƒIƒ“ƒƒjƒ…[‚Ì‚æ‚¤‚Èj‚ğg—p‚µ‚Ä‚¢‚éê‡‚ÍAƒXƒNƒŠƒvƒg‚âƒXƒ^ƒCƒ‹ƒV[ƒg‚ª–³Œø‚Èê‡‚Å‚àŠY“–ƒRƒ“ƒeƒ“ƒc‚ª“Ç‚İæ‚è‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If content is hidden and made visible using scripting (such as "click to expand" sections), ensure this content is readable when scripts and style sheets are disabled.', 'HiddenText');
+                HTMLCS.addMessage(HTMLCS.NOTICE, top, 'åˆæœŸçŠ¶æ…‹ãŒéè¡¨ç¤ºã§ã€ã‚¯ãƒªãƒƒã‚¯æ“ä½œãªã©ã«ã‚ˆã£ã¦è¡¨ç¤ºã•ã‚Œã‚‹ã‚ˆã†ãªæ©Ÿèƒ½ï¼ˆä¾‹ãˆã°ã‚¢ã‚³ãƒ¼ãƒ‡ã‚£ã‚ªãƒ³ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã‚ˆã†ãªï¼‰ã‚’ä½¿ç”¨ã—ã¦ã„ã‚‹å ´åˆã¯ã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚„ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆãŒç„¡åŠ¹ãªå ´åˆã§ã‚‚è©²å½“ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒèª­ã¿å–ã‚Šå¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If content is hidden and made visible using scripting (such as "click to expand" sections), ensure this content is readable when scripts and style sheets are disabled.', 'HiddenText');
             }
         }
     },
@@ -64,7 +64,7 @@ var HTMLCS_Section508_Sniffs_D = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'PresMarkup.' + tags[i].nodeName.substr(0, 1).toUpperCase() + tags[i].nodeName.substr(1).toLowerCase();
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ƒZƒ}ƒ“ƒeƒBƒbƒN‚È—v‘f‚Í“KØ‚ÈƒeƒLƒXƒg‚Ìƒ}[ƒNƒAƒbƒv‚Ég—p‚³‚ê‚é‚×‚«‚Å‚·B Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ã‚»ãƒãƒ³ãƒ†ã‚£ãƒƒã‚¯ãªè¦ç´ ã¯é©åˆ‡ãªãƒ†ã‚­ã‚¹ãƒˆã®ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã«ä½¿ç”¨ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
 
         // Align attributes, too.
@@ -72,7 +72,7 @@ var HTMLCS_Section508_Sniffs_D = {
 
         for (var i = 0; i < tags.length; i++) {
             var msgCode = 'PresMarkup.AlignAttr';
-            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ƒZƒ}ƒ“ƒeƒBƒbƒN‚È—v‘f‚Í“KØ‚ÈƒeƒLƒXƒg‚Ìƒ}[ƒNƒAƒbƒv‚Ég—p‚³‚ê‚é‚×‚«‚Å‚·B Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
+            HTMLCS.addMessage(HTMLCS.WARNING, tags[i], 'ã‚»ãƒãƒ³ãƒ†ã‚£ãƒƒã‚¯ãªè¦ç´ ã¯é©åˆ‡ãªãƒ†ã‚­ã‚¹ãƒˆã®ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã«ä½¿ç”¨ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.', msgCode);
         }
     },
 
@@ -83,14 +83,14 @@ var HTMLCS_Section508_Sniffs_D = {
         for (var i = 0; i < headings.length; i++) {
             var headingNum = parseInt(headings[i].nodeName.substr(1, 1));
             if (headingNum - lastHeading > 1) {
-                var exampleMsg = '“KØ‚ÈƒlƒXƒg‚Ì‚½‚ß‚É h' + (lastHeading + 1) + ' —v‘f‚Åƒ}[ƒNƒAƒbƒv‚³‚ê‚é‚×‚«‚Å‚·B should be an h' + (lastHeading + 1) + ' to be properly nested';
+                var exampleMsg = 'é©åˆ‡ãªãƒã‚¹ãƒˆã®ãŸã‚ã« h' + (lastHeading + 1) + ' è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ should be an h' + (lastHeading + 1) + ' to be properly nested';
                 if (lastHeading === 0) {
                     // If last heading is empty, we are at document top and we are
                     // expecting a H1, generally speaking.
-                    exampleMsg = '•¶‘“à‚ÌÅ‰‚ÌŒ©o‚µ‚Æv‚í‚ê‚é‚½‚ßAh1 —v‘f‚Åƒ}[ƒNƒAƒbƒv‚³‚ê‚é‚×‚«‚Å‚·B appears to be the primary document heading, so should be an h1 element';
+                    exampleMsg = 'æ–‡æ›¸å†…ã®æœ€åˆã®è¦‹å‡ºã—ã¨æ€ã‚ã‚Œã‚‹ãŸã‚ã€h1 è¦ç´ ã§ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚ appears to be the primary document heading, so should be an h1 element';
                 }
 
-                HTMLCS.addMessage(HTMLCS.ERROR, headings[i], '‚±‚ÌŒ©o‚µ\‘¢‚Í“KØ‚ÉƒlƒXƒg‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB‚±‚Ì h' + headingNum + ' —v‘f‚ÍA' + exampleMsg + ' The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'HeadingOrder');
+                HTMLCS.addMessage(HTMLCS.ERROR, headings[i], 'ã“ã®è¦‹å‡ºã—æ§‹é€ ã¯é©åˆ‡ã«ãƒã‚¹ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã“ã® h' + headingNum + ' è¦ç´ ã¯ã€' + exampleMsg + ' The heading structure is not logically nested. This h' + headingNum + ' element ' + exampleMsg + '.', 'HeadingOrder');
             }
 
             lastHeading = headingNum;

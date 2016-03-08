@@ -39,19 +39,19 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_1 = {
         if ((element.hasAttribute('lang') === false) && (element.hasAttribute('xml:lang') === false)) {
             // TODO: if we can tell whether it's HTML or XHTML, we should split this
             // into two - one asking for "lang", the other for "xml:lang".
-            HTMLCS.addMessage(HTMLCS.ERROR, element, 'html —v‘f‚Í•¶‘‚ÌŒ¾Œê‚ğ¦‚· lang ‘®«A‚Ü‚½‚Í xml:lang ‘®«‚ğ‚Á‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B The html element should have a lang or xml:lang attribute which describes the language of the document.', 'H57.2');
+            HTMLCS.addMessage(HTMLCS.ERROR, element, 'html è¦ç´ ã¯æ–‡æ›¸ã®è¨€èªã‚’ç¤ºã™ lang å±æ€§ã€ã¾ãŸã¯ xml:lang å±æ€§ã‚’æŒã£ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ The html element should have a lang or xml:lang attribute which describes the language of the document.', 'H57.2');
         } else {
             if (element.hasAttribute('lang') === true) {
                 var lang = element.getAttribute('lang');
                 if (this.isValidLanguageTag(lang) === false) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, top, '‚±‚Ì•¶‘‚Éw’è‚³‚ê‚½ lang ‘®«‚Ì’l‚Í•s³‚Å‚·B The language specified in the lang attribute of the document element does not appear to be well-formed.', 'H57.3.Lang');
+                    HTMLCS.addMessage(HTMLCS.ERROR, top, 'ã“ã®æ–‡æ›¸ã«æŒ‡å®šã•ã‚ŒãŸ lang å±æ€§ã®å€¤ã¯ä¸æ­£ã§ã™ã€‚ The language specified in the lang attribute of the document element does not appear to be well-formed.', 'H57.3.Lang');
                 }
             }
 
             if (element.hasAttribute('xml:lang') === true) {
                 var lang = element.getAttribute('xml:lang');
                 if (this.isValidLanguageTag(lang) === false) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, top, '‚±‚Ì•¶‘‚Éw’è‚³‚ê‚½ xml:lang ‘®«‚Ì’l‚Í•s³‚Å‚·B The language specified in the xml:lang attribute of the document element does not appear to be well-formed.', 'H57.3.XmlLang');
+                    HTMLCS.addMessage(HTMLCS.ERROR, top, 'ã“ã®æ–‡æ›¸ã«æŒ‡å®šã•ã‚ŒãŸ xml:lang å±æ€§ã®å€¤ã¯ä¸æ­£ã§ã™ã€‚ The language specified in the xml:lang attribute of the document element does not appear to be well-formed.', 'H57.3.XmlLang');
                 }
             }
         }

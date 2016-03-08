@@ -36,6 +36,6 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ó‹µ‚É‰‚¶‚½ƒwƒ‹ƒv‚ª—˜—p‚Å‚«‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that context-sensitive help is available for this form, at a Web-page and/or control level.', 'G71,G184,G193');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'çŠ¶æ³ã«å¿œã˜ãŸãƒ˜ãƒ«ãƒ—ãŒåˆ©ç”¨ã§ãã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that context-sensitive help is available for this form, at a Web-page and/or control level.', 'G71,G184,G193');
     }
 };

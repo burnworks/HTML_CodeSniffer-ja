@@ -36,6 +36,6 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_3_3_3_6 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'æÁ•s‰Â”\‚Èƒgƒ‰ƒ“ƒUƒNƒVƒ‡ƒ“‚ªŠ®—¹‚·‚é‘O‚ÉAƒ†[ƒU[‚ª“ü—Í“à—e‚ÌŠm”F‚âƒGƒ‰[‚ÌC³‚ğs‚¤è’i‚ª’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.', 'G98,G99,G155,G164,G168.AllForms');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'å–æ¶ˆä¸å¯èƒ½ãªãƒˆãƒ©ãƒ³ã‚¶ã‚¯ã‚·ãƒ§ãƒ³ãŒå®Œäº†ã™ã‚‹å‰ã«ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒå…¥åŠ›å†…å®¹ã®ç¢ºèªã‚„ã‚¨ãƒ©ãƒ¼ã®ä¿®æ­£ã‚’è¡Œã†æ‰‹æ®µãŒæä¾›ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.', 'G98,G99,G155,G164,G168.AllForms');
     }
 };

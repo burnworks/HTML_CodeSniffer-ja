@@ -42,8 +42,8 @@ var HTMLCS_Section508_Sniffs_B = {
     process: function(element, top)
     {
         var nodeName = element.nodeName.toLowerCase();
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‰f‘œ‚ğŠÜ‚ŞƒRƒ“ƒeƒ“ƒc‚É‘Î‚µ‚ÄAƒeƒLƒXƒgƒx[ƒX‚Ì‘ã‘ÖƒRƒ“ƒeƒ“ƒcA‚Ü‚½‚Í‰f‘œ‚Æ“¯Šú‚µ‚½‰¹º‰ğà‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B For multimedia containing video, ensure a synchronised audio description or text alternative for the video portion is provided.', 'Video');
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‰f‘œA‚Ü‚½‚Í‰¹º‚ğŠÜ‚ŞƒRƒ“ƒeƒ“ƒc‚É‘Î‚µ‚ÄAƒeƒLƒXƒgƒx[ƒX‚Ì‘ã‘ÖƒRƒ“ƒeƒ“ƒcA‚Ü‚½‚Í‰f‘œ‚Æ“¯Šú‚µ‚½‰¹º‰ğà‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B For multimedia containing synchronised audio and video, ensure synchronised captions are provided for the audio portion.', 'Captions');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'æ˜ åƒã‚’å«ã‚€ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«å¯¾ã—ã¦ã€ãƒ†ã‚­ã‚¹ãƒˆãƒ™ãƒ¼ã‚¹ã®ä»£æ›¿ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã€ã¾ãŸã¯æ˜ åƒã¨åŒæœŸã—ãŸéŸ³å£°è§£èª¬ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ For multimedia containing video, ensure a synchronised audio description or text alternative for the video portion is provided.', 'Video');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'æ˜ åƒã€ã¾ãŸã¯éŸ³å£°ã‚’å«ã‚€ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«å¯¾ã—ã¦ã€ãƒ†ã‚­ã‚¹ãƒˆãƒ™ãƒ¼ã‚¹ã®ä»£æ›¿ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã€ã¾ãŸã¯æ˜ åƒã¨åŒæœŸã—ãŸéŸ³å£°è§£èª¬ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ For multimedia containing synchronised audio and video, ensure synchronised captions are provided for the audio portion.', 'Captions');
 
     }
 };

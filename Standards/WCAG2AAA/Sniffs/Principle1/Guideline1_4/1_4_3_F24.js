@@ -87,9 +87,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_3_F24 = {
 
         if (hasBg !== hasFg) {
             if (hasBg === true) {
-                HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚Ì—v‘f‚É‚ÍƒCƒ“ƒ‰ƒCƒ“‚Å”wŒiFA‚ ‚é‚¢‚Í”wŒi‰æ‘œ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚·‚ª‘OŒiF‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB“KØ‚ÈƒRƒ“ƒgƒ‰ƒXƒg‚ªŠm•Û‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.', 'F24.BGColour');
+                HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®è¦ç´ ã«ã¯ã‚¤ãƒ³ãƒ©ã‚¤ãƒ³ã§èƒŒæ™¯è‰²ã€ã‚ã‚‹ã„ã¯èƒŒæ™¯ç”»åƒãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ãŒå‰æ™¯è‰²ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚é©åˆ‡ãªã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆãŒç¢ºä¿ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.', 'F24.BGColour');
             } else {
-                HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚Ì—v‘f‚É‚ÍƒCƒ“ƒ‰ƒCƒ“‚Å‘OŒiF‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚·‚ª”wŒiFA‚ ‚é‚¢‚Í”wŒi‰æ‘œ‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB“KØ‚ÈƒRƒ“ƒgƒ‰ƒXƒg‚ªŠm•Û‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.', 'F24.FGColour');
+                HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®è¦ç´ ã«ã¯ã‚¤ãƒ³ãƒ©ã‚¤ãƒ³ã§å‰æ™¯è‰²ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ãŒèƒŒæ™¯è‰²ã€ã‚ã‚‹ã„ã¯èƒŒæ™¯ç”»åƒãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚é©åˆ‡ãªã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆãŒç¢ºä¿ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.', 'F24.FGColour');
             }
         }
     }

@@ -39,7 +39,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_9 = {
         var imgObj = top.querySelector('img');
 
         if (imgObj !== null) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ƒˆ‚È‘•ü–Ú“IA‚à‚µ‚­‚Í‚»‚Ìî•ñ‚ğ“`‚¦‚éã‚ÅƒeƒLƒXƒg‚ğ“Á’è‚ÌŒ`‚Å•\Œ»‚·‚é‚±‚Æ‚ª•K—v•s‰ÂŒ‡‚Å‚ ‚éê‡‚ÉŒÀ‚Á‚ÄA•¶š‰æ‘œ‚ªg—p‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.', 'G140,C22,C30.NoException');
+            HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ç´”ç²‹ãªè£…é£¾ç›®çš„ã€ã‚‚ã—ãã¯ãã®æƒ…å ±ã‚’ä¼ãˆã‚‹ä¸Šã§ãƒ†ã‚­ã‚¹ãƒˆã‚’ç‰¹å®šã®å½¢ã§è¡¨ç¾ã™ã‚‹ã“ã¨ãŒå¿…è¦ä¸å¯æ¬ ã§ã‚ã‚‹å ´åˆã«é™ã£ã¦ã€æ–‡å­—ç”»åƒãŒä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.', 'G140,C22,C30.NoException');
         }
     }
 };

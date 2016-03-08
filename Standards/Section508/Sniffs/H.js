@@ -40,23 +40,23 @@ var HTMLCS_Section508_Sniffs_H = {
 
         // Incorrect usage of headers - error; emit always.
         for (var i = 0; i < headersAttr.wrongHeaders.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, 'ŠÔˆá‚Á‚½ headers ‘®«’l‚ª‚±‚Ì td —v‘f‚É•t—^‚³‚ê‚Ä‚¢‚Ü‚·B‹°‚ç‚­³‚µ‚¢‚Ì‚Í "' + headersAttr.wrongHeaders[i].expected + '" ‚Å‚·‚ªAÀÛ‚ÉŒ©‚Â‚©‚Á‚½‚Ì‚Í "' + headersAttr.wrongHeaders[i].actual + '" ‚Å‚·B Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'IncorrectHeadersAttr');
+            HTMLCS.addMessage(HTMLCS.ERROR, headersAttr.wrongHeaders[i].element, 'é–“é•ã£ãŸ headers å±æ€§å€¤ãŒã“ã® td è¦ç´ ã«ä»˜ä¸ã•ã‚Œã¦ã„ã¾ã™ã€‚æã‚‰ãæ­£ã—ã„ã®ã¯ "' + headersAttr.wrongHeaders[i].expected + '" ã§ã™ãŒã€å®Ÿéš›ã«è¦‹ã¤ã‹ã£ãŸã®ã¯ "' + headersAttr.wrongHeaders[i].actual + '" ã§ã™ã€‚ Incorrect headers attribute on this td element. Expected "' + headersAttr.wrongHeaders[i].expected + '" but found "' + headersAttr.wrongHeaders[i].actual + '"', 'IncorrectHeadersAttr');
         }
 
         // Errors where headers are compulsory.
         if ((headersAttr.required === true) && (headersAttr.allowScope === false)) {
             if (headersAttr.used === false) {
                 // Headers not used at all, and they are mandatory.
-                HTMLCS.addMessage(HTMLCS.ERROR, table, 'Œ©o‚µƒZƒ‹ith —v‘fj‚Æƒf[ƒ^ƒZƒ‹itd —v‘fj‚ÌŠÖŒW«‚ª’è‹`‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB‚±‚Ìƒe[ƒuƒ‹‚É‚ÍsŒ©o‚µ‚ª•¡”‚ ‚é‚½‚ßAtd —v‘f‚É headers ‘®«‚ğg—p‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'MissingHeadersAttrs');
+                HTMLCS.addMessage(HTMLCS.ERROR, table, 'è¦‹å‡ºã—ã‚»ãƒ«ï¼ˆth è¦ç´ ï¼‰ã¨ãƒ‡ãƒ¼ã‚¿ã‚»ãƒ«ï¼ˆtd è¦ç´ ï¼‰ã®é–¢ä¿‚æ€§ãŒå®šç¾©ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«ã«ã¯è¡Œè¦‹å‡ºã—ãŒè¤‡æ•°ã‚ã‚‹ãŸã‚ã€td è¦ç´ ã« headers å±æ€§ã‚’ä½¿ç”¨ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ The relationship between td elements and their associated th elements is not defined. As this table has multiple levels of th elements, you must use the headers attribute on td elements.', 'MissingHeadersAttrs');
             } else {
                 // Missing TH IDs - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingThId.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì th —v‘f‚É‚Í id ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBtd —v‘f‚É headers ‘®«‚ğ—p‚¢‚ÄQÆ‚·‚é‚½‚ß‚É‚ÍAid ‘®«‚ğ‚Á‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'MissingHeaderIds');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® th è¦ç´ ã«ã¯ id å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚td è¦ç´ ã« headers å±æ€§ã‚’ç”¨ã„ã¦å‚ç…§ã™ã‚‹ãŸã‚ã«ã¯ã€id å±æ€§ã‚’æŒã£ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all th elements in this table contain an id attribute. These cells should contain ids so that they may be referenced by td elements\' headers attributes.', 'MissingHeaderIds');
                 }
 
                 // Missing TD headers attributes - error; emit at this stage only if headers are compulsory.
                 if (headersAttr.missingTd.length > 0) {
-                    HTMLCS.addMessage(HTMLCS.ERROR, table, '‚±‚Ìƒe[ƒuƒ‹“à‚Ì‚·‚×‚Ä‚Ì td —v‘f‚É‚Í headers ‘®«‚ª•t—^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBheaders ‘®«‚É‚ÍŠÖ˜A•t‚¯‚é th —v‘f‚ª‚Â id ‘®«’l‚ğ‚·‚×‚Äw’è‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'IncompleteHeadersAttrs');
+                    HTMLCS.addMessage(HTMLCS.ERROR, table, 'ã“ã®ãƒ†ãƒ¼ãƒ–ãƒ«å†…ã®ã™ã¹ã¦ã® td è¦ç´ ã«ã¯ headers å±æ€§ãŒä»˜ä¸ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚headers å±æ€§ã«ã¯é–¢é€£ä»˜ã‘ã‚‹ th è¦ç´ ãŒæŒã¤ id å±æ€§å€¤ã‚’ã™ã¹ã¦æŒ‡å®šã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ Not all td elements in this table contain a headers attribute. Each headers attribute should list the ids of all th elements associated with that cell.', 'IncompleteHeadersAttrs');
                 }
             }//end if
         }//end if

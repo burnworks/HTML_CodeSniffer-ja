@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_2_2_2_5 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '”FØÏ‚ÌƒZƒbƒVƒ‡ƒ“‚ªØ‚ê‚½ê‡AÄ”FØŒã‚Å‚àƒf[ƒ^‚ğ¸‚¤‚±‚Æ‚È‚­ƒ†[ƒU[‚ª‘€ì‚ğŒp‘±‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B If this Web page is part of a set of Web pages with an inactivity time limit, check that an authenticated user can continue the activity without loss of data after re-authenticating.', 'G105,G181');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'èªè¨¼æ¸ˆã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ãŒåˆ‡ã‚ŒãŸå ´åˆã€å†èªè¨¼å¾Œã§ã‚‚ãƒ‡ãƒ¼ã‚¿ã‚’å¤±ã†ã“ã¨ãªããƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæ“ä½œã‚’ç¶™ç¶šã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this Web page is part of a set of Web pages with an inactivity time limit, check that an authenticated user can continue the activity without loss of data after re-authenticating.', 'G105,G181');
 
     }
 };

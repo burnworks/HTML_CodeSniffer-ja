@@ -54,27 +54,27 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
     {
         var errors = this.processLinks(top);
         for (var i = 0; i < errors.empty.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.empty[i], 'ƒŠƒ“ƒNƒeƒLƒXƒgA‚à‚µ‚­‚Í href ‘®«‚ðŽ‚½‚¸Aid ‘®«‚ªŽw’è‚³‚ê‚½ a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½Be—v‘f‚â•t‹ß‚Ì—v‘f‚É‚»‚Ì id ‘®«‚ðˆÚ“®‚·‚é‚±‚Æ‚ðŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.', 'H91.A.Empty');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.empty[i], 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã€ã‚‚ã—ãã¯ href å±žæ€§ã‚’æŒãŸãšã€id å±žæ€§ãŒæŒ‡å®šã•ã‚ŒãŸ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚è¦ªè¦ç´ ã‚„ä»˜è¿‘ã®è¦ç´ ã«ãã® id å±žæ€§ã‚’ç§»å‹•ã™ã‚‹ã“ã¨ã‚’æ¤œè¨Žã—ã¦ãã ã•ã„ã€‚ Anchor element found with an ID but without a href or link text. Consider moving its ID to a parent or nearby element.', 'H91.A.Empty');
         }
 
         for (var i = 0; i < errors.emptyWithName.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.emptyWithName[i], 'ƒŠƒ“ƒNƒeƒLƒXƒgA‚à‚µ‚­‚Í href ‘®«‚ðŽ‚½‚¸Aname ‘®«‚ªŽw’è‚³‚ê‚½ a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½Bid ‘®«‚É•ÏX‚µ‚½ã‚ÅAe—v‘f‚â•t‹ß‚Ì—v‘f‚ÉˆÚ“®‚·‚é‚±‚Æ‚ðŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.', 'H91.A.EmptyWithName');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.emptyWithName[i], 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã€ã‚‚ã—ãã¯ href å±žæ€§ã‚’æŒãŸãšã€name å±žæ€§ãŒæŒ‡å®šã•ã‚ŒãŸ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚id å±žæ€§ã«å¤‰æ›´ã—ãŸä¸Šã§ã€è¦ªè¦ç´ ã‚„ä»˜è¿‘ã®è¦ç´ ã«ç§»å‹•ã™ã‚‹ã“ã¨ã‚’æ¤œè¨Žã—ã¦ãã ã•ã„ã€‚ Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.', 'H91.A.EmptyWithName');
         }
 
         for (var i = 0; i < errors.emptyNoId.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'ƒŠƒ“ƒNƒeƒLƒXƒg‚ðŽ‚½‚¸Aname ‘®«A‚Ü‚½‚Í id ‘®«‚Ì‚¢‚¸‚ê‚©A‚ ‚é‚¢‚Í‚»‚Ì—¼•û‚ðŽ‚½‚È‚¢ a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½B Anchor element found with no link content and no name and/or ID attribute.', 'H91.A.EmptyNoId');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.emptyNoId[i], 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã‚’æŒãŸãšã€name å±žæ€§ã€ã¾ãŸã¯ id å±žæ€§ã®ã„ãšã‚Œã‹ã€ã‚ã‚‹ã„ã¯ãã®ä¸¡æ–¹ã‚’æŒãŸãªã„ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚ Anchor element found with no link content and no name and/or ID attribute.', 'H91.A.EmptyNoId');
         }
 
         for (var i = 0; i < errors.noHref.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.noHref[i], 'ƒy[ƒW“àƒŠƒ“ƒN‚Ìƒ^[ƒQƒbƒg‚ð’è‹`‚·‚é‚½‚ß‚É a —v‘f‚ðŽg—p‚·‚×‚«‚Å‚Í‚ ‚è‚Ü‚¹‚ñB‘¼‚Ì–Ú“Ii—á‚¦‚ÎƒXƒ^ƒCƒ‹ƒV[ƒg‚âƒXƒNƒŠƒvƒg‚©‚ç‚ÌŽQÆj‚Å id ‘®«‚ðŽg—p‚µ‚Ä‚¢‚È‚¢ê‡‚ÍAe—v‘f‚ÉˆÚ“®‚·‚é‚±‚Æ‚ðŒŸ“¢‚µ‚Ä‚­‚¾‚³‚¢B Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.', 'H91.A.NoHref');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.noHref[i], 'ãƒšãƒ¼ã‚¸å†…ãƒªãƒ³ã‚¯ã®ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã‚’å®šç¾©ã™ã‚‹ãŸã‚ã« a è¦ç´ ã‚’ä½¿ç”¨ã™ã¹ãã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»–ã®ç›®çš„ï¼ˆä¾‹ãˆã°ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆã‚„ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‹ã‚‰ã®å‚ç…§ï¼‰ã§ id å±žæ€§ã‚’ä½¿ç”¨ã—ã¦ã„ãªã„å ´åˆã¯ã€è¦ªè¦ç´ ã«ç§»å‹•ã™ã‚‹ã“ã¨ã‚’æ¤œè¨Žã—ã¦ãã ã•ã„ã€‚ Anchor elements should not be used for defining in-page link targets. If not using the ID for other purposes (such as CSS or scripting), consider moving it to a parent element.', 'H91.A.NoHref');
         }
 
         for (var i = 0; i < errors.placeholder.length; i++) {
-            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'ƒŠƒ“ƒNƒeƒLƒXƒg‚ðŠÜ‚Þ a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½‚ªAhref ‘®«‚ðŽ‚½‚¸Aname ‘®«Aid ‘®«‚Ì‚¢‚¸‚ê‚©‚àŽw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB Anchor element found with link content, but no href, ID or name attribute has been supplied.', 'H91.A.Placeholder');
+            HTMLCS.addMessage(HTMLCS.WARNING, errors.placeholder[i], 'ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆã‚’å«ã‚€ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸãŒã€href å±žæ€§ã‚’æŒãŸãšã€name å±žæ€§ã€id å±žæ€§ã®ã„ãšã‚Œã‹ã‚‚æŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ Anchor element found with link content, but no href, ID or name attribute has been supplied.', 'H91.A.Placeholder');
         }
 
         for (var i = 0; i < errors.noContent.length; i++) {
-            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'href ‘®«‚ðŽ‚Â a —v‘f‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½‚ªAƒŠƒ“ƒNƒeƒLƒXƒg‚ª‹ó‚Å‚·B Anchor element found with a valid href attribute, but no link content has been supplied.', 'H91.A.NoContent');
+            HTMLCS.addMessage(HTMLCS.ERROR, errors.noContent[i], 'href å±žæ€§ã‚’æŒã¤ a è¦ç´ ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸãŒã€ãƒªãƒ³ã‚¯ãƒ†ã‚­ã‚¹ãƒˆãŒç©ºã§ã™ã€‚ Anchor element found with a valid href attribute, but no link content has been supplied.', 'H91.A.NoContent');
         }
     },
 
@@ -237,9 +237,9 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
                 }//end for
 
                 if (i === requiredNames[nodeName].length) {
-                    var msgNodeType = nodeName + ' —v‘f';
+                    var msgNodeType = nodeName + ' è¦ç´ ';
                     if (nodeName.substr(0, 6) === 'input_') {
-                        msgNodeType = nodeName.substr(6) + ' input —v‘f';
+                        msgNodeType = nodeName.substr(6) + ' input è¦ç´ ';
                     }
 
                     var builtAttrs = requiredNames[nodeName].slice(0, requiredNames[nodeName].length);
@@ -247,13 +247,13 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
                         if (builtAttrs[a] === '_content') {
                             builtAttrs[a] = 'element content';
                         } else if (builtAttrs[a].charAt(0) === '@') {
-                            builtAttrs[a] = builtAttrs[a].substr(1) + ' ‘®«';
+                            builtAttrs[a] = builtAttrs[a].substr(1) + ' å±žæ€§';
                         } else {
-                            builtAttrs[a] = builtAttrs[a] + ' —v‘f';
+                            builtAttrs[a] = builtAttrs[a] + ' è¦ç´ ';
                         }
                     }
 
-                    var msg = '‚±‚Ì ' + msgNodeType + ' ‚É‚ÍƒAƒNƒZƒVƒrƒŠƒeƒB API ‚Å—˜—p‰Â”\‚ÈŽ¯•Ê–¼‚ª‚ ‚è‚Ü‚¹‚ñB‘Ã“–‚ÈŽ¯•Ê–¼‚Í ' + builtAttrs.join(', ') + ' ‚Å‚·B This ' + msgNodeType + ' does not have a name available to an accessibility API. Valid names are: ' + builtAttrs.join(', ') + '.';
+                    var msg = 'ã“ã® ' + msgNodeType + ' ã«ã¯ã‚¢ã‚¯ã‚»ã‚·ãƒ“ãƒªãƒ†ã‚£ API ã§åˆ©ç”¨å¯èƒ½ãªè­˜åˆ¥åãŒã‚ã‚Šã¾ã›ã‚“ã€‚å¦¥å½“ãªè­˜åˆ¥åã¯ ' + builtAttrs.join(', ') + ' ã§ã™ã€‚ This ' + msgNodeType + ' does not have a name available to an accessibility API. Valid names are: ' + builtAttrs.join(', ') + '.';
                     errors.push({
                         element: element,
                         msg: msg,
@@ -295,12 +295,12 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
             }//end if
 
             if (valueFound === false) {
-                var msgNodeType = nodeName + ' —v‘f';
+                var msgNodeType = nodeName + ' è¦ç´ ';
                 if (nodeName.substr(0, 6) === 'input_') {
-                    msgNodeType = nodeName.substr(6) + ' input —v‘f';
+                    msgNodeType = nodeName.substr(6) + ' input è¦ç´ ';
                 }
 
-                var msg = '‚±‚Ì ' + msgNodeType + ' ‚É‚ÍƒAƒNƒZƒVƒrƒŠƒeƒB API ‚Å—˜—p‰Â”\‚È’l‚ª‚ ‚è‚Ü‚¹‚ñB This ' + msgNodeType + ' does not have a value available to an accessibility API.';
+                var msg = 'ã“ã® ' + msgNodeType + ' ã«ã¯ã‚¢ã‚¯ã‚»ã‚·ãƒ“ãƒªãƒ†ã‚£ API ã§åˆ©ç”¨å¯èƒ½ãªå€¤ãŒã‚ã‚Šã¾ã›ã‚“ã€‚ This ' + msgNodeType + ' does not have a value available to an accessibility API.';
                 
                 var builtAttr = '';
                 var warning   = false;
@@ -311,12 +311,12 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_2 = {
                     // in HTML5 the first option in a single select dropdown is automatically selected.
                     // Because of this, it should also be sent out as a warning, not an error.
                     warning = true;
-                    msg = '‚±‚Ì ' + msgNodeType + ' ‚É‚Í initially selected option ‚ª‚ ‚è‚Ü‚¹‚ñB This ' + msgNodeType + ' does not have an initially selected option.' + ' ' +
-                        'Žg—p‚³‚ê‚Ä‚¢‚é HTML ‚Ìƒo[ƒWƒ‡ƒ“‚É‚æ‚Á‚ÄAƒAƒNƒZƒVƒrƒŠƒeƒB API ‚É’ñ‹Ÿ‚³‚ê‚é’l‚Íˆê’è‚Å‚Í‚È‚¢ê‡‚ª‚ ‚è‚Ü‚·B Depending on your HTML version, the value exposed to an accessibility API may be undefined.';
+                    msg = 'ã“ã® ' + msgNodeType + ' ã«ã¯ initially selected option ãŒã‚ã‚Šã¾ã›ã‚“ã€‚ This ' + msgNodeType + ' does not have an initially selected option.' + ' ' +
+                        'ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ HTML ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã«ã‚ˆã£ã¦ã€ã‚¢ã‚¯ã‚»ã‚·ãƒ“ãƒªãƒ†ã‚£ API ã«æä¾›ã•ã‚Œã‚‹å€¤ã¯ä¸€å®šã§ã¯ãªã„å ´åˆãŒã‚ã‚Šã¾ã™ã€‚ Depending on your HTML version, the value exposed to an accessibility API may be undefined.';
                 } else if (requiredValue.charAt(0) === '@') {
-                    builtAttr = ' ’l‚Í "' + requiredValue + '" ‘®«‚ð—p‚¢‚Ä’ñ‹Ÿ‚³‚ê‚Ü‚·B A value is exposed using the "' + requiredValue + '" attribute.';
+                    builtAttr = ' å€¤ã¯ "' + requiredValue + '" å±žæ€§ã‚’ç”¨ã„ã¦æä¾›ã•ã‚Œã¾ã™ã€‚ A value is exposed using the "' + requiredValue + '" attribute.';
                 } else {
-                    builtAttr = ' ’l‚Í "' + requiredValue + '" —v‘f‚ð—p‚¢‚Ä’ñ‹Ÿ‚³‚ê‚Ü‚·B A value is exposed using the "' + requiredValue + '" element.';
+                    builtAttr = ' å€¤ã¯ "' + requiredValue + '" è¦ç´ ã‚’ç”¨ã„ã¦æä¾›ã•ã‚Œã¾ã™ã€‚ A value is exposed using the "' + requiredValue + '" element.';
                 }
 
                 msg += builtAttr;

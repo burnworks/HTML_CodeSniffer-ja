@@ -37,7 +37,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_2 = {
     process: function(element, top)
     {
         // Generic message for changes in language.
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Œ¾Œê‚Ì•ÏX‚Í lang ‘®«A‚Ü‚½‚Í xml:lang ‘®«‚Ì‚¢‚¸‚ê‚©A‚à‚µ‚­‚Í—¼•û‚Ìw’è‚É‚æ‚Á‚Äs‚í‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.', 'H58');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'è¨€èªã®å¤‰æ›´ã¯ lang å±æ€§ã€ã¾ãŸã¯ xml:lang å±æ€§ã®ã„ãšã‚Œã‹ã€ã‚‚ã—ãã¯ä¸¡æ–¹ã®æŒ‡å®šã«ã‚ˆã£ã¦è¡Œã‚ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.', 'H58');
 
         // Alias the SC 3.1.1 object, which contains our "valid language tag" test.
         var sc3_1_1 = HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_1;
@@ -60,14 +60,14 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_2 = {
                 if (langEl.hasAttribute('lang') === true) {
                     var lang = langEl.getAttribute('lang');
                     if (sc3_1_1.isValidLanguageTag(lang) === false) {
-                        HTMLCS.addMessage(HTMLCS.ERROR, langEl, '‚±‚Ì—v‘f‚Éw’è‚³‚ê‚½ lang ‘®«‚Ì’l‚Í•s³‚Å‚·B The language specified in the lang attribute of this element does not appear to be well-formed.', 'H58.1.Lang');
+                        HTMLCS.addMessage(HTMLCS.ERROR, langEl, 'ã“ã®è¦ç´ ã«æŒ‡å®šã•ã‚ŒãŸ lang å±æ€§ã®å€¤ã¯ä¸æ­£ã§ã™ã€‚ The language specified in the lang attribute of this element does not appear to be well-formed.', 'H58.1.Lang');
                     }
                 }
 
                 if (langEl.hasAttribute('xml:lang') === true) {
                     var lang = langEl.getAttribute('xml:lang');
                     if (sc3_1_1.isValidLanguageTag(lang) === false) {
-                        HTMLCS.addMessage(HTMLCS.ERROR, langEl, '‚±‚Ì—v‘f‚Éw’è‚³‚ê‚½ xml:lang ‘®«‚Ì’l‚Í•s³‚Å‚·B The language specified in the xml:lang attribute of this element does not appear to be well-formed.', 'H58.1.XmlLang');
+                        HTMLCS.addMessage(HTMLCS.ERROR, langEl, 'ã“ã®è¦ç´ ã«æŒ‡å®šã•ã‚ŒãŸ xml:lang å±æ€§ã®å€¤ã¯ä¸æ­£ã§ã™ã€‚ The language specified in the xml:lang attribute of this element does not appear to be well-formed.', 'H58.1.XmlLang');
                     }
                 }
             }//end if

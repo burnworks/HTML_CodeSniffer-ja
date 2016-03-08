@@ -40,7 +40,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_1_2_1_2 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.WARNING, element, 'ƒL[ƒ{[ƒh‘€ì‚É‚æ‚Á‚Äƒvƒ‰ƒOƒCƒ“A‚Ü‚½‚Í–„‚ß‚İƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚É‚æ‚Á‚Ä•`Ê‚³‚ê‚éƒRƒ“ƒ|[ƒlƒ“ƒg‚ÉƒtƒH[ƒJƒX‚ªˆÚ“®‚Å‚«‚éê‡AƒL[ƒ{[ƒh‘€ì‚¾‚¯‚ğ—p‚¢‚Ä‚»‚ÌƒRƒ“ƒ|[ƒlƒ“ƒg‚©‚çƒtƒH[ƒJƒX‚ğŠO‚·‚±‚Æ‚ª‰Â”\‚Å‚ ‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.', 'F10');
+        HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã«ã‚ˆã£ã¦ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã€ã¾ãŸã¯åŸ‹ã‚è¾¼ã¿ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã«ã‚ˆã£ã¦æå†™ã•ã‚Œã‚‹ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã«ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒç§»å‹•ã§ãã‚‹å ´åˆã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã ã‘ã‚’ç”¨ã„ã¦ãã®ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‹ã‚‰ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’å¤–ã™ã“ã¨ãŒå¯èƒ½ã§ã‚ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.', 'F10');
 
     }
 };

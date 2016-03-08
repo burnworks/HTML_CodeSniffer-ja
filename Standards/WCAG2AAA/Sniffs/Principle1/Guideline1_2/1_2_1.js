@@ -46,11 +46,11 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_1 = {
         var nodeName = element.nodeName.toLowerCase();
 
         if (nodeName !== 'video') {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ‚±‚Ì–„‚ß‚İƒIƒuƒWƒFƒNƒg‚ªû˜^Ï‚Ì‰¹º‚µ‚©ŠÜ‚Ü‚¸A‚©‚Â‚»‚ê‚ªƒeƒLƒXƒg‚Ì‘ã‘ÖƒƒfƒBƒA‚Å‚È‚¢ê‡A‘ã‘ÖƒRƒ“ƒeƒ“ƒc‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.', 'G158');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã“ã®åŸ‹ã‚è¾¼ã¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒåéŒ²æ¸ˆã®éŸ³å£°ã—ã‹å«ã¾ãšã€ã‹ã¤ãã‚ŒãŒãƒ†ã‚­ã‚¹ãƒˆã®ä»£æ›¿ãƒ¡ãƒ‡ã‚£ã‚¢ã§ãªã„å ´åˆã€ä»£æ›¿ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this embedded object contains pre-recorded audio only, and is not provided as an alternative for text content, check that an alternative text version is available.', 'G158');
         }
 
         if ((nodeName !== 'bgsound') && (nodeName !== 'audio')) {
-            HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ‚±‚Ì–„‚ß‚İƒIƒuƒWƒFƒNƒg‚ªû˜^Ï‚Ì‰f‘œ‚µ‚©ŠÜ‚Ü‚¸A‚©‚Â‚»‚ê‚ªƒeƒLƒXƒg‚Ì‘ã‘ÖƒƒfƒBƒA‚Å‚È‚¢ê‡A‘ã‘ÖƒRƒ“ƒeƒ“ƒcA‚Ü‚½‚Í‰f‘œ‚Æ“¯Šú‚µ‚½‰¹º‰ğà‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.', 'G159,G166');
+            HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã“ã®åŸ‹ã‚è¾¼ã¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒåéŒ²æ¸ˆã®æ˜ åƒã—ã‹å«ã¾ãšã€ã‹ã¤ãã‚ŒãŒãƒ†ã‚­ã‚¹ãƒˆã®ä»£æ›¿ãƒ¡ãƒ‡ã‚£ã‚¢ã§ãªã„å ´åˆã€ä»£æ›¿ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã€ã¾ãŸã¯æ˜ åƒã¨åŒæœŸã—ãŸéŸ³å£°è§£èª¬ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this embedded object contains pre-recorded video only, and is not provided as an alternative for text content, check that an alternative text version is available, or an audio track is provided that presents equivalent information.', 'G159,G166');
         }
 
     }

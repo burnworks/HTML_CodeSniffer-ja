@@ -71,7 +71,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_2 = {
             HTMLCS.addMessage(
                 HTMLCS.ERROR,
                 form,
-                '�t�H�[�����ɑ��M / ���s�{�^�����܂܂�Ă��Ȃ����߁A�L�[�{�[�h����Ńt�H�[���𑗐M / ���s���邱�Ƃ��ł��܂���B���M / ���s�{�^���́Ainput �v�f�� type="submit"�Ainput type="image" ���w�肷�邩�Abutton �v�f�� type="submit" ���w�肷�邱�Ƃō쐬���邱�Ƃ��ł��܂��B This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute "submit" or "image", or BUTTON elements with type "submit" or omitted/invalid.',
+                'フォーム内に送信 / 実行ボタンが含まれていないため、キーボード操作でフォームを送信 / 実行することができません。送信 / 実行ボタンは、input 要素に type="submit"、input type="image" を指定するか、button 要素に type="submit" を指定することで作成することができます。 This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute "submit" or "image", or BUTTON elements with type "submit" or omitted/invalid.',
                 'H32.2'
             );
         }

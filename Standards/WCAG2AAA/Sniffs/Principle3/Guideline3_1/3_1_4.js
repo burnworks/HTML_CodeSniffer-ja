@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_4 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, '—ªŒê‚ÌŒ³‚ÌŒê‚âˆÓ–¡‚ğ“Á’è‚·‚éd‘g‚İ‚ª—˜—p‚Å‚«‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that a mechanism for identifying the expanded form or meaning of abbreviations is available.', 'G102,G55,G62,H28,G97');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ç•¥èªã®å…ƒã®èªã‚„æ„å‘³ã‚’ç‰¹å®šã™ã‚‹ä»•çµ„ã¿ãŒåˆ©ç”¨ã§ãã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that a mechanism for identifying the expanded form or meaning of abbreviations is available.', 'G102,G55,G62,H28,G97');
 
     }
 };

@@ -49,7 +49,7 @@ var HTMLCS_Section508_Sniffs_I = {
         }
 
         if (titleEmpty === true) {
-            HTMLCS.addMessage(HTMLCS.ERROR, top, '���� ' + nodeName + ' �v�f�ɂ̓^�C�g���ƂȂ�e�L�X�g������܂���B�t���[���ɂ͎��ʂ⑀���e�Ղɂ��邽�߁A�K�؂ȃ^�C�g����t����K�v������܂��B This ' + nodeName + ' element is missing title text. Frames should be titled with text that facilitates frame identification and navigation.', 'Frames');
+            HTMLCS.addMessage(HTMLCS.ERROR, top, 'この ' + nodeName + ' 要素にはタイトルとなるテキストがありません。フレームには識別や操作を容易にするため、適切なタイトルを付ける必要があります。 This ' + nodeName + ' element is missing title text. Frames should be titled with text that facilitates frame identification and navigation.', 'Frames');
         }
     }
 };

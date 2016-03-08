@@ -78,13 +78,13 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_4_1_4_3 = {
 
                 if (isAbsolute === true) {
                     code += '.Abs';
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚Ì—v‘f‚Íâ‘ÎˆÊ’u‚Å”z’u‚³‚ê”wŒiF‚ª“Á’è‚Å‚«‚Ü‚¹‚ñB•¶šF‚Æ”wŒiF‚Æ‚ÌŠÔ‚É­‚È‚­‚Æ‚à ' + required + ':1 ‚ÌƒRƒ“ƒgƒ‰ƒXƒg”ä‚ªŠm•Û‚³‚ê‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least ' + required + ':1.', code);
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®è¦ç´ ã¯çµ¶å¯¾ä½ç½®ã§é…ç½®ã•ã‚ŒèƒŒæ™¯è‰²ãŒç‰¹å®šã§ãã¾ã›ã‚“ã€‚æ–‡å­—è‰²ã¨èƒŒæ™¯è‰²ã¨ã®é–“ã«å°‘ãªãã¨ã‚‚ ' + required + ':1 ã®ã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆæ¯”ãŒç¢ºä¿ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least ' + required + ':1.', code);
                 } else if (hasBgImg === true) {
                     code += '.BgImage';
-                    HTMLCS.addMessage(HTMLCS.WARNING, element, '‚±‚ÌƒeƒLƒXƒg‚Í”wŒi‰æ‘œ‚Ìã‚É’u‚©‚ê‚Ä‚¢‚Ü‚·B”wŒi‚ÆƒeƒLƒXƒg‚ÌƒRƒ“ƒgƒ‰ƒXƒg”ä‚ª­‚È‚­‚Æ‚à ' + required + ':1 ˆÈã‚ ‚é‚±‚Æ‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B This element\'s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least ' + required + ':1.', code);
+                    HTMLCS.addMessage(HTMLCS.WARNING, element, 'ã“ã®ãƒ†ã‚­ã‚¹ãƒˆã¯èƒŒæ™¯ç”»åƒã®ä¸Šã«ç½®ã‹ã‚Œã¦ã„ã¾ã™ã€‚èƒŒæ™¯ã¨ãƒ†ã‚­ã‚¹ãƒˆã®ã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆæ¯”ãŒå°‘ãªãã¨ã‚‚ ' + required + ':1 ä»¥ä¸Šã‚ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚ This element\'s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least ' + required + ':1.', code);
                 } else {
                     code += '.Fail';
-                    HTMLCS.addMessage(HTMLCS.ERROR, element, '‚±‚Ì—v‘f‚Í‚±‚Ì“K‡ƒŒƒxƒ‹‚É•K—v‚ÈƒRƒ“ƒgƒ‰ƒXƒg”ä ' + required + ':1 ‚ªŠm•Û‚³‚ê‚Ä‚¨‚ç‚¸A' + value + ':1 ‚ÌƒRƒ“ƒgƒ‰ƒXƒg”ä‚µ‚©‚ ‚è‚Ü‚¹‚ñB This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least ' + required + ':1, but text in this element has a contrast ratio of ' + value + ':1.' + recommendText, code);
+                    HTMLCS.addMessage(HTMLCS.ERROR, element, 'ã“ã®è¦ç´ ã¯ã“ã®é©åˆãƒ¬ãƒ™ãƒ«ã«å¿…è¦ãªã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆæ¯” ' + required + ':1 ãŒç¢ºä¿ã•ã‚Œã¦ãŠã‚‰ãšã€' + value + ':1 ã®ã‚³ãƒ³ãƒˆãƒ©ã‚¹ãƒˆæ¯”ã—ã‹ã‚ã‚Šã¾ã›ã‚“ã€‚ This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least ' + required + ':1, but text in this element has a contrast ratio of ' + value + ':1.' + recommendText, code);
                 }//end if
             }//end for
         }//end if

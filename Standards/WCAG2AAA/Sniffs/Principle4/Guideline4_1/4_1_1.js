@@ -47,7 +47,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle4_Guideline4_1_4_1_1 = {
                 if (usedIds[id] !== undefined) {
                     // F77 = "Failure of SC 4.1.1 due to duplicate values of type ID".
                     // Appropriate technique in HTML is H93.
-                    HTMLCS.addMessage(HTMLCS.ERROR, elsWithIds[i], 'ƒy[ƒW“à‚Å "' + id + '" ‚Æ‚¢‚¤ id ‘®«’l‚ªd•¡‚µ‚Ä‘¶Ý‚µ‚Ä‚¢‚Ü‚·B Duplicate id attribute value "' + id + '" found on the web page.', 'F77');
+                    HTMLCS.addMessage(HTMLCS.ERROR, elsWithIds[i], 'ãƒšãƒ¼ã‚¸å†…ã§ "' + id + '" ã¨ã„ã† id å±žæ€§å€¤ãŒé‡è¤‡ã—ã¦å­˜åœ¨ã—ã¦ã„ã¾ã™ã€‚ Duplicate id attribute value "' + id + '" found on the web page.', 'F77');
                 } else {
                     usedIds[id] = true;
                 }

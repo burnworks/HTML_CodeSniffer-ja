@@ -41,7 +41,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_8 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, element, '‚à‚µ‚±‚Ì–„‚ß‚İƒIƒuƒWƒFƒNƒg‚ªû˜^Ï‚Ì“¯Šú‚µ‚½ƒƒfƒBƒAA‹y‚Ñû˜^Ï‚Ì‰f‘œ‚µ‚©ŠÜ‚Ü‚È‚¢ƒƒfƒBƒA‚Ìê‡A‘ã‘ÖƒRƒ“ƒeƒ“ƒc‚ª’ñ‹Ÿ‚³‚êAƒ†[ƒU[‚ª—˜—p‰Â”\‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B If this embedded object contains pre-recorded synchronised media or video-only content, check that an alternative text version of the content is provided.', 'G69,G159');
+        HTMLCS.addMessage(HTMLCS.NOTICE, element, 'ã‚‚ã—ã“ã®åŸ‹ã‚è¾¼ã¿ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒåéŒ²æ¸ˆã®åŒæœŸã—ãŸãƒ¡ãƒ‡ã‚£ã‚¢ã€åŠã³åéŒ²æ¸ˆã®æ˜ åƒã—ã‹å«ã¾ãªã„ãƒ¡ãƒ‡ã‚£ã‚¢ã®å ´åˆã€ä»£æ›¿ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒæä¾›ã•ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ If this embedded object contains pre-recorded synchronised media or video-only content, check that an alternative text version of the content is provided.', 'G69,G159');
 
     }
 };

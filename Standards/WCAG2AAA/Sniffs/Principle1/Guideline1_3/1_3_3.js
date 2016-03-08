@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_3 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ƒRƒ“ƒeƒ“ƒc‚ğ—‰ğ‚µ‘€ì‚·‚é‚½‚ß‚Ìà–¾‚ÍAŠ´Šo“I‚È“Á’¥iŒ`A‘å‚«‚³A‹Šo“I‚ÈˆÊ’u‚È‚Çj‚¾‚¯‚ÉˆË‘¶‚µ‚Ä‚Í‚¢‚¯‚Ü‚¹‚ñB Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.', 'G96');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’ç†è§£ã—æ“ä½œã™ã‚‹ãŸã‚ã®èª¬æ˜ã¯ã€æ„Ÿè¦šçš„ãªç‰¹å¾´ï¼ˆå½¢ã€å¤§ãã•ã€è¦–è¦šçš„ãªä½ç½®ãªã©ï¼‰ã ã‘ã«ä¾å­˜ã—ã¦ã¯ã„ã‘ã¾ã›ã‚“ã€‚ Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.', 'G96');
 
     }
 };

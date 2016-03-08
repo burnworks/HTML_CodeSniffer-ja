@@ -36,7 +36,7 @@ var HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_2_3_2_4 = {
      */
     process: function(element, top)
     {
-        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Web ƒy[ƒWˆê®‚Ì’†‚Å“¯‚¶‹@”\‚ğ—L‚·‚éƒRƒ“ƒeƒ“ƒc‚É‘Î‚µ‚ÄˆêŠÑ‚µ‚½ƒ‰ƒxƒ‹A¯•Ê–¼A‹y‚Ñ‘ã‘ÖƒeƒLƒXƒg‚ª—p‚¢‚ç‚êAƒ†[ƒU[‚ªˆêŠÑ‚µ‚Ä¯•Ê‚Å‚«‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.', 'G197');
+        HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Web ãƒšãƒ¼ã‚¸ä¸€å¼ã®ä¸­ã§åŒã˜æ©Ÿèƒ½ã‚’æœ‰ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«å¯¾ã—ã¦ä¸€è²«ã—ãŸãƒ©ãƒ™ãƒ«ã€è­˜åˆ¥åã€åŠã³ä»£æ›¿ãƒ†ã‚­ã‚¹ãƒˆãŒç”¨ã„ã‚‰ã‚Œã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒä¸€è²«ã—ã¦è­˜åˆ¥ã§ãã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚ Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.', 'G197');
 
     }
 };
